@@ -1,0 +1,108 @@
+---
+title: "Mastery 1"
+date: 2021-06-28T07:41:35-04:00
+menuid: "rulebook.attributes1.M1"
+menu:
+  main:
+    identifier: "rulebook.attributes1.M1"
+    parent: "rulebook.attributes1"
+    weight: 14
+draft: true
+---
+
+# MASTERY
+
+{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+
+Avorkarth is a more settled world, where the mighty and magical are rare and the
+skilled are just that, skilled, nothing more. Mastery represents the character's
+ability and practice in certain skills compared to the rest of its own species
+through determination and practice.
+
+Although mastery may not give a weak character the ability to level mountains,
+a character with mastered skill has a much high chance of success in their field
+of expertise.
+
+### MASTERY CATEOGRIES
+Mastery is considered split into three possible categories, each giving separate
+bonuses based upon the number of years that the character has spent dedicating
+their craft.
+
+**Natural Skills** : Natural skill mastery can only ever be increased by so much,
+due to their bonus coming from the creature's natural abilities.
+(See Skills/Maximum Mastery).
+
+**Learned/Knowledge Skills** : Learned and Knowledge Skill mastery, while having
+a harder and longer learning curve, have a greater potential.
+
+**Trade Skills** : Trade Skills, much like Weapon/Combat mastery, is on a per
+trade basis, but certain trades overlap or give bonuses elsewhere.
+(See Skills section) (Trade skills aren't yet implemented)
+
+**Weapon/Combat** : Mastery in combat is determined by a character's ability
+to wield weapons and their determination towards a specific combat style.
+Each weapon mastery gives X amount of combat mastery, which then also gives
+additional bonuses.
+
+### MAXIMUM MASTERY
+While the experience to gain a mastery bonus to a skill is nearly consistent
+for all creatures, not all have the same lifespan or natural aptitude.
+
+Therefore, a character's mastery must be split with however how many years
+they have been alive.
+
+**Natural Skills** : Natural skills also have the penalty of being limited by
+the creature's natural aptitudes. Natural skills can only gain bonuses up
+to half of the creature's related ability score.
+
+#### MASTERY PER YEARS
+
+| Mastery       | Years Spent | Mastery       | Years Spent |
+|:-------------:|:-----------:|:-------------:|:-----------:|
+|  Untrained    |     0       |  Untrained    |   20        |
+|  Apprenticed  |     1       |  Apprenticed  |   50        |
+|  Practiced    |     2       |  Practiced    |   100       |
+|  Proficient   |     3       |  Proficient   |   250       |
+|  Skilled      |     7       |  Skilled      |   500       |
+|  Expert       |     12      |  Expert       |   1000+     |
+
+{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
+
+#### NATURAL SKILL BONUS
+
+| Mastery          | Bonus    | Mastery          | Bonus    |
+|:----------------:|:--------:|:----------------:|:--------:|
+|  Untrained       |   -2     | Master           |   +4     |
+|  Apprenticed     |   -1     | Grand Master     |   +5     |
+|  Practiced       |   +0     | Illustrious      |   +6     |
+|  Proficient      |   +1     | Fabled           |   +7     |
+|  Skilled         |   +2     | Legend           |   +8     |
+|  Expert          |   +3     | Mythical         |   +9     |
+
+#### LEARNED/KNOWLEDGE SKILL BONUS
+
+| Mastery          | Bonus    | Mastery          | Bonus    |
+|:----------------:|:--------:|:----------------:|:--------:|
+|  Untrained       |   -5     | Master           |   +3     |
+|  Apprenticed     |   -3     | Grand Master     |   +5     |
+|  Practiced       |   -2     | Illustrious      |   +7     |
+|  Proficient      |   -1     | Fabled           |   +9     |
+|  Skilled         |   +0     | Legend           |   +12    |
+|  Expert          |   +1     | Mythical         |   +15    |
+
+#### TRADE SKILL BONUS
+
+| Mastery          | Bonus    | Mastery          | Bonus    |
+|:----------------:|:--------:|:----------------:|:--------:|
+|  Untrained       |   -4     | Master           |   +3     |
+|  Apprenticed     |   -2     | Grand Master     |   +4     |
+|  Practiced       |   -1     | Illustrious      |   +6     |
+|  Proficient      |   +0     | Fabled           |   +8     |
+|  Skilled         |   +1     | Legend           |   +10    |
+|  Expert          |   +2     | Mythical         |   +12    |
+
+{{< img-resize "rulebook-mastery1-img.png" "400x" >}}
+“Bonus Text!”
+
+{{< snippet >}}</div></div>{{< /snippet >}}
+

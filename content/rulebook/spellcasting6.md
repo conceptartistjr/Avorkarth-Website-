@@ -1,0 +1,95 @@
+---
+title: "Spellcasting 6"
+date: 2021-06-28T06:43:44-04:00
+menuid: "rulebook.spellcasting1.6"
+menu:
+  main:
+    identifier: "rulebook.spellcasting1.6"
+    parent: "rulebook.spellcasting1"
+    weight: 37
+draft: true
+---
+
+# SPELLCASTING
+
+{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+
+### RITUALS
+Not all casters are powerful enought to cast spells of greater effect, and most
+aren't able to cast anything at all. However, with the aid of the right words,
+movements, prayers and ingredients, characters may empower their capabilities
+beyond what is normally available to them. Rituals may also be empowered by
+multiple people gaining ever greater might, which have in the past enabled cults
+to raze the cities of their enemies with magical plagues or to awaken and control
+eldritch creatures deep within the earth. Spells that are quickly cast, such as
+fireballs or rays, often have the ritual empower an object like an arrow, staff
+or wand.
+
+Most rituals are arcane based deals done with creatures of darker desires such
+as daemons and malevolant beings. Devotion and spirit variants are rarer and
+require the user to be attuned to a powerful spirit or deity of the sphere of
+magic they are attempting to cast.
+
+**Ritual costs** : Rituals are often an aid to powers, not necessarily an
+inherent power. A ritual begins when a spell cannot be cast in less than 1 hour,
+and its costs increase algorithmically the further the power of the spell is
+from the casting ritualist. For each reserve cost required to cast a spell,
+increase the total time by an additional i.
+
+#### RITUAL COSTS (required reserve/2) (1+required reserve).
+
+**Additional Ritualists** : For each additional person joining a ritual,
+the casting time is reduced by their total reserves. If a ritualist joins after
+the casting has already begun, calculate the total amount of time required,
+then reduce it by the amount of time already spent on the ritual.
+
+**Caster Benefits** : Actual casters may reduce the total reserve required for
+a ritual by casting what they can at +2 of their caster might instead of their
+base caster might.
+
+**Power Control** : The further a spell is from the caster's ability, the
+greater the danger. For each point of reserve the spell is greater than all
+of the ritualits' reserve total + 10, they roll a die. On a 2 or less,
+they take 1 point of lethal damage as feedback. Should all the ritualists
+are slain by the ritual, the spell is cancelled and a feedback occurs.
+
+**Stopping/Resuming** : Rituals can only be paused at intervals of hours.
+Stopping early or late would result in the spell failing and a feedback
+would happen.
+
+**Feedback** : A failed ritual will explode with feedback energy. The feedback
+of the ritual deals 2 lethal points of damage per level of the spell to all
+creatures within X tiles per level of the spell + 1 multiplied by the spell
+level twice over, with a minimum of 1 lethal damage at a distance of 1 tile.
+(So a level 3 spell feedback would deal 6 lethal damage (3X2) to all creatures
+within 36 tiles (4x3x3).)
+
+
+
+{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
+
+### RITUAL EXAMPLE
+Three village women, suspected as witches, decide to take out their frustration
+by actually casting a spell. Though none have any magical capabilities, one of
+them has heard of a ritual passed down by her grandmother.
+
+* Since none of the three women have any spellcasting abilities, they all have
+  a caster level of Non-Caster and a power reserve of 1.
+* The ritual is a weak one, casting a oth level spell to change the colour of
+  the lying villager's favourite ring. Therefore the cost of a oth level spell
+  for a non-caster is 12 reserve.
+* With each of them having a total reserve of 1, they reduce the cost of the
+  spell by 3 before the time calculations. This brings the cost down to 9.
+* A ritual of 9 reserve is in total 45 hours (9/2)x(1+9), or more simply
+  (1+2+3+4+5+6+7+8+9). This will make the ritual take a bit less than two days.
+* Although none of them have any casting experience, they are lucky to be three,
+  as their combined reserve + 10 is 13. This means they are powerful enough to
+  control the 12 reserve spell and do not run the chance of being consumed by the spell.
+* Once the ritual done, the spell is cast successfully.
+
+{{< img-resize "rulebook-spellcasting6-img.png" "800x" >}}
+Rituals are often scoffed at as being superstition and fakery. It is,
+however, used often as evidence to burn those under suspect.
+
+{{< snippet >}}</div></div>{{< /snippet >}}
+

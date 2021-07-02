@@ -1,0 +1,40 @@
+baseURL = "https://www.avorkarth.com/"
+languageCode = "en-US" # or en-US
+title = "Avorkarth"
+description = "Nice page"
+canonifyURLs = true
+copyright = "Julien Ruest"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[menu]
+
+  [[menu.main]]
+    identifier = "rulebook"
+    name = "Rulebook"
+    url = "/rulebook/startup1"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "storybook"
+    name = "Storybook"
+    url = "/storybook/storybook"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "adventures"
+    name = "Adventures"
+    url = "/adventures/adventures"
+    weight = 4
+
+  [[menu.main]]
+    identifier = "charactersheet"
+    name = "Character Sheet"
+    url = "/charactersheet"
+    weight = 5
+
+  [[menu.main]]
+    identifier = "changelog"
+    name = "Changelog"
+    url = "/changelog"
+    weight = 56

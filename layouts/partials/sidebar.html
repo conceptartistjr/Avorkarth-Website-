@@ -1,0 +1,39 @@
+<!-- sidebar start -->
+<aside>
+     <a href="/home">
+        <img src="/images/AvorkarthLogo_Main_Alpha.png" alt="AVORKARTH">
+     </a>
+
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+        <!-- always want the top level menu items -->
+        <a href="{{ .URL }}"><button class=menuitem>{{ .Name }}</button></a>
+
+        <!-- only want children if parent or child is active -->
+        <!-- ie: pages whose menuid matches the parent identifier -->
+        {{ $parentID := .Identifier }}
+        {{ range .Children }}
+            {{- if $currentPage.Params.menuid }}
+                {{ if (hasPrefix $currentPage.Params.menuid $parentID) }}
+                    <a href="{{ .URL }}"><button class=submenu>{{ .Name }}</button></a>
+
+                    <!-- only want children if parent or child is active -->
+                    <!-- ie: pages whose menuid matches the parent identifier -->
+                    {{ $subParentID := .Identifier }}
+                    {{ range .Children }}
+                        {{- if $currentPage.Params.menuid }}
+                            {{ if (hasPrefix $currentPage.Params.menuid $subParentID) }}
+                                <a href="{{ .URL }}"><button class=subsubmenu>{{ .Name }}</button></a>
+                            {{ end }}
+                        {{ end }}
+                    {{ end }}
+                {{ end }}
+            {{ end }}
+        {{ end }}
+    {{ end }}
+
+    <a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+        <img src="/images/Youtube_Image.png" alt="ConceptArtistJR_Banner"></a>
+    <a href="https://www.patreon.com/avorkarth">
+        <img src="/images/Patreon_Image.jpg" alt="Patreon_Banner"></a>
+</aside>

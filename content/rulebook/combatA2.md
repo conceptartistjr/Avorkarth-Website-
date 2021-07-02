@@ -1,0 +1,100 @@
+---
+title: "Combat A2"
+date: 2021-06-28T07:51:16-04:00
+menuid: "rulebook.combatA1.2"
+menu:
+  main:
+    identifier: "rulebook.combatA1.2"
+    parent: "rulebook.combatA1"
+    weight: 27
+draft: true
+---
+
+# COMBAT ATTRIBUTES
+
+{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+
+### DODGE
+Dodging is the primary method of defense, showing the character's ability to
+weave through combat and evade blows, arrows or directed spells.
+
+DODGE (Agility + Instinct)/2 (rounded down) + Armour Penalty
+
+**Directional Dodge** : While in combat, the character's facing matters just
+as much as their placing. Almost each creature in Avorkarth has a front,
+flank and back. This can affect dodge rather harshly.
+
+DIRECTIONAL DODGE
+
+Direction Effect
+
+Front Retain the full dodge amount.
+
+Flank Flank attacks increase the attack's rolling category by 1.
+
+Back Back attacks increase the attack's rolling category by 3.
+
+### PARRYING
+The secondary part of defense, should an attack partially hit,
+is to deflect part of the incoming damage. Parrying is influenced by one's
+arm strength as well as one's proficiency with their current weapon.
+Parrying isn't a roll and is instead added on top of one's armour amount before
+any calculation.
+
+**Blocking** : If a character has a shield, they instead block the attack,
+adding the shield's block value to the parry.
+
+PARRY Strength/3 (rounded down) + Dexterity/4 (rounded down)
+
+### ARMOUR
+Armour is the tertiary and final method of defense, from armoured plating to
+thick hides, it is used for any attack that isn't dodged or parried.
+It is used to counter the attacker's strike and to possibly negate incoming damage.
+
+**Armour Penalty** : Armour within the world will protect one's skin, at the cost
+of hindering movement. Some armours come with an Armour Penalty, which is applied
+to some skills and to the character's dodge. This is covered on a per skill basis.
+
+{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
+
+### ARMOUR TYPES
+**Full Armour** : Worn armour is made to defend a creature in battle from all
+incoming blows. Full armour bonuses apply to any attack which is made to the
+character, as long as they are aware that they are in combat.
+
+**Guarded Armour** : Most armours and shields better protect against attacks
+made to the front or flank, but less so against attacks from the back.
+Guarded armour bonuses are only applied to frontal and flank attacks.
+
+**Natural Armour** : All creatures have a skin to protect from minor injures.
+These are natural to the creature and as such cannot be countered by positioning
+unless specifically stated.
+
+NATURAL ARMOUR Constitution/3 (rounded down)
+
+### RESISTANCES
+Resistances offer a flat damage reduction to any damage of its type.
+The resistances are as follows : Physical, Acid, Poison, Necrotic, Fire,
+Cold, Shock, Holy, Infernal, Shadow and Spirit.
+
+**Negative Resistances** : Should a creature have a negative score in their
+resistances, they take reduced healing or increased damage equal to the
+negative of the resistance.
+
+### PRESENCE
+A character's presence upon the battlefield is ever important, not only to
+leaders who wish to bolster their allies, but also to strike fear into the enemy.
+The creature's presence is used as the basis for resolve rolls during combat.
+
+PRESENCE (Strength + Constitution + Will)/3 (rounded down)
+
+**Terrifying Size** : A creature of Large size gains a +1 bonus to their presence,
+doubling per size greater.
+
+**Inspiring Beauty** : A creature may instead have use of their beauty to inspire
+neaby allies. Note that this presence is only counted for allies, and enemies
+must still use the highest strength based presence score.
+
+ALTERNATE PRESENCE (Beauty + Will)/2 (rounded down)
+
+{{< snippet >}}</div></div>{{< /snippet >}}

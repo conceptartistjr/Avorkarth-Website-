@@ -1,0 +1,176 @@
+/* -- SIDEBAR -- */
+.sidenav {
+	height: 100%;
+	width: 220px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: white;
+	background-image: url("/images/BG_Banner.png");
+	background-repeat: no-repeat;
+	padding-top: 20px;
+}
+.menuitem {
+	width: 100%;
+    margin-left: 0px;
+    margin-top: 10px;
+	padding: 9px;
+	background-image: url("/images/Button_Norm.jpg");
+	background-size: cover;
+	background-color: transparent;
+	background-repeat: no-repeat;
+}
+.submenu {
+	width: 80%;
+    margin-top: 5px;
+    margin-left:30px;
+	padding: 6px;
+	background-image: url("/images/Button_Norm.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.subsubmenu {
+	width: 70%;
+    margin-top: 5px;
+    margin-left:50px;
+	padding: 6px;
+	background-image: url("/images/Button_Norm.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.sidenav button:hover {
+	background-image: url("/images/Button_Hovered.jpg");
+}
+
+.sidenav img {
+  width:200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+
+/* -- MAIN CONTENT -- */
+.main {
+	padding-left: 230px;
+	max-width: 1379px;
+	background-color: white;
+    position: relative;
+}
+
+.main_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%
+}
+
+/* -- BOOKPAGE CONTENT -- */
+
+.bookpage-background {
+    position: relative
+}
+
+.bookpage {
+    height: 100%;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 22px;
+    background-image: url("/images/page-background.png");
+    background-repeat: no-repeat;
+    background-size: 1379px 1792px;
+}
+.bookpage h1 {
+    padding-top: 105px;
+	font-size: 32px;
+    text-align: center
+}
+.bookpage-columns {
+    display: flex;
+    padding: 20px;
+}
+.bookpage-column {
+    flex: 50%;
+    padding: 10px;
+}
+.bookpage-fill {
+    height: 800px;
+}
+.bookpage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    padding-bottom: 60px;
+}
+
+.copyright {
+	font-size: 12px;
+}
+
+/* TABLE - general (no class) */
+table, th, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 320px;
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-size: 12px;
+    margin: auto;
+}
+/*
+tr:nth-child(even) {
+    background-color: #c2c2c2;
+}
+tr:nth-child(odd) {
+    background-color: #d2c2a2;
+}
+*/
+
+/* TABLE - skills specific */
+table.skills {
+    width: 90%;
+	margin: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+    padding-top: 20px;
+}
+table.skills tr:nth-child(even) {
+    background-color: #F3ECD5;
+}
+table.skills tr:nth-child(odd) {
+    background-color: #E7E0CA;
+}
+table.skills tr:first-child {
+    background-color: #C4BBA0;
+}
+table.skills td:first-child {
+    width: 120px;
+}
+
+/* -- FOOTER -- */
+.foot {
+    position: fixed;
+	bottom: 0;
+    text-align: center;
+	padding-left: 230px;
+}
+
+
+/*
+p, i {
+	text-align: justify;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12px;
+}
+
+.box {
+	float: left;
+	width: 8px;
+	height: 8px;
+	margin: 2px;
+	border: 1px solid black;
+}
+*/

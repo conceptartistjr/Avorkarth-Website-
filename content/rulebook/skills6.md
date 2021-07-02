@@ -1,0 +1,81 @@
+---
+title: "Skills 6"
+date: 2021-06-28T06:54:33-04:00
+menuid: "rulebook.interactions1.S6"
+menu:
+  main:
+    identifier: "rulebook.interactions1.S6"
+    parent: "rulebook.interactions1"
+    weight: 26
+draft: true
+---
+
+# INTERACTIONS
+
+{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+
+{{< table "skills" >}}
+|                      |                                                       |
+|----------------------|:------------------------------------------------------|
+| **Skill**            | **RIDE** - AGILITY, INSTINCT OR WISDOM SWIFT ACTION  |
+| **Description**      | The creature's ability to ride upon mounts, tamed or untamed, without falling off.  |
+| **Checks**           | Once per creature  |
+| **Difficulty Check** | Mount's (Agility + Instinct)/2. Increase by +3 if attempting to do an additional action.  |
+| **Armour Penalty**   | Yes  |
+| **Combat Uses**      | None  |
+| **Additional**       | **Riding Companion** : If the mount is willing to have a rider upon it, decrease the DC by 10.  |
+| -------------------- |   |
+| **Critical Success** | You no longer take penalties for additional actions while riding.  |
+| **Success**          | You ride the mount successfully  |
+| **Partial Success**  | You ride the mount successfully, but with a -1 to all other rolls while riding.  |
+| **Fail**             | You fall off.  |
+| **Critical Fail**    | You fall off and take -1 on your next ride check.  |
+{{< /table >}}
+
+
+{{< table "skills" >}}
+|                      |                                                       |
+|----------------------|:------------------------------------------------------|
+| **Skill**            | **SWIM** - STRENGTH OR AGILITY - LIMITED MOVE ACTION  |
+| **Description**      | The creature's ability to move through and float in liquid based bodies.  |
+| **Checks**           | Once per action.  |
+| **Difficulty Check** | Per Situation *   |
+| **Armour Penalty**   | No  |
+| **Combat Uses**      | None  |
+| **Additional**       | **Environmental Challenges** : The DC is as follows : - Still waters - 5 - Rough waters - 8 - Rapids - 13 - Large ocean waves - 15 - Stormy ocean - 18 - Waterfall pull - 20 - Whirlpool - 25  |
+| -------------------- |   |
+| **Critical Success** | Move at full speed.  |
+| **Success**          | Move at half speed.  |
+| **Partial Success**  | Don't move, but don't sink.  |
+| **Fail**             | Begin sinking.  |
+| **Critical Fail**    | Thrash, making the situation worse. Increase the DC of the next roll by 1.  |
+{{< /table >}}
+
+
+{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
+
+{{< table "skills" >}}
+|                      |                                                       |
+|----------------------|:------------------------------------------------------|
+| **Skill**            | **TRACK** - INSTINCT, INTELLIGENCE OR WISDOM 1 ROUND  |
+| **Description**      | The creature's ability to follow a target's whearabouts and previous paths.  |
+| **Checks**           | Once per round.  |
+| **Difficulty Check** | Opponent's size/weight (GM's discretion).  |
+| **Armour Penalty**   | No  |
+| **Combat Uses**      | None  |
+| **Additional**       | None  |
+| -------------------- |   |
+| **Critical Success** | Find tracks with the exact direction.  |
+| **Success**          | Find related tracks with an approximate direction.  |
+| **Partial Success**  | Find related tracks, but are unable to discern the direction.  |
+| **Fail**             | Find no related tracks to the search   |
+| **Critical Fail**    | Follow the wrong tracks.  |
+{{< /table >}}
+
+
+{{< img-resize "rulebook-skills6-img.png" "800x" >}}
+Bonus Text!
+
+
+{{< snippet >}}</div></div>{{< /snippet >}}
+

@@ -1,0 +1,62 @@
+---
+title: "Attributes"
+date: 2021-06-28T07:36:08-04:00
+menuid: "rulebook.attributes1"
+menu:
+  main:
+    identifier: "rulebook.attributes1"
+    parent: "rulebook"
+    weight: 9
+draft: true
+---
+
+# GENERAL ATTRIBUTES
+
+{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+
+Attributes are a creature's ability to affect their surroundings and be affected
+by the world's obstacles. Such examples are how quickly or nimbly a character
+may move or how many wounds they can take before they are downed.
+
+## WORLD SIZE
+
+### TILE SIZE
+Size represents the approximation of how much space a creature or object takes
+upon the field, be it through height or width. This is generalized into categories
+that can be fitted upon Avorkarth's tile system. Each tile represents about
+1.5 meters or -5 feet.
+
+{{< img-resize "rulebook-attributes1-img1.png" "600x" >}}
+A medium creature such as a human takes up 1 tile, being approximately 1.5 meters tall. A large creature such as an ogre
+takes up 4 tiles (2x2).
+
+### SIZE CATEGORIES
+A creature's placement upon the field is based upon their approximate size as
+noted above. These categories offer different bonuses and penalties.
+| SIZE         |  SPACE               |   REACH         |
+|:------------:|:--------------------:|:---------------:|
+| Diminuative  |  10 per tile         |   Same tile     |
+| Tiny         |  4 per tile          |   Same tile     |
+| Small        |  2 per tile          |   1 tile        |
+| Medium       |  1-3 tiles           |   1 tile        |
+| Large        |  4+ tiles (2x2)      |   2-3 tiles     |
+| Huge         |  16+ tiles (4x4)     |   4-6 tiles     |
+| Gargantuan   |  49+ tiles (7x7)     |   7-11 tiles    |
+| Colossal     |  144+ tiles (12x12)  |   12-24 tiles   |
+| Titanic      |  625+ tiles (25X25)  |   25+ tiles     |
+
+{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
+
+[image goes here]
+
+* Pixie (Diminuative)
+* House Cat (Tiny)
+* Falgrii (Small)
+* Human  (Medium)
+* Hill Ogre (Large)
+* Echovale Hydra (Huge)
+* Dune Wurm (Gargantuan)
+* Adult Dragon (Colossal)
+
+{{< snippet >}}</div></div>{{< /snippet >}}
+
