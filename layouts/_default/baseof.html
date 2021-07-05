@@ -6,7 +6,6 @@
     {{ $stylemain := resources.Get "css/main.css" | minify | fingerprint "sha512" }}
     <link rel="stylesheet" href="{{ $stylemain.RelPermalink }}" integrity="{{ $stylemain.Data.Integrity }}">
     <title>{{ block "title" . }}
-      <!-- Blocks may include default content. -->
       {{ .Site.Title }}
     {{ end }}</title>
   </head>

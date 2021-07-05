@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.alignments1.2"
     parent: "rulebook.alignments1"
     weight: 7
-draft: true
 ---
 
 # ALIGNMENTS

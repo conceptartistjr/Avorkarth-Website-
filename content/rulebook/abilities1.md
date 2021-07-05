@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.abilities1"
     parent: "rulebook"
     weight: 3
-draft: true
 ---
 
 # Ability Scores

@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.startup"
     parent: "rulebook"
     weight: 1
-draft: true
 ---
 
 # Start-Up

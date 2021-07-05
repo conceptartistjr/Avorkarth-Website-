@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.spellcasting1.6"
     parent: "rulebook.spellcasting1"
     weight: 37
-draft: true
 ---
 
 # SPELLCASTING

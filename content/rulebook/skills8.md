@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.interactions1.S8"
     parent: "rulebook.interactions1"
     weight: 28
-draft: true
 ---
 
 # INTERACTIONS

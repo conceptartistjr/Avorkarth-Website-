@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.attributes1.C1"
     parent: "rulebook.attributes1"
     weight: 16
-draft: true
 ---
 
 # CLASS TALENTS

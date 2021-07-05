@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.attributes1.M1"
     parent: "rulebook.attributes1"
     weight: 14
-draft: true
 ---
 
 # MASTERY

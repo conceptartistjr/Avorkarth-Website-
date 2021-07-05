@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.dicerolls"
     parent: "rulebook"
     weight: 2
-draft: true
 ---
 
 # Dice Rolls

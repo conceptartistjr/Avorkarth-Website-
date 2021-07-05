@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.combatA1.2"
     parent: "rulebook.combatA1"
     weight: 27
-draft: true
 ---
 
 # COMBAT ATTRIBUTES

@@ -7,7 +7,6 @@ menu:
     identifier: "rulebook.attributes1.3"
     parent: "rulebook.attributes1"
     weight: 11
-draft: true
 ---
 
 # GENERAL ATTRIBUTES
