@@ -1,105 +1,132 @@
-title: "Skills 3"
-weight: 24
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Skills 3</title>
+		<meta name="author" content="Julien Ruest" charset="UTF-8">
+		<link href="../website_css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- Side Navigation Buttons -->
+		<div class="sidenav">
+			<!-- Main Logo -->
+			<a href="index.html" style="color:white;margin-left:5px;margin-bottom:0px;"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" 
+			alt="AVORKARTH" style="width:208px;"></a>
 
-# INTERACTIONS
+			<!-- Book Choice -->
+			<a href="rulebook.html"><button class="picked"><b>Rulebook</b></button></a>
+			<a href="worldlore.html"><button><b>World Lore</b></button></a>
+			<a href="tale.html"><button><b>Tale of the Fifth Age</b></button></a>
+			<a href="adventures.html"><button><b>Adventures</b></button></a>
+			<br><br>
+			<a href="charactersheet.html"><button><b>Character Sheet</b></button></a>
+			<a href="changelog.html"><button><b>Changelog</b></button></a>
 
-{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+			<!-- Links -->
+			<p>
+			<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+			<img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner" style="width:200px;display:block;margin:auto;"></a>
+			<a href="https://www.patreon.com/avorkarth">
+			<img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner" style="width:200px;display:block;margin:auto;"></a>
+			</p>
+		</div>
 
-{{< table "skills" >}}
-|                      |                                                       |
-|----------------------|:------------------------------------------------------|
-| **Skill**            | **MOVE SILENTLY** - AGILITY, DEXTERITY OR INSTINCT MOVE ACTION   |
-| **Description**      | The creature's ability to not be heard whilst moving.  |
-| **Checks**           | Declaration - No roll required.  |
-| **Difficulty Check** | Opponen'ts Listen checks.  |
-| **Armour Penalty**   | Yes   |
-| **Combat Uses**      | None  |
-| **Additional**       | None  |
-| -------------------- |   |
-| **Critical Success** | - |
-| **Success**          | - |
-| **Partial Success**  | - |
-| **Fail**             | - |
-| **Critical Fail**    | - |
-{{< /table >}}
+		<!-- Main Page content -->
+		<div class="rulebook">
 
-{{< table "skills" >}}
-|                      |                                                       |
-|----------------------|:------------------------------------------------------|
-| **Skill**            | **SEARCH** - INSTINCT, INTELLIGENCE OR WISDOM 10+ ROUNDS  |
-| **Description**      | The creature's ability for seaching the area and finding small details.  |
-| **Checks**           | Once per action. Cancelling early automatically fails.  |
-| **Difficulty Check** | Per obstacle  |
-| **Armour Penalty**   | No   |
-| **Combat Uses**      | None  |
-| **Additional**       | **Scrutiny** : Increase the check result by 1 per doubling of time period searched.  |
-| -------------------- |   |
-| **Critical Success** | You successfully find everything in that area.  |
-| **Success**          | You find something in the location.  |
-| **Partial Success**  | You find traces, but nothing specific. Increase further check results by 1.  |
-| **Fail**             | You find nothing.  |
-| **Critical Fail**    | You hinder the evidence. Increase the difficulty check by 1 forever.  |
-{{< /table >}}
+<h1>INTERACTIONS</h1>
 
-{{< table "skills" >}}
-|                      |                                                       |
-|----------------------|:------------------------------------------------------|
-| **Skill**            | **SENSE MOTIVE** - INSTINCT, INTELLIGENCE OR WISDOM SWIFT OR IMMEDIATE ACTION  |
-| **Description**      | The creature's ability to sense what others are feeling or thinking to do, usually used when one thinks they are being lied to.  |
-| **Checks**           | Declaration - No roll required.  |
-| **Difficulty Check** | Opponent's Bluff or Persuade skills.  |
-| **Armour Penalty**   | No   |
-| **Combat Uses**      | None  |
-| **Additional**       | None  |
-| -------------------- |   |
-| **Critical Success** | - |
-| **Success**          | - |
-| **Partial Success**  | - |
-| **Fail**             | - |
-| **Critical Fail**    | - |
-{{< /table >}}
+<div class="bookpage-columns">
+    <div class="bookpage-column">
 
-{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
+<table class="skills">
+<tr><td> Skill            </td><td> MOVE SILENTLY - AGILITY, DEXTERITY OR INSTINCT MOVE ACTION   </td></tr>
+<tr><td> Description      </td><td> The creature's ability to not be heard whilst moving.  </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponen'ts Listen checks.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
 
-{{< table "skills" >}}
-|                      |                                                       |
-|----------------------|:------------------------------------------------------|
-| **Skill**            | **SPOT** - INSTINCT - LIMITED STANDARD ACTION  |
-| **Description**      | The creature's ability to notice larger details or incoming dangers before they occur.  |
-| **Checks**           | Once per action.  |
-| **Difficulty Check** | Per obstacle.  |
-| **Armour Penalty**   | No   |
-| **Combat Uses**      | None  |
-| **Additional**       | None  |
-| -------------------- |   |
-| **Critical Success** | You notice additional details. Gain +1 to the next roll against the target outside of combat.  |
-| **Success**          | You notice the target/opportunity/happening.  |
-| **Partial Success**  | You notice something out of the corner of your eye.  |
-| **Fail**             | You fail to notice anything.  |
-| **Critical Fail**    | You are distracted, and think you notice something that isn't there.  |
-{{< /table >}}
+<table class="skills">
+<tr><td> Skill            </td><td> SEARCH - INSTINCT, INTELLIGENCE OR WISDOM 10+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability for seaching the area and finding small details.  </td></tr>
+<tr><td> Checks           </td><td> Once per action. Cancelling early automatically fails.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Scrutiny : Increase the check result by 1 per doubling of time period searched.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> You successfully find everything in that area.  </td></tr>
+<tr><td> Success          </td><td> You find something in the location.  </td></tr>
+<tr><td> Partial Success  </td><td> You find traces, but nothing specific. Increase further check results by 1.  </td></tr>
+<tr><td> Fail             </td><td> You find nothing.  </td></tr>
+<tr><td> Critical Fail    </td><td> You hinder the evidence. Increase the difficulty check by 1 forever.  </td></tr>
+</table>
 
+<table class="skills">
+<tr><td> Skill            </td><td> SENSE MOTIVE - INSTINCT, INTELLIGENCE OR WISDOM SWIFT OR IMMEDIATE ACTION  </td></tr>
+<tr><td> Description      </td>
+    <td> The creature's ability to sense what others are feeling or thinking to do,
+         usually used when one thinks they are being lied to.  </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Bluff or Persuade skills.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
 
-{{< table "skills" >}}
-|                      |                                                       |
-|----------------------|:------------------------------------------------------|
-| **Skill**            | **TUMBLE** - AGILITY MOVE/IMMEDIATE ACTION  |
-| **Description**      | The creature's ability in acrobatic movements and to fall gracefully.  |
-| **Checks**           | Once per action/reaction to falling.  |
-| **Difficulty Check** | 3 per tile of Falling distance.  |
-| **Armour Penalty**   | Yes   |
-| **Combat Uses**      | None  |
-| **Additional**       | None  |
-| -------------------- |   |
-| **Critical Success** | Increase falling distance by 5 tiles.  |
-| **Success**          | Increase falling distance by 3 tiles.  |
-| **Partial Success**  | Increase falling distance by 1 tile.  |
-| **Fail**             | Take the full falling damage.   |
-| **Critical Fail**    | Increase damage taken from the fall by i lethal damage per instance of distance.  |
-{{< /table >}}
+</div><div class="bookpage-column">
 
-{{< img-resize "rulebook-skills3-img.png" "800x" >}}
+<table class="skills">
+<tr><td> Skill            </td><td> SPOT - INSTINCT - LIMITED STANDARD ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to notice larger details or incoming dangers before they occur.  </td></tr>
+<tr><td> Checks           </td><td> Once per action.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> You notice additional details. Gain +1 to the next roll against the target outside of combat.  </td></tr>
+<tr><td> Success          </td><td> You notice the target/opportunity/happening.  </td></tr>
+<tr><td> Partial Success  </td><td> You notice something out of the corner of your eye.  </td></tr>
+<tr><td> Fail             </td><td> You fail to notice anything.  </td></tr>
+<tr><td> Critical Fail    </td><td> You are distracted, and think you notice something that isn't there.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> TUMBLE - AGILITY MOVE/IMMEDIATE ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability in acrobatic movements and to fall gracefully.</td></tr>
+<tr><td> Checks           </td><td> Once per action/reaction to falling.  </td></tr>
+<tr><td> Difficulty Check </td><td> 3 per tile of Falling distance.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Increase falling distance by 5 tiles.  </td></tr>
+<tr><td> Success          </td><td> Increase falling distance by 3 tiles.  </td></tr>
+<tr><td> Partial Success  </td><td> Increase falling distance by 1 tile.  </td></tr>
+<tr><td> Fail             </td><td> Take the full falling damage.   </td></tr>
+<tr><td> Critical Fail    </td><td> Increase damage taken from the fall by 1 lethal damage per instance of distance.</td></tr>
+</table>
+
+<img src="images/rulebook-skills3-img.png" width="400px" >
+<p class="caption">
 Bonus Text!
+</p>
 
-{{< snippet >}}</div></div>{{< /snippet >}}
+</div></div>
+</div></body></html>
 

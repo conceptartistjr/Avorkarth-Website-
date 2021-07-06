@@ -1,91 +1,173 @@
-title: "Combat A2"
-weight: 27
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Combat Attributes 2</title>
+		<meta name="author" content="Julien Ruest" charset="UTF-8">
+		<link href="../website_css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- Side Navigation Buttons -->
+		<div class="sidenav">
+			<!-- Main Logo -->
+			<a href="index.html" style="color:white;margin-left:5px;margin-bottom:0px;"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" 
+			alt="AVORKARTH" style="width:208px;"></a>
 
-# COMBAT ATTRIBUTES
+			<!-- Book Choice -->
+			<a href="rulebook.html"><button class="picked"><b>Rulebook</b></button></a>
+			<a href="worldlore.html"><button><b>World Lore</b></button></a>
+			<a href="tale.html"><button><b>Tale of the Fifth Age</b></button></a>
+			<a href="adventures.html"><button><b>Adventures</b></button></a>
+			<br><br>
+			<a href="charactersheet.html"><button><b>Character Sheet</b></button></a>
+			<a href="changelog.html"><button><b>Changelog</b></button></a>
 
-{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+			<!-- Links -->
+			<p>
+			<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+			<img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner" style="width:200px;display:block;margin:auto;"></a>
+			<a href="https://www.patreon.com/avorkarth">
+			<img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner" style="width:200px;display:block;margin:auto;"></a>
+			</p>
+		</div>
 
-### DODGE
+		<!-- Main Page content -->
+		<div class="rulebook">
+
+<h1>COMBAT ATTRIBUTES</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h3>DODGE</h3>
+<p>
 Dodging is the primary method of defense, showing the character's ability to
 weave through combat and evade blows, arrows or directed spells.
+</p>
 
+<p>
 DODGE (Agility + Instinct)/2 (rounded down) + Armour Penalty
+</p>
 
-**Directional Dodge** : While in combat, the character's facing matters just
+<p>
+<b>Directional Dodge</b> : While in combat, the character's facing matters just
 as much as their placing. Almost each creature in Avorkarth has a front,
 flank and back. This can affect dodge rather harshly.
+</p>
 
+<p>
 DIRECTIONAL DODGE
+</p>
 
+<p>
 Direction Effect
+</p>
 
+<p>
 Front Retain the full dodge amount.
+</p>
 
+<p>
 Flank Flank attacks increase the attack's rolling category by 1.
+</p>
 
+<p>
 Back Back attacks increase the attack's rolling category by 3.
+</p>
 
-### PARRYING
+<h3>PARRYING</h3>
+<p>
 The secondary part of defense, should an attack partially hit,
 is to deflect part of the incoming damage. Parrying is influenced by one's
 arm strength as well as one's proficiency with their current weapon.
 Parrying isn't a roll and is instead added on top of one's armour amount before
 any calculation.
+</p>
 
-**Blocking** : If a character has a shield, they instead block the attack,
+<p>
+<b>Blocking</b> : If a character has a shield, they instead block the attack,
 adding the shield's block value to the parry.
+</p>
 
+<p>
 PARRY Strength/3 (rounded down) + Dexterity/4 (rounded down)
+</p>
 
-### ARMOUR
+<h3>ARMOUR</h3>
+<p>
 Armour is the tertiary and final method of defense, from armoured plating to
 thick hides, it is used for any attack that isn't dodged or parried.
 It is used to counter the attacker's strike and to possibly negate incoming damage.
+</p>
 
-**Armour Penalty** : Armour within the world will protect one's skin, at the cost
+<p>
+<b>Armour Penalty</b> : Armour within the world will protect one's skin, at the cost
 of hindering movement. Some armours come with an Armour Penalty, which is applied
 to some skills and to the character's dodge. This is covered on a per skill basis.
+</p>
 
-{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
+</div><div class="bookpage-column">
 
-### ARMOUR TYPES
-**Full Armour** : Worn armour is made to defend a creature in battle from all
+<h3>ARMOUR TYPES
+<p>
+<b>Full Armour</b> : Worn armour is made to defend a creature in battle from all
 incoming blows. Full armour bonuses apply to any attack which is made to the
 character, as long as they are aware that they are in combat.
+</p>
 
-**Guarded Armour** : Most armours and shields better protect against attacks
+<p>
+<b>Guarded Armour</b> : Most armours and shields better protect against attacks
 made to the front or flank, but less so against attacks from the back.
 Guarded armour bonuses are only applied to frontal and flank attacks.
+</p>
 
-**Natural Armour** : All creatures have a skin to protect from minor injures.
+<p>
+<b>Natural Armour</b> : All creatures have a skin to protect from minor injures.
 These are natural to the creature and as such cannot be countered by positioning
 unless specifically stated.
+</p>
 
+<p>
 NATURAL ARMOUR Constitution/3 (rounded down)
+</p>
 
-### RESISTANCES
+<h3>RESISTANCES</h3>
+<p>
 Resistances offer a flat damage reduction to any damage of its type.
 The resistances are as follows : Physical, Acid, Poison, Necrotic, Fire,
 Cold, Shock, Holy, Infernal, Shadow and Spirit.
+</p>
 
-**Negative Resistances** : Should a creature have a negative score in their
+<p>
+<b>Negative Resistances</b> : Should a creature have a negative score in their
 resistances, they take reduced healing or increased damage equal to the
 negative of the resistance.
+</p>
 
-### PRESENCE
+<h3>PRESENCE</h3>
+<p>
 A character's presence upon the battlefield is ever important, not only to
 leaders who wish to bolster their allies, but also to strike fear into the enemy.
 The creature's presence is used as the basis for resolve rolls during combat.
+</p>
 
+<p>
 PRESENCE (Strength + Constitution + Will)/3 (rounded down)
+</p>
 
-**Terrifying Size** : A creature of Large size gains a +1 bonus to their presence,
+<p>
+<b>Terrifying Size</b> : A creature of Large size gains a +1 bonus to their presence,
 doubling per size greater.
+</p>
 
-**Inspiring Beauty** : A creature may instead have use of their beauty to inspire
+<p>
+<b>Inspiring Beauty</b> : A creature may instead have use of their beauty to inspire
 neaby allies. Note that this presence is only counted for allies, and enemies
 must still use the highest strength based presence score.
+</p>
 
+<p>
 ALTERNATE PRESENCE (Beauty + Will)/2 (rounded down)
+</p>
 
-{{< snippet >}}</div></div>{{< /snippet >}}
+</div></div>
+</div></body></html>

@@ -1,97 +1,159 @@
-title: "Attributes 3"
-weight: 11
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Attributes 3</title>
+		<meta name="author" content="Julien Ruest" charset="UTF-8">
+		<link href="../website_css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- Side Navigation Buttons -->
+		<div class="sidenav">
+			<!-- Main Logo -->
+			<a href="index.html" style="color:white;margin-left:5px;margin-bottom:0px;"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" 
+			alt="AVORKARTH" style="width:208px;"></a>
 
-# GENERAL ATTRIBUTES
+			<!-- Book Choice -->
+			<a href="rulebook.html"><button class="picked"><b>Rulebook</b></button></a>
+			<a href="worldlore.html"><button><b>World Lore</b></button></a>
+			<a href="tale.html"><button><b>Tale of the Fifth Age</b></button></a>
+			<a href="adventures.html"><button><b>Adventures</b></button></a>
+			<br><br>
+			<a href="charactersheet.html"><button><b>Character Sheet</b></button></a>
+			<a href="changelog.html"><button><b>Changelog</b></button></a>
 
-{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+			<!-- Links -->
+			<p>
+			<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+			<img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner" style="width:200px;display:block;margin:auto;"></a>
+			<a href="https://www.patreon.com/avorkarth">
+			<img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner" style="width:200px;display:block;margin:auto;"></a>
+			</p>
+		</div>
 
-## LIFTING CAPACITY
+		<!-- Main Page content -->
+		<div class="rulebook">
+
+<h1>GENERAL ATTRIBUTES</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h2>LIFTING CAPACITY</h2>
+<p>
 Upon journeys and adventures, characters are often burdened with travelling gear,
 treasures or strange items of various usefulness. However, characters can only
 lift so much, their strength determining their maximal weight allowance,
 including the gear currently worn.
+</p>
 
-### LIFTING CAPACITY
+<h3>LIFTING CAPACITY</h3>
+<p>
 Lifting capacity determines the total weight of all objects upon the character
 and when they suffer penalties for carrying too much. These are separated into
 multiple general categories of lifting or carry weight. All lifting calculations
 are done with pounds (lbs) in mind.
+</p>
 
-### CARRY WEIGHT CATEGORIES/PENALTIES
+<h3>CARRY WEIGHT CATEGORIES/PENALTIES</h3>
 
-**Light Load or lower** : A character below their light load is carrying a
+<p>
+<b>Light Load or lower</b> : A character below their light load is carrying a
 comfortable amount of things and there are no penalties associated to it.
 A character that can fly must be in their Light Load to fly.
+</p>
 
-**Light to Medium Load** : A character within their light load finds themselves
+<p>
+<b>Light to Medium Load</b> : A character within their light load finds themselves
 a bit limited in their agile based movements. | - 1 to all Dodge, Movement and
 Agility based actions and skills.
+</p>
 
-**Medium to Heavy Load** : A character within their medium load finds themselves
+<p>
+<b>Medium to Heavy Load</b> : A character within their medium load finds themselves
 quite limited in their agile movements. | Halve all Dodge, Movement and Agility
 based actions and skills.
+</p>
 
-**Heavy to Maximum Load** : A character within their heavy load is carrying too
+<p>
+<b>Heavy to Maximum Load</b> : A character within their heavy load is carrying too
 much to move properly and is heavily burdened. | Dodge and Movement are reduced
 to 1, can only use non-movement based actions and skills. | Reduce actions per
 turn to 1.
+</p>
 
-**Maximum Lift** : The final state of lifting capacity is what the character can
+<p>
+<b>Maximum Lift</b> : The final state of lifting capacity is what the character can
 barely lift, but not carry with them. | Cannot move or take any action.
+</p>
 
-{{< img-resize "rulebook-attributes3-img.png" "400x" >}}
+<img src="images/rulebook-attributes3-img.png" width="400px" >
+<p class="caption">
 "The burden of adventure is not always in gold, for there are
 treasures of much greater value to be found.” - The Chronicler
+</p>
 
+    </div><div class="bookpage-column">
 
-{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
-
-### LIFTING CAPACITY STRENGTH
+<h3>LIFTING CAPACITY STRENGTH</h3>
+<p>
 To calculate what are the limits to the character's carrying capacities one must
 look at one's own strength and strength category.
+</p>
 
-#### Lifting Base : Strength x Strength.
-| STR CAT.    |  LIGHT |  MEDIUM |  HEAVY  |  MAXIMUM |
-|+-----------+|+------+|+-------+|+-------+|+--------+|
-| Minor       | X1     |  X2     |  X3     |  X4      |
-| Lesser      | X1     |  X2     |  X4     |  X6      |
-| Standard    | X1     |  X2     |  X5     |  X9      |
-| Greater     | X2     |  X4     |  X8     |  X15     |
-| Superior    | X3     |  X7     |  X12    |  X25     |
-| Mighty      | X5     |  X10    |  X15    |  X50     |
-| Legendary   | X7     |  X15    |  X30    |  X75     |
-| Mythical    | X10    |  X20    |  X50    |  X100    |
+<h4>Lifting Base : Strength x Strength.</h4>
+<table>
+    <tr><th> STR CAT.    </th><th>  LIGHT </th><th>  MEDIUM </th><th>  HEAVY  </th><th>  MAXIMUM </th><tr>
+    <tr><td> Minor       </td><td> X1     </td><td>  X2     </td><td>  X3     </td><td>  X4      </td><tr>
+    <tr><td> Lesser      </td><td> X1     </td><td>  X2     </td><td>  X4     </td><td>  X6      </td><tr>
+    <tr><td> Standard    </td><td> X1     </td><td>  X2     </td><td>  X5     </td><td>  X9      </td><tr>
+    <tr><td> Greater     </td><td> X2     </td><td>  X4     </td><td>  X8     </td><td>  X15     </td><tr>
+    <tr><td> Superior    </td><td> X3     </td><td>  X7     </td><td>  X12    </td><td>  X25     </td><tr>
+    <tr><td> Mighty      </td><td> X5     </td><td>  X10    </td><td>  X15    </td><td>  X50     </td><tr>
+    <tr><td> Legendary   </td><td> X7     </td><td>  X15    </td><td>  X30    </td><td>  X75     </td><tr>
+    <tr><td> Mythical    </td><td> X10    </td><td>  X20    </td><td>  X50    </td><td>  X100    </td><tr>
+</table>
 
-### LIFTING CAPACITY EXAMPLES
-**PIXIE (Male)** - An average male pixie has a strength value of 1. It has therefore
+<h3>LIFTING CAPACITY EXAMPLES</h3>
+<p>
+<b>PIXIE (Male)</b> - An average male pixie has a strength value of 1. It has therefore
 a lifting base of 1 (1x1). Since the pixie's strength is in the Minor strength
 category, its light load is 1 lbs. (1x1), medium load is 2 lbs. (1x2), heavy load
 is 3 lbs(1x3) and it can lift at maximum 4 lbs. (1x4).
+</p>
 
-**HUMAN (Male - Karthian)** - An average male human has a strength value of 7.
+<p>
+<b>HUMAN (Male - Karthian)</b> - An average male human has a strength value of 7.
 It has therefore a lifting base of 49 (787). Since the male human's strength is
 in the Standard strength category, its light load is 49 lbs. (49x1), medium
 load is 98 lbs. (49X2), heavy load is 245 lbs. (49x5) and it can lift at maximum
 441 lbs. (49x9).
+</p>
 
-**GRYPHON (Male - Brown)** - An average male brown feathered gryphon has a
+<p>
+<b>GRYPHON (Male - Brown)</b> - An average male brown feathered gryphon has a
 strength value of 13. It therefore has a lifting base of 169 (13x13).
 Since the gryphon's strength is in the Greater strength category, its
 light load is 338 lbs. (169x2), medium load is 676 lbs. (169x4),
 heavy load is 1,352 lbs. (169x8), and it can lift at maximum 2,535 lbs. (169x15).
+</p>
 
-## CARRYING CAPCITY
+<h2>CARRYING CAPCITY</h2>
+<p>
 No matter a character's strength, their carrying amount is unfortunately still
 limited by their size. A character may only carry so many items of certain sizes.
 Note that worn armour and clothing does NOT count towards this capacity,
 but worn items such as swords and backpacks do.
+</p>
 
-| ITEM SIZE (RELATIVE) | CARRY AMOUNT  |
-|:--------------------+|+-------------+|
-| Tiny                 |  20           |
-| Small                |  10           |
-| Standard             |  5            |
-| Large                |  2            |
+<table>
+    <tr><th> ITEM SIZE (RELATIVE) </th><th> CARRY AMOUNT  </th></tr>
+    <tr><td> Tiny                 </td><td>  20           </td></tr>
+    <tr><td> Small                </td><td>  10           </td></tr>
+    <tr><td> Standard             </td><td>  5            </td></tr>
+    <tr><td> Large                </td><td>  2            </td></tr>
+</table>
 
-{{< snippet >}}</div></div>{{< /snippet >}}
+    </div>
+</div>
+</div></body></html>
 

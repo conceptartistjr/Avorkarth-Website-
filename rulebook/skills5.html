@@ -1,90 +1,122 @@
-title: "Skills 5"
-weight: 25
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Skills 5</title>
+		<meta name="author" content="Julien Ruest" charset="UTF-8">
+		<link href="../website_css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- Side Navigation Buttons -->
+		<div class="sidenav">
+			<!-- Main Logo -->
+			<a href="index.html" style="color:white;margin-left:5px;margin-bottom:0px;"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" 
+			alt="AVORKARTH" style="width:208px;"></a>
 
-# INTERACTIONS
+			<!-- Book Choice -->
+			<a href="rulebook.html"><button class="picked"><b>Rulebook</b></button></a>
+			<a href="worldlore.html"><button><b>World Lore</b></button></a>
+			<a href="tale.html"><button><b>Tale of the Fifth Age</b></button></a>
+			<a href="adventures.html"><button><b>Adventures</b></button></a>
+			<br><br>
+			<a href="charactersheet.html"><button><b>Character Sheet</b></button></a>
+			<a href="changelog.html"><button><b>Changelog</b></button></a>
 
-{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+			<!-- Links -->
+			<p>
+			<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+			<img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner" style="width:200px;display:block;margin:auto;"></a>
+			<a href="https://www.patreon.com/avorkarth">
+			<img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner" style="width:200px;display:block;margin:auto;"></a>
+			</p>
+		</div>
 
-{{< table "skills" >}}
-|                      |                                                       |
-|----------------------|:------------------------------------------------------|
-| **Skill**            | **HANDLE ANIMAL** - INSTINCT OR WISDOM - COMPLEX 1 ROUND |
-| **Description**      | The creature's ability to take care of tamed animals, as well as the ability to teach them tricks.  |
-| **Checks**           | Per creature.  |
-| **Difficulty Check** | Creature's will + instinct/2.  |
-| **Armour Penalty**   | No  |
-| **Combat Uses**      | None  |
-| **Additional**       | **Wild** : Wild animals are immune to Handle Animal.  |
-| -------------------- |   |
-| **Critical Success** | The animal gets +1 to their asked task.  |
-| **Success**          | The animal does as commanded.  |
-| **Partial Success**  | The animal does as commanded, but at -1.  |
-| **Fail**             | The animal fails to understand the command.  |
-| **Critical Fail**    | The animal gets irritated and increases further DCs for the day by 1.  |
-{{< /table >}}
+		<!-- Main Page content -->
+		<div class="rulebook">
 
+<h1>INTERACTIONS</h1>
 
-{{< table "skills" >}}
-|                      |                                                       |
-|----------------------|:------------------------------------------------------|
-| **Skill**            | **HEAL** - INTELLIGENCE OR WISDOM - COMPLEX X HOURS  |
-| **Description**      | The creature's ability to disable mechanical devies, negating their use or effectiveness.  |
-| **Checks**           | Once per day per target.  |
-| **Difficulty Check** | 5+ total wounds - hours taken.  |
-| **Armour Penalty**   | No  |
-| **Combat Uses**      | **First Aid** : Heal can be used as a standard action to stop bleeding out at a difficulty check of 5 +/- 1 per target's size difference. (Smaller is easier, larger is harder).  |
-| **Additional**       | None  |
-| -------------------- |   |
-| **Critical Success** | The target gains the chosen ability's worth of healing points.  |
-| **Success**          | The target gains the chosen ability's worth of healing points / 2.  |
-| **Partial Success**  | The target gains i healing point.  |
-| **Fail**             | The target heals nothing.  |
-| **Critical Fail**    | Worsen the wound. The target loses 1 healing points. If they have no healing points, they take 1 lethal damage.  |
-{{< /table >}}
+<div class="bookpage-columns">
+    <div class="bookpage-column">
 
+<table class="skills">
+<tr><td> Skill            </td><td> HANDLE ANIMAL - INSTINCT OR WISDOM - COMPLEX 1 ROUND </td></tr>
+<tr><td> Description      </td><td> The creature's ability to take care of tamed animals, as well as the ability to teach them tricks.  </td></tr>
+<tr><td> Checks           </td><td> Per creature.  </td></tr>
+<tr><td> Difficulty Check </td><td> Creature's will + instinct/2.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Wild : Wild animals are immune to Handle Animal.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The animal gets +1 to their asked task.  </td></tr>
+<tr><td> Success          </td><td> The animal does as commanded.  </td></tr>
+<tr><td> Partial Success  </td><td> The animal does as commanded, but at -1.  </td></tr>
+<tr><td> Fail             </td><td> The animal fails to understand the command.  </td></tr>
+<tr><td> Critical Fail    </td><td> The animal gets irritated and increases further DCs for the day by 1.  </td></tr>
+</table>
 
-{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
-
-
-{{< table "skills" >}}
-|                      |                                                       |
-|----------------------|:------------------------------------------------------|
-| **Skill**            | **PERSUADE** - WISDOM OR CHARISMA 1 ROUND  |
-| **Description**      | The creature's ability to change the mindset of others and convince them of a certain viewpoint.  |
-| **Checks**           | Once per target.  |
-| **Difficulty Check** | Opponent's Sense Motive  |
-| **Armour Penalty**   | No  |
-| **Combat Uses**      | None  |
-| **Additional**       | **Diplomacy** : Persuasion through wisdom gains +/- 1 per reputation level.  |
-| -------------------- |   |
-| **Critical Success** | The target is persuaded. Increase reputation by 1.  |
-| **Success**          | The target is persuaded.  |
-| **Partial Success**  | The target will begrudgingly think about it.  |
-| **Fail**             | The target disagrees to the persuasion.  |
-| **Critical Fail**    | The target feels insulted and is angered. |
-{{< /table >}}
-
-
-{{< table "skills" >}}
-|                      |                                                       |
-|----------------------|:------------------------------------------------------|
-| **Skill**            | **PICK POCKET** - DEXTERITY OR INTELLIGENCE - COMPLEX STANDARD ACTION  |
-| **Description**      | The creature's ability to steal from another without them noticing  |
-| **Checks**           | Once per round.  |
-| **Difficulty Check** | Opponent's Spot  |
-| **Armour Penalty**   | No  |
-| **Combat Uses**      | None  |
-| **Additional**       | **Small Advantage** : Reduce the difficulty per item size smaller than you.  |
-| -------------------- |   |
-| **Critical Success** | Grab an additional random item of equal size.  |
-| **Success**          | Grab the item you were trying to.  |
-| **Partial Success**  | Grab a random item of equal size, with a chance of grabbing the item you were trying to.  |
-| **Fail**             | Fail the pick pocket.  |
-| **Critical Fail**    | The target notices you tried to pick pocket them.  |
-{{< /table >}}
-
-{{< snippet >}}</div></div>{{< /snippet >}}
+<table class="skills">
+<tr><td> Skill            </td><td> HEAL - INTELLIGENCE OR WISDOM - COMPLEX X HOURS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to disable mechanical devies, negating their use or effectiveness.  </td></tr>
+<tr><td> Checks           </td><td> Once per day per target.  </td></tr>
+<tr><td> Difficulty Check </td><td> 5+ total wounds - hours taken.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td>
+    <td> First Aid : Heal can be used as a standard action to stop bleeding out
+         at a difficulty check of 5 +/- 1 per target's size difference.
+        (Smaller is easier, larger is harder).  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The target gains the chosen ability's worth of healing points.  </td></tr>
+<tr><td> Success          </td><td> The target gains the chosen ability's worth of healing points / 2.  </td></tr>
+<tr><td> Partial Success  </td><td> The target gains i healing point.  </td></tr>
+<tr><td> Fail             </td><td> The target heals nothing.  </td></tr>
+<tr><td> Critical Fail    </td>
+    <td> Worsen the wound. The target loses 1 healing points. If they have no healing points,
+         they take 1 lethal damage.  </td></tr>
+</table>
 
 
-{{< img-resize "rulebook-skills5-img.png" "800x" >}}
+</div><div class="bookpage-column">
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> PERSUADE - WISDOM OR CHARISMA 1 ROUND  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to change the mindset of others and convince them of a certain viewpoint.  </td></tr>
+<tr><td> Checks           </td><td> Once per target.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Sense Motive  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Diplomacy : Persuasion through wisdom gains +/- 1 per reputation level.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The target is persuaded. Increase reputation by 1.  </td></tr>
+<tr><td> Success          </td><td> The target is persuaded.  </td></tr>
+<tr><td> Partial Success  </td><td> The target will begrudgingly think about it.  </td></tr>
+<tr><td> Fail             </td><td> The target disagrees to the persuasion.  </td></tr>
+<tr><td> Critical Fail    </td><td> The target feels insulted and is angered. </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> PICK POCKET - DEXTERITY OR INTELLIGENCE - COMPLEX STANDARD ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to steal from another without them noticing  </td></tr>
+<tr><td> Checks           </td><td> Once per round.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Spot  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Small Advantage : Reduce the difficulty per item size smaller than you.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Grab an additional random item of equal size.  </td></tr>
+<tr><td> Success          </td><td> Grab the item you were trying to.  </td></tr>
+<tr><td> Partial Success  </td><td> Grab a random item of equal size, with a chance of grabbing the item you were trying to.  </td></tr>
+<tr><td> Fail             </td><td> Fail the pick pocket.  </td></tr>
+<tr><td> Critical Fail    </td><td> The target notices you tried to pick pocket them.  </td></tr>
+</table>
+
+</div></div>
+
+<img src="images/rulebook-skills5-img.png" width="800px" >
+<p class="caption">
 Bonus Text!
+</p>
+
+</div></body></html>

@@ -1,83 +1,148 @@
-title: "Attributes 2"
-weight: 10
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Attributes 2</title>
+		<meta name="author" content="Julien Ruest" charset="UTF-8">
+		<link href="../website_css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- Side Navigation Buttons -->
+		<div class="sidenav">
+			<!-- Main Logo -->
+			<a href="index.html" style="color:white;margin-left:5px;margin-bottom:0px;"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" 
+			alt="AVORKARTH" style="width:208px;"></a>
 
-# GENERAL ATTRIBUTES
+			<!-- Book Choice -->
+			<a href="rulebook.html"><button class="picked"><b>Rulebook</b></button></a>
+			<a href="worldlore.html"><button><b>World Lore</b></button></a>
+			<a href="tale.html"><button><b>Tale of the Fifth Age</b></button></a>
+			<a href="adventures.html"><button><b>Adventures</b></button></a>
+			<br><br>
+			<a href="charactersheet.html"><button><b>Character Sheet</b></button></a>
+			<a href="changelog.html"><button><b>Changelog</b></button></a>
 
-{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+			<!-- Links -->
+			<p>
+			<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+			<img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner" style="width:200px;display:block;margin:auto;"></a>
+			<a href="https://www.patreon.com/avorkarth">
+			<img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner" style="width:200px;display:block;margin:auto;"></a>
+			</p>
+		</div>
 
-## PLACING
+		<!-- Main Page content -->
+		<div class="rulebook">
 
-### SIZE SHAPES
+<h1>GENERAL ATTRIBUTES</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h2> PLACING</h2>
+
+<h3>SIZE SHAPES</h3>
+<p>
 While size dictates the overall space that a creature takes, not all large
 creatures are shaped the same way. As such a large creature does necessarily
 have to be 2x2 or 3x3 tiles. As long as the number of occupied tiles are between
 4 and 15, it'd be considered a large creatue, as seen below.
+</p>
 
-{{< img-resize "rulebook-attributes2-img1.png" "200x" >}}
+<img src="images/rulebook-attributes2-img1.png" width="400px">
+<p class="caption">
 Hectrea are deadly large creatures (2x3), their long tusked face
 allowing allowing them to charge their prey head on.
+</p>
 
-### LONG SHAPES
+<h3>LONG SHAPES</h3>
+<p>
 Some creatures, such as snakes, sirens or lillends have a long tail section.
 Their sections are shown as separate tokens which must be connected up to the
 first body/head token. Each square chosen counts as a tail section.
+</p>
 
-{{< img-resize "rulebook-attributes2-img2.png" "200x" >}}
+<img src="images/rulebook-attributes2-img2.png" width="400px" >}}
+<p class="caption">
 Thresher sirens are fierce predators while underwater or within the air,
 but their long finned tail meant for swimming makes them quite vulnerable
 while grounded.
+</p>
 
-### POSITIONING (FRONT/FLANK/REAR)
+<h3>POSITIONING (FRONT/FLANK/REAR)</h3>
+<p>
 Most creatures can only face a single direction at a time. This is their front,
 which allows for them to fully use their dodge defense. If they are attacked
 from the sides, that would be the flank, which gives penalties and at worse,
 they are attacked from the back. For creatures with a tail, attacking any part
 of the tail is counted as attacking their back.
+</p>
 
-{{< img-resize "rulebook-attributes2-img3.png" "200x" >}}
+<img src="images/rulebook-attributes2-img3.png" width="400px">
+<p class="caption">
 A creature's front is always dictated by the direction of the token.
+</p>
 
-{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
+    </div><div class="bookpage-column">
 
-## VISION
+<h2>VISION</h2>
+<p>
 Vision, or sight, is a character's ability to see properly depending on the
 amount of light that is currently available.
+</p>
 
-### LIGHT CATEGORIES
+<h3>LIGHT CATEGORIES</h3>
+<p>
 The amount of light can truly vary between areas however is simplified and
 categorized as follows.
+</p>
 
-**Daylight** : Typical vision in daylight can go for miles on end and is only
+<p>
+<b>Daylight</b> : Typical vision in daylight can go for miles on end and is only
 interrupted by line of sight, or is limited if a creature is light sensitive.
+</p>
 
-**Partial Light** : While under a moonlit night or carrying only a simple candle,
+<p>
+<b>Partial Light</b> : While under a moonlit night or carrying only a simple candle,
 many creatures are limited in their vision. Normal vision based creatures have a
 hard time seeing far under circumstances of partial light.
+</p>
 
-**Darkness** : Vision fails completely while in complete darkness, most often
+<p>
+<b>Darkness</b> : Vision fails completely while in complete darkness, most often
 while delving in depths of ancient cave systems or wandering in underground
 adventures. When there is no light, characters with normal vision are considered
 blind, taking even greater penalties.
+</p>
 
-### Vision PENALTIES
+<h3>Vision PENALTIES</h3>
+<p>
 When a character's vision is not fully compatible with the amount of light
 available, they take certain penalties.
+</p>
 
-**Blurred** : The least harmful penalty, blurred vision makes the character
+<p>
+<b>Blurred</b> : The least harmful penalty, blurred vision makes the character
 take -1 to all values of physical actions per distance threshold, including
 combat and skill checks up to -5.
+</p>
 
-**Strained** : Should a character only be able to see general shapes, they
+<p>
+<b>Strained</b> : Should a character only be able to see general shapes, they
 take -2 to all values of physical actions per distance threshold up to -10.
+</p>
 
-**Blind** : If a character is blind, they must rely on their other senses.
+<p>
+<b>Blind</b> : If a character is blind, they must rely on their other senses.
 Whenever a blind character wishes to do a physical action, they must first
 roll a die to see if they are even facing the right way.
+</p>
+<ul>
+    <li>On a 1-4 the action critically fails.</li>
+    <li>On a 5 the action fails automatically.</li>
+    <li>On a roll of 6, the original action may be rolled although with -10 to the
+        value and -1 to the die's result.</li>
+</ul>
 
-* On a 1-4 the action critically fails.
-* On a 5 the action fails automatically.
-* On a roll of 6, the original action may be rolled although with -10 to the
-  value and -1 to the die's result.
-
-{{< snippet >}}</div></div>{{< /snippet >}}
-
+    </div>
+</div>
+</div></body></html>

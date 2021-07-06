@@ -1,76 +1,138 @@
-title: "Interactions 3"
-weight: 18
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Interactions 3</title>
+		<meta name="author" content="Julien Ruest" charset="UTF-8">
+		<link href="../website_css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- Side Navigation Buttons -->
+		<div class="sidenav">
+			<!-- Main Logo -->
+			<a href="index.html" style="color:white;margin-left:5px;margin-bottom:0px;"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" 
+			alt="AVORKARTH" style="width:208px;"></a>
 
-# INTERACTIONS
+			<!-- Book Choice -->
+			<a href="rulebook.html"><button class="picked"><b>Rulebook</b></button></a>
+			<a href="worldlore.html"><button><b>World Lore</b></button></a>
+			<a href="tale.html"><button><b>Tale of the Fifth Age</b></button></a>
+			<a href="adventures.html"><button><b>Adventures</b></button></a>
+			<br><br>
+			<a href="charactersheet.html"><button><b>Character Sheet</b></button></a>
+			<a href="changelog.html"><button><b>Changelog</b></button></a>
 
-{{< snippet >}}<div class="bookpage-columns"><div class="bookpage-column">{{< /snippet >}}
+			<!-- Links -->
+			<p>
+			<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+			<img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner" style="width:200px;display:block;margin:auto;"></a>
+			<a href="https://www.patreon.com/avorkarth">
+			<img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner" style="width:200px;display:block;margin:auto;"></a>
+			</p>
+		</div>
 
-### MOVEMENT
+		<!-- Main Page content -->
+		<div class="rulebook">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h3>MOVEMENT</h3>
+<p>
 Movement is the representation of how quickly a character moves through the world.
 The movement attribute is generally unused outside of dangerous situations or combat.
 While combat is active, movement is shown as 1 for each tile, with diagonals
 counting as 1 and a half. A character can move through these tiles at the rate
 of their chosen movement as long as they are not yet occupied or are of a small
 enough stature.
+</p>
 
-#### MANEUVERABILITY
+<h4>MANEUVERABILITY</h4>
+<p>
 This determines the ease of travel for the character upon different terrains.
+</p>
 
-**Perfect** : The character may move freely in any direction.
-{{< img-resize "rulebook-interactions3-img1.png" "400x" >}}
+<p>
+<b>Perfect</b> : The character may move freely in any direction.
+</p>
+<img src="images/rulebook-interactions3-img1.png" width="400px" >
 
-**Good** : The character cannot move in diagonals, but can turn direction
+<p>
+<b>Good</b> : The character cannot move in diagonals, but can turn direction
 in the same move action.
-{{< img-resize "rulebook-interactions3-img2.png" "400x" >}}
+</p>
+<img src="images/rulebook-interactions3-img2.png" width="400px" >
 
-**Rough** : The character can only move in a straight line and must take
+<p>
+<b>Rough</b> : The character can only move in a straight line and must take
 a second move action to turn.
-{{< img-resize "rulebook-interactions3-img3.png" "400x" >}}
+</p>
+<img src="images/rulebook-interactions3-img3.png" width="400px" >
 
-#### SPRINTING
+<h4>SPRINTING</h4>
+<p>
 A character may use two movement actions in a turn to sprint. If so used,
 they may add +1 to their total movement, with an additional +1 per 5 base
 movement speed.
+</p>
 
-{{< snippet >}}</div><div class="bookpage-column">{{< /snippet >}}
+</div><div class="bookpage-column">
 
-#### SWIMMING/CLIMBING
+<h4>SWIMMING/CLIMBING</h4>
+<p>
 Though swimming and climbing are skill actions, they are technically movement
 sub-sets as well. Characters who attempt to swim through deep waters or climb
 steep mountain-sides may do so only if they pass the skill check first.
+</p>
 
-#### FLYING
+<h4>FLYING</h4>
+<p>
 Characters that have a flying movement speed may use it instead of their running move.
 Their distance from the ground (moving “up”) counts as part of the movement as
 well and must be kept note of. Flight can only be used if the character is in
 their Light or lower lifting capacity. (See lifting capacity.)
+</p>
 
-#### FALLING
+<h4>FALLING</h4>
+<p>
 Falling is commonplace in areas of danger. Cliffs, traps, ravines and ledges are
 all obstacles where falling is possible. Falling penalties increase the further
 the distance fallen. The penalties of the fall can be reduced by a successful
 tumble skill action.
+</p>
 
-**Light Fall** : Falling dangers begin once the drop is greater than 2 tiles
+<p>
+<b>Light Fall</b> : Falling dangers begin once the drop is greater than 2 tiles
 more than their height. The character then takes i lethal damage per further
 tile. The DC of the tumble is equal to the total number of tiles fallen.
+</p>
 
-**Medium Fall** : If a fall is greater than 5 tiles (+1 per size), then the
+<p>
+<b>Medium Fall</b> : If a fall is greater than 5 tiles (+1 per size), then the
 character instead takes 2 lethal damage per distance fallen. The DC of the
 tumble is equal to the total number of tiles fallen.
+</p>
 
-**Great Fall** : If a fall is greater than 8 tiles (+1 per size), then the
+<p>
+<b>Great Fall</b> : If a fall is greater than 8 tiles (+1 per size), then the
 character takes 4 lethal damage per distance fallen. The DC of the tumble is
 equal to 2x the total number of tiles fallen
+</p>
 
-**Size Difference** : Creatures larger than medium size increase the total
+<p>
+<b>Size Difference</b> : Creatures larger than medium size increase the total
 damage taken by 2 per size category. Creatures smaller than medium size decrease
 the total damage taken by i per size category.
+</p>
 
-#### BREATHING/HOLDING UNDERWATER
+<h4>BREATHING/HOLDING UNDERWATER</h4>
+<p>
 Most land species of Avorkath cannot breathe underwater, however may hold their
 breath a number of rounds equal to their constitution score + 1 per size smaller
 than medium. Afterwards, they take 1 lethal damage per round.
+</p>
 
-{{< snippet >}}</div></div>{{< /snippet >}}
+</div></div>
+</div></body></html>
 

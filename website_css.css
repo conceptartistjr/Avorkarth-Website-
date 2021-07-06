@@ -100,7 +100,7 @@
 }
 
 /* -- OTHER DETAILS -- */
-p, i {
+p, i, li {
 	text-align: justify;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 12px;
@@ -127,11 +127,12 @@ table, th, tr, td {
 
 /* -- RULEBOOK -- */
 .rulebook {
-	padding-left: 230px;
+	margin-left: 230px;
+	padding-left: 20px;
 	max-width: 800px;
     background-image: url('images/rulebook/page-background.png');
     background-repeat:no-repeat;
-    background-size: contain;
+    background-size: 800px 1039px;
 }
 .bookpage-background {
     position: relative;
@@ -157,4 +158,25 @@ table, th, tr, td {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 12px;
     font-style: italic;
+}
+
+/* TABLE - skills specific */
+table.skills {
+    width: 100%;
+	margin: auto;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 14px;
+    margin-top: 20px;
+}
+table.skills tr:nth-child(even) {
+    background-color: #F3ECD5;
+}
+table.skills tr:nth-child(odd) {
+    background-color: #E7E0CA;
+}
+table.skills tr:first-child {
+    background-color: #C4BBA0;
+}
+table.skills td:first-child {
+    width: 120px;
 }
