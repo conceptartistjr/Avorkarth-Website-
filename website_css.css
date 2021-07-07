@@ -19,26 +19,28 @@
 	padding-top: 20px;
 	overflow: auto;
 }
-.sidenav a {
-	text-align: center;
-	line-height: 20px;
-	margin-left : 0px;
-	color: black;
+.sidenav button:hover {
+	background-image: url("images/general/Button_Hovered.jpg");
 }
-.sidenav button {
+.menu {
 	border: 3px solid transparent;
-	padding: 6px 10px;
 	text-align: center;
 	width: 93%;
+	padding: 6px 10px;
+	text-align: center;
+    font-weight: bold;
 	margin-left: 8px;
 	background-color: transparent;
 	background-image: url("images/general/Button_Norm.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-
-.sidenav button:hover {
-	background-image: url("images/general/Button_Hovered.jpg");
+.submenu {
+	margin-left: 28px;
+	width: 80%;
+}
+.picked {
+    background-image:url("images/general/Button_Picked.jpg");
 }
 
 /* -- PAGES -- */
@@ -100,7 +102,7 @@
 }
 
 /* -- OTHER DETAILS -- */
-p, i, li {
+p, i, li, th, tr, td {
 	text-align: justify;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 12px;
@@ -111,8 +113,6 @@ table, th, tr, td {
 	border-collapse: collapse;
 	width: 320px;
 	text-align: center;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 12px;
 	margin: auto;
 }
 
@@ -124,39 +124,57 @@ table, th, tr, td {
 	border: 1px solid black;
 }
 
-
 /* -- RULEBOOK -- */
 .rulebook {
-	margin-left: 230px;
-	padding-left: 20px;
 	max-width: 800px;
+	margin-left: 230px;
+    padding-left: 20px;
+	text-align: justify;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12px;
     background-image: url('images/rulebook/page-background.png');
     background-repeat:no-repeat;
-    background-size: 800px 1039px;
+    background-size: 800px 1000px;
+}
+.rulebook table, th, tr, td {
+    width: 100%;
+	margin: auto;
+    table-layout: fixed;
+}
+.rulebook img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.rulebook h1 {
+    padding-top: 25px;
+	font-size: 24px;
+    text-align: center
+}
+.rulebook h2 {
+	font-size: 18px;
+}
+.rulebook h3 {
+	font-size: 14px;
+}
+.rulebook h4 {
+	font-size: 12px;
 }
 .bookpage-background {
     position: relative;
 }
-.bookpage {
-    height: 100%;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 22px;
-}
-.bookpage h1 {
-    padding-top: 105px;
-	font-size: 32px;
-    text-align: center
-}
 .bookpage-columns {
     display: flex;
+    align-items: flex-end;
+    min-height: 950px;
 }
 .bookpage-column {
     flex: 50%;
     padding-right:40px;
+    align-self:stretch;
 }
 .caption {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 12px;
     font-style: italic;
 }
 
@@ -164,8 +182,7 @@ table, th, tr, td {
 table.skills {
     width: 100%;
 	margin: auto;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-size: 14px;
+    table-layout: fixed;
     margin-top: 20px;
 }
 table.skills tr:nth-child(even) {

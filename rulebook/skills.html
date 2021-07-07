@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Skills 1</title>
+		<meta name="author" content="Julien Ruest" charset="UTF-8">
+		<link href="../website_css.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- Side Navigation Buttons -->
+		<div class="sidenav">
+			<!-- Main Logo -->
+			<a href="index.html" style="color:white;margin-left:5px;margin-bottom:0px;"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" 
+			alt="AVORKARTH" style="width:208px;"></a>
+
+			<!-- Book Choice -->
+			<a href="../rulebook.html"><button class="menu">Rulebook</button></a>
+			<a href="../rulebook/startup.html"><button class="menu submenu">Startup</button></a>
+			<a href="../rulebook/abilities.html"><button class="menu submenu">Abilities</button></a>
+			<a href="../rulebook/alignments.html"><button class="menu submenu">Alignments</button></a>
+			<a href="../rulebook/attributes.html"><button class="menu submenu">Attributes</button></a>
+			<a href="../rulebook/mastery.html"><button class="menu submenu">Mastery</button></a>
+			<a href="../rulebook/interactions.html"><button class="menu submenu">Interactions</button></a>
+			<a href="../rulebook/skills.html"><button class="menu submenu picked">Skills</button></a>
+			<a href="../rulebook/combat.html"><button class="menu submenu">Combat</button></a>
+			<a href="../rulebook/spellcasting.html"><button class="menu submenu">Spell Casting</button></a>
+			<a href="../worldlore.html"><button class="menu">World Lore</button></a>
+			<a href="../tale.html"><button class="menu">Tale of the Fifth Age</button></a>
+			<a href="../adventures.html"><button class="menu">Adventures</button></a>
+			<br><br>
+			<a href="../charactersheet.html"><button class="menuitem">Character Sheet></button></a>
+			<a href="../changelog.html"><button class="menuitem">Changelog</button></a>
+
+			<!-- Links -->
+			<p>
+			<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+			<img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner" style="width:200px;display:block;margin:auto;"></a>
+			<a href="https://www.patreon.com/avorkarth">
+			<img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner" style="width:200px;display:block;margin:auto;"></a>
+			</p>
+		</div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="rulebook">
+
+<h1>INTERACTIONS</h1>
+
+<h3>NATURAL SKILLS</h3>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> BALANCE - AGILITY - MOVE ACTION </td></tr>
+<tr><td> Description      </td>
+    <td> The creature's ability to balance on ledges or tight areas that cannot
+         be simply bypassed by walking.  </td></tr>
+<tr><td> Checks           </td><td> Per Move action.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None.  </td></tr>
+<tr><td> Additional       </td>
+    <td> Inherent Focus : Increase the difficulty check by 3 if the creature
+         is in combat or doing an additional action.  </td></tr>
+<tr><td> -----------------</td><td> ------------------------ </td></tr>
+<tr><td> Critical Success </td><td> Move your full movement.  </td></tr>
+<tr><td> Success          </td><td> Move half your movement.  </td></tr>
+<tr><td> Partial Success  </td><td> Fail to move, but don't fall off.  </td></tr>
+<tr><td> Fail             </td><td> Fall off, but hang on.  </td></tr>
+<tr><td> Critical Fail    </td><td> Fall off completely.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> BLUFF - WISDOM OR CHARISMA - FREE/IMMEDIATE ACTION </td></tr>
+<tr><td> Description      </td>
+    <td> The creature's ability to lie and subvert situations to their own advantage. </td></tr>
+<tr><td> Checks           </td><td> Per opponent, per situation. </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Sense Motive skill value.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None.  </td></tr>
+<tr><td> Additional       </td><td> None.  </td></tr>
+<tr><td> -----------------</td><td> |   </td></tr>
+<tr><td> Critical Success </td><td> The opponent trusts you, divulging even more information   </td></tr>
+<tr><td> Success          </td><td> The opponent believes you.  </td></tr>
+<tr><td> Partial Success  </td><td> The opponent believes you, but is suspicious of you.  </td></tr>
+<tr><td> Fail             </td><td> The opponent knows you are lying.  </td></tr>
+<tr><td> Critical Fail    </td><td> You reveal unintended pieces of information.  </td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> CHARM - BEAUTY-  LIMITED SWIFT ACTION  </td></tr>
+<tr><td> Description      </td>
+    <td> The creature's ability to use their attractiveness as a base persuasion
+         or to be focused upon.  </td></tr>
+<tr><td> Checks           </td><td> Per opponent, per situation. </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Will score.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td>
+    <td> Pleasing Distraction : Charm may be used as a standard action in combat
+         against all targets within 15 tiles. Allies have +3 to their Will for this. </td></tr>
+<tr><td> Additional       </td>
+    <td> Heart Smitten : Increase the difficulty check by 10 if the opponent
+         would not usually consider the charmer attractive.  </td></tr>
+<tr><td> -----------------</td><td> |   </td></tr>
+<tr><td> Critical Success </td><td> The opponent gains charm points equal to your 5 + Beauty score - their Will (Min 1).  </td></tr>
+<tr><td> Success          </td><td> The opponent gains charm points equal to your 2 + Beauty score - their Will (Min 1).  </td></tr>
+<tr><td> Partial Success  </td><td> The opponent gains charm points equal to your Beauty score - their Will – 2 (Min. 1).  </td></tr>
+<tr><td> Fail             </td><td> The opponent loses all charm points and dislikes you.  </td></tr>
+<tr><td> Critical Fail    </td><td> The opponent loses all charm points and dislikes you immensly, seeing you as a threat. </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> CLIMB - STRENGTH - AGILITY OR DEXTERITY MOVE ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to climb rough surfaces, be it walls or cliffsides. </td></tr>
+<tr><td> Checks           </td><td> Per Move action  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.   </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes  </td></tr>
+<tr><td> Combat Uses      </td><td> None. </td></tr>
+<tr><td> Additional       </td>
+    <td> Inherent Focus : Increase the difficulty check by 3 if the creature is
+         in combat or doing an additional action.  </td></tr>
+<tr><td> -----------------</td><td> </td></tr>
+<tr><td> Critical Success </td><td> Move your full movement.  </td></tr>
+<tr><td> Success          </td><td> Move half your movement.  </td></tr>
+<tr><td> Partial Success  </td><td> Fail to move, but don't fall.  </td></tr>
+<tr><td> Fail             </td><td> Fall 3 + the DC - your Climb skill tiles. (Min 1)  </td></tr>
+<tr><td> Critical Fail    </td><td> Fall off completely.  </td></tr>
+</table>
+
+</div></div>
+
+<img src="images/rulebook-skills1-img.png" >
+<p class="caption">
+Bonus Text!
+</p>
+
+</div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="rulebook">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> HIDE - DEXTERITY OR INSTINCT STANDARD ACTION   </td></tr>
+<tr><td> Description      </td><td> The creature's ability to hide and remain in the shadows.   </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.   </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Spot and Search checks.   </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None.  </td></tr>
+<tr><td> Additional       </td>
+    <td> Open Daylight : Hide checks cannot be used while in plain sight,
+         in the open or while being directly looked at.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> INTIMIDATE - STRENGTH, CONSTITUTION OR CHARISMA - LIMITED SWIFT ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to create or even fear within others.  </td></tr>
+<tr><td> Checks           </td><td> Per opponent, per situation.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Will score.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td>
+    <td> Battlecry : Intimidate may be used as a standard action in combat against
+         all targets within 15 tiles. Allies have +4 to their Will for this.  </td></tr>
+<tr><td> Additional       </td>
+    <td> Sizable Terror : Increase or decrease the Difficulty check by 3 peru
+         size smaller or greater than the opponent.   </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The opponent gains fear points equal to 5+ your chosen ability score - their Will (Min 1).  </td></tr>
+<tr><td> Success          </td><td> The opponent gains fear points equal to 2 + your chosen ability score - their Will (Min 1).  </td></tr>
+<tr><td> Partial Success  </td><td> The opponent gains fear points equal to your chosen ability score - their Will – 2 (Min. 1).  </td></tr>
+<tr><td> Fail             </td><td> The opponent loses 3 fear points. This does not affect allies.  </td></tr>
+<tr><td> Critical Fail    </td><td> The opponent loses all fear points. This does not affect allies.  </td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> INSPIRE - CHARISMA OR BEAUTY - LIMITED STANDARD ACTION   </td></tr>
+<tr><td> Description      </td><td> The creature's ability to inspire allies and rekindle their hope.  </td></tr>
+<tr><td> Checks           </td><td> Per target.  </td></tr>
+<tr><td> Difficulty Check </td><td> Target's fear points + 5  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td>
+    <td> Bolster : Inspire may be used as a standard action in combat for all
+         allies within 5 tiles.   </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Target loses fear points equal to 3 + your chosen ability score - the DC (Min 1).  </td></tr>
+<tr><td> Success          </td><td> Target loses fear points equal to your chosen ability score - the DC (Min 1).  </td></tr>
+<tr><td> Partial Success  </td><td> Target loses 1 fear point.  </td></tr>
+<tr><td> Fail             </td><td> Target doesn't lose any fear points.  </td></tr>
+<tr><td> Critical Fail    </td><td> Target gains 3 fear points.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> JUMP - AGILITY - LIMITED MOVE ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to jump over obstacles of height and distance. </td></tr>
+<tr><td> Checks           </td><td> Per Move action  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Make the jump and move again at half movement. </td></tr>
+<tr><td> Success          </td><td> Make the jump.  </td></tr>
+<tr><td> Partial Success  </td><td> Barely make the jump and catch the ledge.  </td></tr>
+<tr><td> Fail             </td><td> Catch yourself before jumping. Don't move.  </td></tr>
+<tr><td> Critical Fail    </td><td> Fail the jump and fall prone/fall down. </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> LISTEN - INSTINCT - LIMITED FREE/IMMEDIATE ACTION  </td></tr>
+<tr><td> Description      </td>
+    <td> The character's ability to focus on listening for specific noises and
+         filtering out unnecessary sounds.  </td></tr>
+<tr><td> Checks           </td><td> Per Move action  </td></tr>
+<tr><td> Difficulty Check </td><td> 1 per tile distance. Opponent's move silently skill.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Resonate : Yelling 1/5ths the difficulty, shouting halves it and whispering doubles it. </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> You hear the exact location of the sound.  </td></tr>
+<tr><td> Success          </td><td> You hear the sound/conversation and its approximate location.  </td></tr>
+<tr><td> Partial Success  </td><td> You hear noise, but nothing specific.  </td></tr>
+<tr><td> Fail             </td><td> You don't hear anything.  </td></tr>
+<tr><td> Critical Fail    </td><td> You think you hear something else...  </td></tr>
+</table>
+
+</div></div></div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="rulebook">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> MOVE SILENTLY - AGILITY, DEXTERITY OR INSTINCT MOVE ACTION   </td></tr>
+<tr><td> Description      </td><td> The creature's ability to not be heard whilst moving.  </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponen'ts Listen checks.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> SEARCH - INSTINCT, INTELLIGENCE OR WISDOM 10+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability for seaching the area and finding small details.  </td></tr>
+<tr><td> Checks           </td><td> Once per action. Cancelling early automatically fails.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Scrutiny : Increase the check result by 1 per doubling of time period searched.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> You successfully find everything in that area.  </td></tr>
+<tr><td> Success          </td><td> You find something in the location.  </td></tr>
+<tr><td> Partial Success  </td><td> You find traces, but nothing specific. Increase further check results by 1.  </td></tr>
+<tr><td> Fail             </td><td> You find nothing.  </td></tr>
+<tr><td> Critical Fail    </td><td> You hinder the evidence. Increase the difficulty check by 1 forever.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> SENSE MOTIVE - INSTINCT, INTELLIGENCE OR WISDOM SWIFT OR IMMEDIATE ACTION  </td></tr>
+<tr><td> Description      </td>
+    <td> The creature's ability to sense what others are feeling or thinking to do,
+         usually used when one thinks they are being lied to.  </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Bluff or Persuade skills.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> SPOT - INSTINCT - LIMITED STANDARD ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to notice larger details or incoming dangers before they occur.  </td></tr>
+<tr><td> Checks           </td><td> Once per action.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> You notice additional details. Gain +1 to the next roll against the target outside of combat.  </td></tr>
+<tr><td> Success          </td><td> You notice the target/opportunity/happening.  </td></tr>
+<tr><td> Partial Success  </td><td> You notice something out of the corner of your eye.  </td></tr>
+<tr><td> Fail             </td><td> You fail to notice anything.  </td></tr>
+<tr><td> Critical Fail    </td><td> You are distracted, and think you notice something that isn't there.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> TUMBLE - AGILITY MOVE/IMMEDIATE ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability in acrobatic movements and to fall gracefully.</td></tr>
+<tr><td> Checks           </td><td> Once per action/reaction to falling.  </td></tr>
+<tr><td> Difficulty Check </td><td> 3 per tile of Falling distance.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Increase falling distance by 5 tiles.  </td></tr>
+<tr><td> Success          </td><td> Increase falling distance by 3 tiles.  </td></tr>
+<tr><td> Partial Success  </td><td> Increase falling distance by 1 tile.  </td></tr>
+<tr><td> Fail             </td><td> Take the full falling damage.   </td></tr>
+<tr><td> Critical Fail    </td><td> Increase damage taken from the fall by 1 lethal damage per instance of distance.</td></tr>
+</table>
+
+<img src="images/rulebook-skills3-img.png" >
+<p class="caption">
+Bonus Text!
+</p>
+
+</div></div></div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="rulebook">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h2>LEARNED SKILLS</h2>
+
+<table class="skills">
+<tr><td> Skill            </td><td> APPRAISE - INSTINCT OR INTELLIGENCE 1 ROUND  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to judge the worth of a rare or unique item.  </td></tr>
+<tr><td> Checks           </td><td> Per Item  </td></tr>
+<tr><td> Difficulty Check </td><td> Per Item  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Just a Guess : Appraise checks with Instinct increase the difficulty check by 1.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Know the exact price, +1 on any knowledge checks for the item.  </td></tr>
+<tr><td> Success          </td><td> Know the approximate worth.  </td></tr>
+<tr><td> Partial Success  </td><td> The guessed worth is slightly lower.  </td></tr>
+<tr><td> Fail             </td><td> The guessed worth is halved.  </td></tr>
+<tr><td> Critical Fail    </td><td> The guessed worth is wrong at 1/10th the worth.  </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> DISABLE DEVICE - DEXTERITY OR INTELLIGENCE - COMPLEX 5+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to disable mechanical devies, negating their use or effectiveness.  </td></tr>
+<tr><td> Checks           </td><td> Per obstacle.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Taking Time : Increase the check result by i per doubling of time period searched.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The mechanism is dismantled and you may take a few parts intact.  </td></tr>
+<tr><td> Success          </td><td> The mechanism is disabled.   </td></tr>
+<tr><td> Partial Success  </td><td> The mechanism is disabled momentarily.  </td></tr>
+<tr><td> Fail             </td><td> Nothing happens.  </td></tr>
+<tr><td> Critical Fail    </td><td> The device activates again and further difficulty checks are increased by 1.  </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> DISGUISE - DEXTERITY - COMPLEX 10+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to hide their original looks and appear as another.  </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Sense Motive or Spot.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td>
+    <td> Disguise Issues : Age (-1), Gender (-3), Size (-5 per larger,
+        -8 per smaller), Species (-10).  </td></tr>
+<tr><td>                  </td>
+    <td> Materials : The disguise needs appropriate materials. The disguise is
+         at -3 per material missing, per the GM's discretion.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> FORAGE FOOD - INSTINCT OR WISDOM 10+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to find food in the wilderness or areas of difficulty.  </td></tr>
+<tr><td> Checks           </td><td> Once per day.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per area.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Survival of the Pack : Hunger points reduced may be split with party members.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Reduce hunger by the chosen ability score   </td></tr>
+<tr><td> Success          </td><td> Reduce hunger by half the chosen ability score.  </td></tr>
+<tr><td> Partial Success  </td><td> Reduce hunger points by 1.  </td></tr>
+<tr><td> Fail             </td><td> You find nothing.  </td></tr>
+<tr><td> Critical Fail    </td><td> You eat something offputting. Gain 2 hunger.  </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> FORGE COPY - DEXTERITY OR INTELLIGENCE - COMPLEX 5+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to duplicate lettering and symbols.  </td></tr>
+<tr><td> Checks           </td><td> Once per item.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per item  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td>
+    <td> Linguistic Issue : Further increase the difficulty by 3 per complexity
+         of the language bieng copied if the forger doesn't know the language.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The forgery's DC is the skill's value +5  </td></tr>
+<tr><td> Success          </td><td> The forgery's DC is the skill's value.   </td></tr>
+<tr><td> Partial Success  </td><td> The forgery's DC is the skill's value -2.  </td></tr>
+<tr><td> Fail             </td><td> The forgery's DC is the skill's value - 5.  </td></tr>
+<tr><td> Critical Fail    </td><td> The forgery's DC is the skill's value - 10.  </td></tr>
+</table>
+
+</div></div></div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+
+<div class="rulebook">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> HANDLE ANIMAL - INSTINCT OR WISDOM - COMPLEX 1 ROUND </td></tr>
+<tr><td> Description      </td><td> The creature's ability to take care of tamed animals, as well as the ability to teach them tricks.  </td></tr>
+<tr><td> Checks           </td><td> Per creature.  </td></tr>
+<tr><td> Difficulty Check </td><td> Creature's will + instinct/2.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Wild : Wild animals are immune to Handle Animal.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The animal gets +1 to their asked task.  </td></tr>
+<tr><td> Success          </td><td> The animal does as commanded.  </td></tr>
+<tr><td> Partial Success  </td><td> The animal does as commanded, but at -1.  </td></tr>
+<tr><td> Fail             </td><td> The animal fails to understand the command.  </td></tr>
+<tr><td> Critical Fail    </td><td> The animal gets irritated and increases further DCs for the day by 1.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> HEAL - INTELLIGENCE OR WISDOM - COMPLEX X HOURS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to disable mechanical devies, negating their use or effectiveness.  </td></tr>
+<tr><td> Checks           </td><td> Once per day per target.  </td></tr>
+<tr><td> Difficulty Check </td><td> 5+ total wounds - hours taken.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td>
+    <td> First Aid : Heal can be used as a standard action to stop bleeding out
+         at a difficulty check of 5 +/- 1 per target's size difference.
+        (Smaller is easier, larger is harder).  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The target gains the chosen ability's worth of healing points.  </td></tr>
+<tr><td> Success          </td><td> The target gains the chosen ability's worth of healing points / 2.  </td></tr>
+<tr><td> Partial Success  </td><td> The target gains i healing point.  </td></tr>
+<tr><td> Fail             </td><td> The target heals nothing.  </td></tr>
+<tr><td> Critical Fail    </td>
+    <td> Worsen the wound. The target loses 1 healing points. If they have no healing points,
+         they take 1 lethal damage.  </td></tr>
+</table>
+
+
+</div><div class="bookpage-column">
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> PERSUADE - WISDOM OR CHARISMA 1 ROUND  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to change the mindset of others and convince them of a certain viewpoint.  </td></tr>
+<tr><td> Checks           </td><td> Once per target.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Sense Motive  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Diplomacy : Persuasion through wisdom gains +/- 1 per reputation level.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The target is persuaded. Increase reputation by 1.  </td></tr>
+<tr><td> Success          </td><td> The target is persuaded.  </td></tr>
+<tr><td> Partial Success  </td><td> The target will begrudgingly think about it.  </td></tr>
+<tr><td> Fail             </td><td> The target disagrees to the persuasion.  </td></tr>
+<tr><td> Critical Fail    </td><td> The target feels insulted and is angered. </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> PICK POCKET - DEXTERITY OR INTELLIGENCE - COMPLEX STANDARD ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to steal from another without them noticing  </td></tr>
+<tr><td> Checks           </td><td> Once per round.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Spot  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Small Advantage : Reduce the difficulty per item size smaller than you.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Grab an additional random item of equal size.  </td></tr>
+<tr><td> Success          </td><td> Grab the item you were trying to.  </td></tr>
+<tr><td> Partial Success  </td><td> Grab a random item of equal size, with a chance of grabbing the item you were trying to.  </td></tr>
+<tr><td> Fail             </td><td> Fail the pick pocket.  </td></tr>
+<tr><td> Critical Fail    </td><td> The target notices you tried to pick pocket them.  </td></tr>
+</table>
+
+</div></div>
+
+<img src="images/rulebook-skills5-img.png" >
+<p class="caption">
+Bonus Text!
+</p>
+
+</div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="rulebook">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> RIDE - AGILITY, INSTINCT OR WISDOM SWIFT ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to ride upon mounts, tamed or untamed, without falling off.  </td></tr>
+<tr><td> Checks           </td><td> Once per creature  </td></tr>
+<tr><td> Difficulty Check </td><td> Mount's (Agility + Instinct)/2. Increase by +3 if attempting to do an additional action.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Riding Companion : If the mount is willing to have a rider upon it, decrease the DC by 10.  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> You no longer take penalties for additional actions while riding.  </td></tr>
+<tr><td> Success          </td><td> You ride the mount successfully  </td></tr>
+<tr><td> Partial Success  </td><td> You ride the mount successfully, but with a -1 to all other rolls while riding.  </td></tr>
+<tr><td> Fail             </td><td> You fall off.  </td></tr>
+<tr><td> Critical Fail    </td><td> You fall off and take -1 on your next ride check.  </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> SWIM - STRENGTH OR AGILITY - LIMITED MOVE ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to move through and float in liquid based bodies.  </td></tr>
+<tr><td> Checks           </td><td> Once per action.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per Situation *   </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td>
+    <td> Environmental Challenges : The DC is as follows :</br>
+         - Still waters - 5</br>
+         - Rough waters - 8</br>
+         - Rapids - 13</br>
+         - Large ocean waves - 15</br>
+         - Stormy ocean - 18</br>
+         - Waterfall pull - 20</br>
+         - Whirlpool - 25  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Move at full speed.  </td></tr>
+<tr><td> Success          </td><td> Move at half speed.  </td></tr>
+<tr><td> Partial Success  </td><td> Don't move, but don't sink.  </td></tr>
+<tr><td> Fail             </td><td> Begin sinking.  </td></tr>
+<tr><td> Critical Fail    </td><td> Thrash, making the situation worse. Increase the DC of the next roll by 1.  </td></tr>
+</table>
+
+
+</div><div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> TRACK - INSTINCT, INTELLIGENCE OR WISDOM 1 ROUND  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to follow a target's whearabouts and previous paths.  </td></tr>
+<tr><td> Checks           </td><td> Once per round.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's size/weight (GM's discretion).  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> Find tracks with the exact direction.  </td></tr>
+<tr><td> Success          </td><td> Find related tracks with an approximate direction.  </td></tr>
+<tr><td> Partial Success  </td><td> Find related tracks, but are unable to discern the direction.  </td></tr>
+<tr><td> Fail             </td><td> Find no related tracks to the search   </td></tr>
+<tr><td> Critical Fail    </td><td> Follow the wrong tracks.  </td></tr>
+</table>
+
+<img src="images/rulebook-skills6-img.png" >
+<p class="caption">
+Bonus Text!
+</p>
+
+</div></div> </div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="rulebook">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h3>TRADE SKILLS</h3>
+<p>
+Unlike the traditional Natural and Learned skills, which each have singular
+specific checks and results, trade skills all roll off of the same challenges.
+
+<h3>INSPIRATION TRADE SKILLS</h3>
+<p>
+These skill have a potential to increase the rolls of the target by inspiring
+them to greater heights. If multiple inspiration trade skills are used,
+the highest DC beaten is used. The bonuses given by DC's also give all previous
+tier bonuses.
+</p>
+
+<table class="skills">
+<tr><td> Skill            </td><td> </td></tr>
+<tr><td> Description      </td><td> </td></tr>
+<tr><td> Checks           </td><td> Once per day  </td></tr>
+<tr><td> Difficulty Check </td><td> Choose from one:
+   Terrible -1 to all roll results </br>
+   Uninspired - 1 to all roll values </br>
+   Basic </br>
+   5 - Fine +1 Will for the day. (+1 per tier) </br>
+   8 - Beautiful +1 to one's highest skill value </br>
+   12 - Graceful +1 to all skill attempt values. </br>
+   17 - Elegant +1 to all roll values </br>
+   23 - Alluring +2 to all roll values </br>
+   30 - Enthralling +1 to all roll results </br>
+   45 - Divine Increase all previous bonuses by 1. </br>
+</td></tr>
+<tr><td> Armour Penalty   </td><td>Acting and Dances only. </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> See Trade Skill Bonuses. </td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The inspiration is even greater than intended.  Increase the attempted performance by 1 stage.</td></tr>
+<tr><td> Success          </td><td> The inspiration is as attempted.  </td></tr>
+<tr><td> Partial Success  </td><td> The performance was almost as intended, reduce the inspiration to 1 stage lower than your skill value.  </td></tr>
+<tr><td> Fail             </td><td> The performance failed to be as intended, reduce the performance by 2 stages lower than your skill value.  </td></tr>
+<tr><td> Critical Fail    </td><td> The performance fails. Reduce the attempted performance to 3 stages lower than your skill value.</td></tr>
+</table>
+
+<h3>CRAFT TRADE SKILLS</h3>
+<p>
+These skill are used to create things of astonishing quality. While each trade
+has its own use, they will not be listed here in extreme detail as the variety
+of objects that can be created are too many to list, and it is mostly up to the
+DM to say what the result entails.
+</p>
+
+<table class="skills">
+<tr><td> Skill            </td><td> </td></tr>
+<tr><td> Description      </td><td> </td></tr>
+<tr><td> Checks           </td><td> Once per day  </td></tr>
+<tr><td> Difficulty Check </td><td> Object dependant.</td></tr>
+<tr><td> Armour Penalty   </td><td> No </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> See Trade Skill Bonuses.</td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> A mistake is a happy accident. The object is an even greater masterpiece than intended.</td></tr>
+<tr><td> Success          </td><td> The object is created accordingly.</td></tr>
+<tr><td> Partial Success  </td><td> The object is created, but twice the materials were used.</td></tr>
+<tr><td> Fail             </td><td> The object is a failure and no materials remain.</td></tr>
+<tr><td> Critical Fail    </td><td> The object costs twice the material value.</td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<h3>TRADE SKILL BONUSES</h3>
+<p>
+Trade skills often also grow the creature's ability in a few other skills,
+though not as quickly as if they had focused solely on that one aspect.
+Increase the related skills by half the value of the trade skill, rounded down.
+Limited skills still apply their further halving to this bonus.
+</p>
+
+<b>TRADE SKILL BONUSES</b>
+<table>
+<tr></th> Skill         </th><th>   Type        </th><th> Bonuses                                            </td></tr>
+<tr></td> Act           </td><td>   Inspiration </td><td> Bluff, Disguise, Persuade                          </td></tr>
+<tr></td> Dance (Wild)  </td><td>   Inspiration </td><td> Balance, Charm, Jump                               </td></tr>
+<tr></td> Dance (Court) </td><td>   Inspiration </td><td> Bluff, Disguise, Persuade                          </td></tr>
+<tr></td> Illustrate    </td><td>   Inspiration </td><td> Forge Copy, Sense Motive, Spot                     </td></tr>
+<tr></td> Instrument    </td><td>   Inspiration </td><td> Persuade, Listen, Appraise                         </td></tr>
+<tr></td> Sing          </td><td>   Inspiration </td><td> Bluff, Charm, Persuade                             </td></tr>
+<tr></td> Speech        </td><td>   Inspiration </td><td> Bluff, Persuade, Sense Motive                      </td></tr>
+<tr></td> Cook          </td><td>   Craft       </td><td> Know. Nature, Forage, Track, Spot, Appraise        </td></tr>
+<tr></td> Smith         </td><td>   Craft       </td><td> Know. Geo, Spot, Appraise, Disable Device, Search  </td></tr>
+<tr></td> Stonework     </td><td>   Craft       </td><td> Know.Geo./Nature, Appraise, Spot, Search           </td></tr>
+<tr></td> Weave         </td><td>   Craft       </td><td> Know. Nature, Spot, Appraise, Forage, Search       </td></tr>
+<tr></td> Woodwork      </td><td>   Craft       </td><td> Know.Nature, Appraise, Forage, Spot, Search        </td></tr>
+</table>
+
+<img src="images/rulebook-skills7-img.png" >
+<p class="caption">
+“There is no treasure quite like living the moment, with the
+exception of delicious food.” - Falgrii saying
+</p>
+
+</div></div></div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+
+<div class="rulebook">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h2>KNOWLEDGE SKILLS</h2>
+<p>
+Knowledge skills are much like the trade skills in that they all share the same
+difficulty check. Unlike trade skills however, knowledge skills don't have a
+choice for their difficulty check and instead function like normal skills in
+that the knowledge in question is the difficulty check.
+</p>
+
+<p>
+Knowledge skills can overlap as well, and any creature may roll all the knowledge
+skills they think will give information and are not limited to rolling a single
+knowledge skill per query. Each knowledge facet will give different answers.
+</p>
+
+<h3>KNOWLEDGE SKILLS</h3>
+
+<table class="skills">
+<tr><td> Skill            </td><td> </td></tr>
+<tr><td> Description      </td><td> </td></tr>
+<tr><td> Checks           </td><td> Once per knowledge</td></tr>
+<tr><td> Difficulty Check </td><td> Per query.</td></tr>
+<tr><td> Armour Penalty   </td><td> No </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> See below.</td></tr>
+<tr><td> ---------------- </td><td>   </td></tr>
+<tr><td> Critical Success </td><td> The knowledge is well known to the creature.  Gain an additional piece of information for free.</td></tr>
+<tr><td> Success          </td><td> The queried knowledge is satisfied and known.</td></tr>
+<tr><td> Partial Success  </td><td> The knowledge is somewhat known, but the answer known is vague at best.</td></tr>
+<tr><td> Fail             </td><td> The knowledge is unknown.</td></tr>
+<tr><td> Critical Fail    </td><td> The character thinks the answer is something that is not even relevant.</td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<h3>SIMILAR KNOWLEDGE - REGION </h3>
+<p>
+<b>Very Similar</b> : Creatures may attempt Knowledge : Region checks for sub-skills
+a similar aspect, such as a Knowledge : Nature check for a different region of
+desert, although with a -2 penalty
+</p>
+
+<p>
+<b>Somewhat Similar</b> : Knowledge skills that share a bit of a similar aspect,
+like a river to a lake, take a -4 penalty.
+</p>
+
+<p>
+<b>Barely Similar</b> : Knowledge skills that are too different but still in the
+same sphere, such as knowledge of deserts versus knowledge of forests
+take a -7 penalty.
+</p>
+
+<h3>SIMILAR KNOWLEDGE - RACE</h3>
+<p>
+Same sub-race : Creatures may attempt Knowledge : Race checks for unknown races
+of the same species (human variation against another human variation), although
+with a -2 penalty
+</p>
+
+<p>
+<b>Known species</b> : If the species are known to one another but not of the same
+species (humans and aelvenkin), the penalty is instead -4.
+</p>
+
+<p>
+<b>Conflicted species</b> : If the races are known to one another but not in good
+standing (humans and goblinkin), the penalty is dropped to -7.
+</p>
+
+<p>
+<b>Unknown/Mythical species</b> : If the species barely know or are unknown to one
+another (humans and faefolk), the penalty is -10.
+</p>
+
+<h3>SIMILAR KNOWLEDGE - MAGIC</h3>
+<p>
+<b>Different Sphere</b> : Creatures may attempt Knowledge : Magic checks for
+spheres other than their own, although with a -5 penalty.
+</p>
+
+</div></div>
+
+<img src="images/rulebook-skills8-img.png" >
+<p class="caption">
+“The realm is vast beyond imagining, with ancient knowledge and forgotten ruins
+or ruins to be ‘round every corner.” -Talon Kiel, adventurer
+</p>
+
+</div>
+
+</body></html>
+
+
