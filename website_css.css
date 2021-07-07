@@ -163,8 +163,7 @@ img {
 /* -- BOOK PAGE -- */
 .bookpage {
 	max-width: 800px;
-    margin-left: 100px;
-    padding-left: 20px;
+    height: 1000px;
 	text-align: justify;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 12px;
@@ -172,16 +171,24 @@ img {
     background-repeat:no-repeat;
     background-size: 800px 1000px;
 }
+.bookpage p {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    padding-top:0;
+    margin-top:0;
+}
 .bookpage table, th, tr, td {
-    width: 100%;
-	margin: auto;
+    width: 90%;
     table-layout: fixed;
 }
 .bookpage img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
 }
 .bookpage h1 {
     padding-top: 25px;
@@ -194,27 +201,32 @@ img {
 }
 .bookpage h3 {
 	font-size: 14px;
-    padding: 0px;
+    padding-left: 18px;
+    padding-top: 10px;
     margin: 0px;
 }
-.bookpage h4 {
+.bookpage h4, h5 {
 	font-size: 12px;
-    padding: 0px;
+    padding-left: 18px;
+    padding-top: 10px;
     margin: 0px;
-}
-.bookpage-background {
-    position: relative;
 }
 .bookpage-columns {
     display: flex;
     align-items: flex-end;
-    min-height: 950px;
 }
 .bookpage-column {
     flex: 50%;
-    padding-right:40px;
+    padding: 20px;
     align-self:stretch;
 }
+/*
+  display: grid;
+  grid-template-areas: 'nav main';
+  grid-template-columns: 230px 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  */
 .caption {
     font-style: italic;
 }
