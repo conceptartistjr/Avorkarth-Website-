@@ -1,1235 +1,830 @@
 <!DOCTYPE html>
-
 <html>
 	<head>
-		<title>Avorkarth - Rulebook : Skills</title>
-		<meta name="author" content="Julien Ruest">
+		<title>Skills 1</title>
+		<meta name="author" content="Julien Ruest" charset="UTF-8">
 		<link href="../website_css.css" rel="stylesheet" type="text/css">
 	</head>
-	
-	
 	<body>
-		<!-- Side Navigation Buttons -->
-		<div class="sidenav">
-			<!-- Main Logo -->
-			<a href="../index.html" style="color:white;margin-left:5px;margin-bottom:0px;"><img src="../Images/Sidenav/Main_Avorkarth_Logo.png" 
-			alt="AVORKARTH" style="width:208px;"></a>
-			
-			<br><br>
-			
-			<!-- Book Choice -->
-			<a href="../rulebook_2/rulebook2.html"><button><b>Rulebook (New - W.I.P.)</b></button></a>	
-			<a href="../rulebook.html"><button style="background-image:url('../Images/Sidenav/Button_Picked.jpg');"><b>Rulebook (Old - Complete)</b></button></a>
-			<a href="../lore.html"><button><b>World Lore</b></button></a>
-			<a href="../tale.html"><button><b>Tale of the Fifth Age</b></button></a>
-			<a href="../campaigns.html"><button><b>Adventures</b></button></a>
-			<br><br>
-			<a href="../charactersheet.html"><button><b>Character Sheet</b></button></a>
-			<a href="../changelog.html"><button><b>Changelog</b></button></a>
-			
-			<!-- Title -->
-			<h2 style="text-align:center;color:white;margin-bottom:0;"><b>Rulebook</b></h2>
-			<hr style="width:50%;margin-top:0;">
-			
-			<!-- Chapters -->
-			<a href="start-up.html"><button><b>Start-Up</b></button></a>
-			
-			<hr style="width:50%;margin-bottom:0;">
-			<p style="color:white;text-align:center;font-size:16px;margin-bottom:0;margin-top:0;">Base</p>
-			<hr style="width:50%;margin-top:0;">
-			
-			<a href="abilityscores.html"><button><b>Ability Scores</b></button></a>			
-			<a href="attributes.html"><button><b>Attributes</b></button></a>
+<div class=page-container>
 
-			<hr style="width:50%;margin-bottom:0;">
-			<p style="color:white;text-align:center;font-size:16px;margin-bottom:0;margin-top:0;">Interactions</p>
-			<hr style="width:50%;margin-top:0;">
-			
-			<a href="dicerolls.html"><button><b>Dice Rolls</b></button></a>
-			<a href="actions.html"><button><b>Actions</b></button></a>
-			<a href="skills.html"><button style="background-image:url('../Images/Sidenav/Button_Picked.jpg');"><b>Skills</b></button></a>			
-			<a href="combat.html"><button><b>Combat</b></button></a>
-			<a href="spellcasting.html"><button><b>Spellcasting</b></button></a>
-			
-			<hr style="width:50%;margin-bottom:0;">
-			<p style="color:white;text-align:center;font-size:16px;margin-bottom:0;margin-top:0;">Character Creation</p>
-			<hr style="width:50%;margin-top:0;">
-			
-			<a href="overview.html"><button><b>Overview</b></button></a>
-			<a href="race.html"><button><b>Race</b></button></a>
-			<a href="alignments.html"><button><b>Alignments</b></button></a>
-			<a href="mastery.html"><button><b>Mastery</b></button></a>			
-			<a href="talents.html"><button><b>Class Talents</b></button></a>
-			<a href="equipment.html"><button><b>Equipment</b></button></a>	
-			
-			<!-- Links -->
-			<p><br><br>
-			<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
-			<img src="../Images/Sidenav/YTimage.jpg" alt="ConceptArtistJR_Banner" style="width:200px;display:block;margin:auto;"></a>
-			<br>
-			<a href="https://www.patreon.com/avorkarth">
-			<img src="../Images/Sidenav/Patreon_image.jpg" alt="Patreon_Banner" style="width:200px;display:block;margin:auto;"></a>
-			</p>				
-		</div>
-		
-		
-		<!--MAIN-->
-		<div class="main">
-				
-			<div class="page">
-				<div class="page_inner_halfw">
-					<br>
-					<h2 style="text-align: center;margin-bottom:0;"><u>Skills</u></h2>					
-					<p>Skills are predetermined actions that the character may do and which require a certain amount of expertise. Unlike actions, there is 
-					a chance that the character's ability to preform these skills isn't good enough and that the character fails. The repercussions of the 
-					failure are entirely up to the Dungeon Master and the circumstances of the skill's use.</p>			
-				
-					<h4 style="margin-bottom:0;">Using Skills</h4><hr style="margin-bottom:0;">
-					<p>For a player's character to use a skill, they first declare the action they want to do. The player would then roll a 
-					die. After the required time for the skill is used, the player's skill value is then checked against the difficulty check of the action.
-					The Dungeon Master then lets them know the outcome of the skill as well as any
-					reactions to the skill's effect.</p>
-					
-					<!--<h4 style="margin-bottom:0;">Skills</h4><hr style="margin-bottom:0;">
-					<p>Skills are a sub-section of actions whose main difference to any other action is that they must be failable. These are actions
-					such as climbing, swimming, picking locks or persuading others. When creating a character, 
-					the player may increase their skills as they wish to reflect their character's backstory
-					and abilities. Certain races also 
-					have benefits to select skills due to their inborn natural abilities, such as merfolk and layunae having a bonus 
-					to the swimming skill.</p>
-					<!--Some skills may also level the more you use them, which are specified per skill in the Skill section.-->
-					<p style="margin-bottom:0;text-align:center;"><b>SKILL VALUES</b></p>
-					<table>
-						<tr><td>Ability Score + Mastery</td></tr>
-					</table>
-					<p><i>Any skill below 1 is counted as a skill value of 1.</i></p>
-					<p><b>Critical Fail</b> :
-					<br>A critical failed roll means disaster, often resulting in a severly negative effect.
-					<p><b>Fail</b> :
-					<br>A failed roll means that the skill did not function, however with little to no repercussion.</p>
-					<p><b>Partial Success</b> :
-					<br>A partial success roll will have the skill function, but at a lesser effect than desired.</p>
-					<p><b>Success</b> :
-					<br>A success roll will have the effect of the skill at its normal values.</p>					
-					<p><b>Critical Success</b> :
-					<br>A critical success roll means that the effect of the skill is greatly enhanced.</p>
+	<!-- Navigation -->
+	<div class="nav">
+		<!-- Main Logo -->
+		<a href="../index.html" class="homemenu"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" alt="AVORKARTH"></a>
 
-					<h4 style="margin-bottom:0;">Difficulty Checks (DC)</h4><hr style="margin-bottom:0;">
-					<p> To know if a skill has been succesful, they must check their skill value against what is known as a Difficulty Check or DC. 
-					This is a preset number given to the object
-					or character that is the receiver of the action. The two numbers compared are used for the dice roll. 
-					<i>(See the Dice Rolls chapter)</i></p>
+		<!-- Book Choice -->
+		<a href="../rulebook/startup.html"><button class="menu">Rulebook</button></a>
+		<a href="../rulebook/startup.html"><button class="menu submenu">Startup</button></a>
+		<a href="../rulebook/abilities.html"><button class="menu submenu">Abilities</button></a>
+		<a href="../rulebook/alignments.html"><button class="menu submenu">Alignments</button></a>
+		<a href="../rulebook/attributes.html"><button class="menu submenu">Attributes</button></a>
+		<a href="../rulebook/mastery.html"><button class="menu submenu">Mastery</button></a>
+		<a href="../rulebook/interactions.html"><button class="menu submenu">Interactions</button></a>
+		<a href="../rulebook/skills.html"><button class="menu submenu picked">Skills</button></a>
+		<a href="../rulebook/combat.html"><button class="menu submenu">Combat</button></a>
+		<a href="../rulebook/spellcasting.html"><button class="menu submenu">Spell Casting</button></a>
+		<a href="../worldlore.html"><button class="menu">World Lore</button></a>
+		<a href="../tale.html"><button class="menu">Tale of the Fifth Age</button></a>
+		<a href="../adventures.html"><button class="menu">Adventures</button></a>
+		<br><br>
+		<a href="../charactersheet.html"><button class="menu">Character Sheet</button></a>
+		<a href="../changelog.html"><button class="menu">Changelog</button></a>
 
-					<!--<h4 style="margin-bottom:0;">Using Skills</h4><hr style="margin-bottom:0;">
-					<p>For a player's character to use a skill, they first declare the action they want to do. The player would then roll a die and add the ability's 
-					total score, which is the total of the associated ability score and skill points that are invested in the chosen skill. The character then spends
-					the required amount of time dictated upon the skills table doing the action,
-					no matter if they failed or suceeded. Once the in-game time is elapsed, the Dungeon Master lets them know the outcome of the skill as well as any
-					reactions to the skill's effect.</p>-->
-					
-					<!--<h4 style="margin-bottom:0;">Skilled</h4><hr style="margin-bottom:0;">
-					<p>When creating a character, you may wish to add a certain flavour to their abilities. Specialties or the such that the character
-					has had experience within. If the character has an affinity or is particularly good at a skill, they may call is as a skilled
-					skill, adding an additional +2 to that skill whenever it is used.</p>-->
-					
-					<!-- I THINK I WANT TO MAKE IT INTO ITS OWN THING! COMBAT VS SKILLS
-					<h4 style="margin-bottom:0;">Skill Training</h4><hr style="margin-bottom:0;">
-					<p>There are characters that dedicate their life to a certain skill, or a certain few skills. Over the course of their lifetime
-					a character may specialize into certain skills. Characters gain 1 Training Point per 5 years dedication to a skill. The bonus
-					to a skill cannot go beyond +5.</p>
-					<p style="margin-bottom:0;text-align:center;"><b>TRAINING POINTS</b></p>
-					<table>
-						<tr><td>Age/5</td><td>Thing</td><td>Time</td></tr>
-					</table>	-->						
-				</div>
-				
-				
-				<div class="page_inner_halfw">
-					<br><br>
-				
-					
-					<h4 style="margin-bottom:0;">Natural Skills</h4><hr style="margin-bottom:0;">
-					<p>Natural skills are ones that any character can do without learning or training. These skill aren't as heavily penalized
-					for being untrained as learned skills, and being with a -2 penalty for being untrained.</p>
-					
-					<h4 style="margin-bottom:0;">Learned Skills</h4><hr style="margin-bottom:0;">
-					<p>Learned skills can also be attempted by any character (as long as they aren't complex), although without learning the intricacies the 
-					character will have a much tougher task ahead. Learned Skill have a heavy penalty untrained, starting at -7,
-					making Learned skills much harder without the relevant ability score or by being trained within them.</p>
-					
-					<h4 style="margin-bottom:0;">Complex (C) Skills</h4><hr style="margin-bottom:0;">
-					<p>There are many skills which are marked as complex, too intricate for lesser minds. A complex
-					skill requires that the character be of intelligence 3 or higher. This limits skills for many sections of creatures, such as
-					animals, that cannot read nor write, at least not without magical aid. </p>
-					
-					<h4 style="margin-bottom:0;">Limited (L) Skills</h4><hr style="margin-bottom:0;">
-					<p>Certain skills aren't able to be greatly enhanced and gain less from the character's Mastery bonuses. If so marked,
-					they reduce any positive bonus by half, rounded down. </p>
-					<!--Characters that don't have any skill points in Learned skills reduce the result of the dice's
-					roll by 3, to a minimum TOTAL of 1.-->
-					
-					<h4 style="margin-bottom:0;">Knowledge Skills</h4><hr style="margin-bottom:0;">
-					<p>While knowledge skills function just like Learned skills for their penalties, they suffer additional penalties depending on
-					the character's backstory and upbrining due to two sections.
-					<p><b>Knowledge - World</b> : These knowledges are based upon reality and are divided into two major subjects: Region and Race.
-					The character automatically begins with the Region of birth/growth and their own Race, but may acquire more with talents/backstory.
-					<br><b>Knowledge - Magic</b> : Knowledge Magic doesn't have any sub-sections, but instead the player may choose a sphere
-					of magic that their character may have studied. This doesn't give them magical abilities, but can be used for knowing of 
-					magical items.</p>
-					
-					<!-- OLD KNOWLEDGE SKILL
-					<h4 style="margin-bottom:0;">Knowledge Skills</h4><hr style="margin-bottom:0;">
-					<p>Knowledge skills are split into subjects, from broad to specific and are all based on the Intelligence ability score
-					.There are three main subjects; Region, Race and Magic, 
-					which each contain knowledge sections. These are given by racial and class talents or chosen upon character creation. 
-					Like Learned Skills, Knowledge Skills have a base -6 skill penalty if unlearned.
-					<br><b>Knowledge - Magic</b> : Knowledge Magic doesn't have any sub-sections, but instead the player may choose a sphere
-					of magic that their character may have studied. This allows them to organize or recognize rituals, which are a variation of spellcasting, 
-					of the specific realm. -->
-					
-					<!--Whenever a knowledge
-					roll is required, the player may choose from most specific to least specific, although with a penalty -3 per less specific category and 
-					-10 if from a different main subject (different region/type of magic).
-					The player may place any points into the lowest sub-sections,
-					but cannot put points into general level knowledge. The specific skill points then add to the parent general knowledge skills.
-					<br><i><b>Example</b> : A character puts a skill point into Knowledge Mythgs sub-section for the History sub-section for the Race(Narei). 
-					They would have +1 to all three knowledge skills, even with only the point in Knowledge Mythgs, though with a -3 penalty for 
-					general history knowledge,
-					-6 for general race knowledge and -10 for myths not from the Narei.</i></p> -->
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_halfw">
-					<br><br>
+		<!-- Links -->
+        <br><br><br>
+		<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+		    <img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner"></a>
+		<br>
+		<a href="https://www.patreon.com/avorkarth">
+		    <img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner"></a>
+	</div>
 
-					<!--<h3 style="text-align:center;">SKILLS TABLE</h3>-->
-					<h4 style="text-align:center;">Natural Skills</h4>
-					<table style="width:340px;">
-						<b><tr><th style="width:20%;">Skill</th><th style="width:5%">Additional</th><th style="width:30%;">Ability Score</th><th>Action Length</th></tr></b>
-						<tr><td style="height:35px;"><b>Balance</b></td><td>-</td><td>Agi</td><td>Free/Immediate Action</td></tr>
-						<tr><td style="height:35px;"><b>Bluff</b></td><td>-</td><td>Wis/Cha</td><td>1 Standard Action</td></tr>
-						<tr><td style="height:35px;"><b>Charm</b></td><td>L</td><td>Bea</td><td>Swift Action</td></tr>
-						<tr><td style="height:35px;"><b>Climb</b></td><td>-</td><td>Str/Agi/Dex</td><td>1 Move Action</td></tr>
-						<tr><td style="height:35px;"><b>Hide</b></td><td>-</td><td>Dex/Ins</td><td>1 Standard Action</td></tr>
-						<tr><td style="height:35px;"><b>Intimidate</b></td><td>L</td><td>Str/Pre</td><td>Swift Action</td></tr>
-						<tr><td style="height:35px;"><b>Inspire</b></td><td>L</td><td>Cha/Pre</td><td>1 Standard Action</td></tr>						
-						<tr><td style="height:35px;"><b>Jump</b></td><td>L</td><td>Agi</td><td>1 Move Action</td></tr>
-						<tr><td style="height:35px;"><b>Listen</b></td><td>L</td><td>Ins</td><td>Free/Immediate Action</td></tr>
-						<tr><td style="height:35px;"><b>Move Silently</b></td><td>-</td><td>Agi/Dex/Ins</td><td>Swift Action</td></tr>
-						<tr><td style="height:35px;"><b>Search</b></td><td>-</td><td>Ins/Int/Wis</td><td>10+ Minutes</td></tr>
-						<tr><td style="height:35px;"><b>Sense Motive</b></td><td>-</td><td>Ins/Int/Wis</td><td>Swift/Immediate Action</td></tr>
-						<tr><td style="height:35px;"><b>Spot</b></td><td>L</td><td>Ins</td><td>Swift/Immediate Action</td></tr>
-						<tr><td style="height:35px;"><b>Tumble</b></td><td>-</td><td>Agi</td><td>Immediate Action</td></tr>
-					</table>
-					<h4 style="text-align:center;">Learned Skills</h4>
-					<table style="width:340px;">
-						<b><tr><th style="width:20%;">Skill</th><th style="width:5%">Additional</th><th style="width:30%;">Ability Score</th><th>Action Length</th></tr></b>
-						<tr><td style="height:35px;"><b>Appraise</b></td><td>-</td><td>Ins/Int</td><td>5+ Minutes</td></tr>
-						<tr><td style="height:35px;"><b>Craft</b></td><td>C</td><td>Dex/Int</td><td>30+ Minutes</td></tr>
-						<!--<tr><td style="height:35px;"><b>Diplomacy</b></td><td>X</td><td>Wis/Cha</td><td>2 Standard Actions</td></tr>-->
-						<tr><td style="height:35px;"><b>Disable Device</b></td><td>C</td><td>Dex/Int</td><td>2+ Standard Actions</td></tr>
-						<tr><td style="height:35px;"><b>Disguise</b></td><td>-</td><td>Dex/Cha</td><td>1+ Hour</td></tr>
-						<tr><td style="height:35px;"><b>Escape Artist</b></td><td>-</td><td>Agi/Dex</td><td>2 Standard Actions</td></tr>
-						<tr><td style="height:35px;"><b>Forgery</b></td><td>C</td><td>Dex/Int</td><td>1+ Hour</td></tr>
-						<tr><td style="height:35px;"><b>Gather Information</b></td><td>C</td><td>Bea/Wis/Cha</td><td>8+ Hours</td></tr>
-					</table>
-				</div>
-			
-				<div class="page_inner_halfw">
-					<br><br>
-					<h4 style="text-align:center;">Learned Skills (Continued...)</h4>
-					<table style="width:340px;">
-						<b><tr><th style="width:20%;">Skill</th><th style="width:5%">Additional</th><th style="width:30%;">Ability Score</th><th>Action Length</th></tr></b>
-						<tr><td style="height:35px;"><b>Handle Animal</b></td><td>C</td><td>Ins/Wis</td><td>2 Standard Actions</td></tr>
-						<tr><td style="height:35px;"><b>Heal</b></td><td>C</td><td>Int/Wis</td><td>5+ Minutes</td></tr>
-						<tr><td style="height:35px;"><b>Perform</b></td><td>-</td><td>-</td><td>-</td></tr>
-						<tr><td style="height:35px;"><b>Perform: Act</b></td><td>C</td><td>Cha/Pre</td><td>2+ Minutes</td></tr>
-						<tr><td style="height:35px;"><b>Perform: Dance</b></td><td>-</td><td>Agi/Cha</td><td>2+ Minutes</td></tr>
-						<tr><td style="height:35px;"><b>Perform: Instrument</b></td><td>C</td><td>Cha</td><td>2+ Minutes</td></tr>
-						<tr><td style="height:35px;"><b>Perform: Sing</b></td><td>-</td><td>Cha</td><td>2+ Minutes</td></tr>
-						<tr><td style="height:35px;"><b>Perform: Speech</b></td><td>C</td><td>Cha/Pre</td><td>2+ Minutes</td></tr>
-						<tr><td style="height:35px;"><b>Persuade</b></td><td>-</td><td>Cha/Pre</td><td>2 Standard Actions</td></tr>
-						<tr><td style="height:35px;"><b>Pick Lock</b></td><td>C</td><td>Dex</td><td>2 Standard Actions</td></tr>
-						<tr><td style="height:35px;"><b>Pick Pocket</b></td><td>C</td><td>Dex</td><td>1 Standard Action</td></tr>
-						<tr><td style="height:35px;"><b>Ride</b></td><td>-</td><td>Agi/Ins/Wis</td><td>Swift Action</td></tr>
-						<tr><td style="height:35px;"><b>Survival</b></td><td>-</td><td>Ins/Wis</td><td>4+ Hours</td></tr>
-						<tr><td style="height:35px;"><b>Swim</b></td><td>-</td><td>Str/Agi</td><td>1 Standard Action</td></tr>
-					</table>			
-					<h4 style="text-align:center;">Knowledge Skills</h4>
-					<table style="width:340px;">
-						<b><tr><th style="width:20%;">Skill</th><th style="width:5%">Complex</th><th style="width:30%;">Ability Score</th><th>Action Length</th></tr></b>
-						<tr><td style="height:35px;"><b>Knowledges</b></td><td>*</td><td>Int</td><td>2 Standard Actions</td></tr>
-						<tr><td colspan="4">
-								<b>Region (Area)</b>
-								<br> Nature, Geography, Politics, Myths
-								<br><b>Race (Type)</b>
-								<br> Factions, History, Religions
-								<br> <b>Magic (Sphere)</b>
-								<br> Arcana, Elemental, Light, Distortion, Spirit
-						<br><br><i>*ALL knowledge skills except for Nature/Myths are Complex skills.</i>
-						<br><br><i>**The more detailed sub-sections are in the descriptions.</i>
-					</table>
-				</div>
-			
-			</div>
-			
-			<div class="page">
+<div class="content">
+   <img class="logo" src="../images/general/AvorkarthLogo_Main_White.jpg" alt="AVORKARTH">
 
-				<div class="page_inner_full">
-					<br><br>
-					<h3 style="text-align:center;">NATURAL SKILLS</h3>
-								
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">BALANCE</th></tr>
-						<tr><td style="width:30%;">Agility</td><td>Free or Immediate Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to balance on ledges or tight areas that cannot
-						simply be bypassed by walking.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Per obstacle/turn
-							<br><b>Difficulty Check</b> : Per obstacle. - Increase by +3 if balancing wihle in combat or doing an additional action.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : Fall off.
-							<br><b>Fail</b> : Fail to move.
-							<br><b>Partial Success</b> : Move 1 tile.
-							<br><b>Success</b> : Move at half speed.
-							<br><b>Critical Success</b> : Move at full speed.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">BLUFF</th></tr>
-						<tr><td style="width:30%;">Wisdom or Charisma</td><td>1 Standard Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to lie and subvert situations to their
-						own advantage.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Per opponent, per situation.
-							<br><b>Difficulty Check</b> : Opponent's Sense Motive skill check. Bluff must be declared before using by the player.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : Reveal an unintended piece of information.
-							<br><b>Fail</b> : Opponent knows you are lying.
-							<br><b>Partial Success</b> : Opponent believes you, but is suspicious.
-							<br><b>Success</b> : Opponent believes you.
-							<br><b>Critical Success</b> : Opponent trusts you, divulging more information.
-						</td></tr>
-					</table>					
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">CHARM</th></tr>
-						<tr><td style="width:30%;">Beauty</td><td>Swift Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to use their attractiveness as a base persuasion.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per opponent.
-							<br><b>Difficulty Check</b> : Opponent's Will Score - Increase by 5 if the opponent would not normally consider the
-							charmer attractive.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : Pleasing Distraction - Charm may be used as a standard action in combat against all targets
-							within 15 squares. Allies have + 5 to their Will score.
-							<br><b>Additional</b> : Heart Smitten - Charm is used as an addition to Persuade and Diplomacy checks only. It cannot be used
-							for such purposes.
-							<br>----
-							<br><b>Critical Fail</b> : Opponent loses 8 - Bea/Pre score Charm points. (Minimum 1)
-							<br><b>Fail</b> : Opponent loses 4 - Bea/Pre score Charm points. (Minimum 1)
-							<br><b>Partial Success</b> : Opponent gains -1 + Bea/Pre score Charm points. (Minimum 0)
-							<br><b>Success</b> : Opponent gains 2 + Bea/Pre score Charm points. (Minimum 1)
-							<br><b>Critical Success</b> : Opponent gains 4 + Bea/Pre score Charm points. (Minimum 1)
-						</td></tr>
-					</table>			
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">CLIMB</th></tr>
-						<tr><td style="width:30%;">Strength, Agility or Dexterity</td><td>1 Move Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to climb rough surfaces, be they walls or cliffs. </i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Per obastacle/action. 
-							<br><b>Difficulty Check</b> : Per obstacle - Increase by +3 if balancing wihle in combat or doing an additional action. 
-							<br><b>Armour Penalty</b> : Yes
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : Lose your grip and fall.
-							<br><b>Fail</b> : Fail to move.
-							<br><b>Partial Success</b> : Move 1 tile.
-							<br><b>Success</b> : Move at half speed.
-							<br><b>Critical Success</b> : Move at full speed.
-						</td></tr>
-					</table>	
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">HIDE</th></tr>
-						<tr><td style="width:30%;">Dexterity or Instinct</td><td>1 Standard Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to hide and remain in the shadows. </i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Declaration only (No rolls)
-							<br><b>Difficulty Check</b> : Opponent's Spot and Search checks.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Hidden - Hide cannot be used while in plain sight, in the open or while being looked at.
-							<br>----
-							<br><b>Critical Fail</b> : -
-							<br><b>Fail</b> : -
-							<br><b>Partial Success</b> : -
-							<br><b>Success</b> : -
-							<br><b>Critical Success</b> : -
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">INTIMIDATE</th></tr>
-						<tr><td style="width:30%;">Strength, Charisma or Presence</td><td>Swift Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to create unease or even fear in a target.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per opponent.
-							<br><b>Difficulty Check</b> : Opponent's Will Score - Intimidate gains + 3 or - 3 to its DC depending on the size difference
-							of the opponent.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : Battlecry - Intimidate may be used as a standard action in combat against all targets
-							within 15 squares. Allies have +5 to their Will score.
-							<br><b>Additional</b> : Terror - Intimidate with Cha is at -2, Intimidate with Strength is at -1 and Intimidate
-							with Presence has no penalties.
-							<br>----
-							<br><b>Critical Fail</b> : Opponent loses 8 - Str/Cha/Pre score Fear points. (Minimum 1)
-							<br><b>Fail</b> : Opponent loses 4 - Str/Cha/Pre score Fear points. (Minimum 1)
-							<br><b>Partial Success</b> : Opponent gains -1 + Str/Cha/Pre score Fear points. (Minimum 0)
-							<br><b>Success</b> : Opponent gains 2 + Str/Cha/Pre score Fear points. (Minimum 1)
-							<br><b>Critical Success</b> : Opponent gains 4 + Str/Cha/Pre score Fear points. (Minimum 1)
-						</td></tr>
-					</table>
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">INSPIRE</th></tr>
-						<tr><td style="width:30%;">Presence</td><td>1 Standard Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to inspire allies.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;"> 
-							<b>Checks</b> : Once per target, per day.
-							<br><b>Difficulty Check</b> : Target's Fear points.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : Bolster - Inspire may be used as a standard action in combat for all allies within 5 tiles. 
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : Target gains 8 - Presence score Fear points. (Minimum 1)
-							<br><b>Fail</b> : Target gains 4 - Presence score Fear points. (Minimum 1)
-							<br><b>Partial Success</b> : Target loses -1 + Presence score Fear points. (Minimum 0)
-							<br><b>Success</b> : Target loses 2 + Presence score Fear points. (Minimum 1)
-							<br><b>Critical Success</b> : Target loses 4 + Presence score Fear points. (Minimum 1)
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">JUMP</th></tr>
-						<tr><td style="width:30%;">Agility</td><td>1 Move Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to jump over obstacles of height and distance.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Per obstacle/action.
-							<br><b>Difficulty Check</b> : Per obstacle - Increase by +3 (x2 per size difference). If the obstacle is
-							smaller, reduce it by 1 instead.
-							<br><b>Armour Penalty</b> : Yes
-							<br><b>Combat Uses</b> : Leap - Jump over allies and foes as part of the move action instead of moving around them.
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : Fall prone.
-							<br><b>Fail</b> : Fail the jump and fail to move.
-							<br><b>Partial Success</b> : Jump up and catch the ledge || Make the jump, Enemies gain attacks of opportunities.
-							<br><b>Success</b> : Make the full jump
-							<br><b>Critical Success</b> : Make the full jump as a swift action instead.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">LISTEN</th></tr>
-						<tr><td style="width:30%;">Instinct</td><td>Free or Immediate Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to focus on listening for specific noises and
-						filtering out unnecessary sounds.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per action.
-							<br><b>Difficulty Check</b> : 1 per tile distance. || Used against the Move Silently skill.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Resoate - Yelling one-fifths the DC, Shouting halves it, Whispering doubles it. 
-							<br>----
-							<br><b>Critical Fail</b> : You hear something else entirely
-							<br><b>Fail</b> : You fail to hear anything.
-							<br><b>Partial Success</b> : You hear a partial sound, but nothing specific.
-							<br><b>Success</b> : You hear the sound/conversation and its approximate location.
-							<br><b>Critical Success</b> : You hear the exact location of the sound.
-						</td></tr>
-					</table>					
-					
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br>
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="bookpage">
 
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">MOVE SILENTLY</th></tr>
-						<tr><td style="width:30%;">Agility, Dexterity or Instinct</td><td>Swift Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to sneak around and not be heard.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Declaration only (No rolls)
-							<br><b>Difficulty Check</b> : Opponent's Listen check.
-							<br><b>Armour Penalty</b> : Yes
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : -
-							<br><b>Fail</b> : -
-							<br><b>Partial Success</b> : -
-							<br><b>Success</b> : -
-							<br><b>Critical Success</b> : -
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">SEARCH</th></tr>
-						<tr><td style="width:30%;">Instinct, Intelligence, or Wisdom</td><td>10+ Minutes (600+ Rounds)</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability for searching and finding small details.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per action.
-							<br><b>Difficulty Check</b> : Per obstacle.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Scrutiny - For every 10 additional minutes spent, decrease the Difficulty Check by 1.
-							<br>----
-							<br><b>Critical Fail</b> : You hinder the evidence. Increase further Difficulty Checks by +1.
-							<br><b>Fail</b> : You find nothing.
-							<br><b>Partial Success</b> : You find traces, but nothing specific. Decrease futher Difficulty Checks by -1.
-							<br><b>Success</b> : You find something in the location.
-							<br><b>Critical Success</b> : You successfully find everything in that location.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">SENSE MOTIVE</th></tr>
-						<tr><td style="width:30%;">Instinct, Intelligence or Wisdom</td><td>Swift or Immediate Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to sense what others are thinking or about to do,
-						usually used when one thinks they are being tricked or lied to.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Automatic (No rolls)
-							<br><b>Difficulty Check</b> : Opposes opponent's Bluff or Persuade skills
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : -
-							<br><b>Fail</b> : -
-							<br><b>Partial Success</b> : - 
-							<br><b>Success</b> : -
-							<br><b>Critical Success</b> : -
-						</td></tr>
-					</table>
-					
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br>
-				
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">SPOT</th></tr>
-						<tr><td style="width:30%;">Instinct</td><td>Swift or Immediate Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to notice larger details or incoming dangers before
-						they occur.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per action.
-							<br><b>Difficulty Check</b> : Per obstacle.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Sight - Spot can only be used be used within the character's sight range.
-							<br>----
-							<br><b>Critical Fail</b> : You are distracted, further spot checks DCs are increased by 2.
-							<br><b>Fail</b> : You fail to notice anything.
-							<br><b>Partial Success</b> : You notice something out the corner of your eye.
-							<br><b>Success</b> : You notice the target/opponent.
-							<br><b>Critical Success</b> : You notice the target, including additional details. Gain +1 to further diplomacy/persuade/bluff
-							checks against the target.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">TUMBLE</th></tr>
-						<tr><td style="width:30%;">Agility</td><td>Immediate Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability in acrobatic movements and to fall gracefully.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : 3 per tile of Falling distance.
-							<br><b>Difficulty Check</b> : 
-							<br><b>Armour Penalty</b> : Yes
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : Increase the damage done from falling by 1 lethal damage per tile of falling.
-							<br><b>Fail</b> : Take the full falling damage.
-							<br><b>Partial Success</b> : Increase falling distance by 1.
-							<br><b>Success</b> : Increase falling distance by 3.
-							<br><b>Critical Success</b> : Increase falling distance by 5.
-						</td></tr>
-					</table>	
+<h1>INTERACTIONS</h1>
 
-					<h3 style="text-align:center;">LEARNED SKILLS</h3>
-					
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">APPRAISE</th></tr>
-						<tr><td style="width:30%;">Instinct or Intelligence</td><td>5+ Minutes (300+ Rounds)</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to judge the worth of a rare or unique item.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Per item.
-							<br><b>Difficulty Check</b> : Item dependant.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : Guess completely wrong, guessed price is 1/10th.
-							<br><b>Fail</b> : Guess wrong, guessed price is halved. 
-							<br><b>Partial Success</b> : Guess approximately, guessed price is lower than full value.
-							<br><b>Success</b> : Guess right, guessed price is equal.
-							<br><b>Critical Success</b> : Guess right, guessed price is equal. Gain +1 on any knowledge checks for unique items.
-						</td></tr>
-					</table>
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">CRAFT (TYPE) - COMPLEX</th></tr>
-						<tr><td style="width:30%;">Intelligence</td><td>30+ Minutes (1800+ Rounds)</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to create an object out of available materials
-						or to have a specific craft like cooking.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Per craft.
-							<br><b>Difficulty Check</b> : -- (TO BE IMPLEMENTED!) -- Per item being crafted
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : There are too many crafts. All in good time.
-							<br>----
-							<br><b>Critical Fail</b> : It fails horribly.
-							<br><b>Fail</b> : The craft is... not of the best quality.
-							<br><b>Partial Success</b> : The craft is of sufficient quality.
-							<br><b>Success</b> : The craft is of great quality.
-							<br><b>Critical Success</b> : The craft is of incredible quality.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">DIPLOMACY - COMPLEX</th></tr>
-						<tr><td style="width:30%;">Wisdom or Charisma</td><td>2 Standard Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to relate and discuss with others of good or 
-						ill intent, and to negotiate their way out of dangerous situations.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per opponent.
-							<br><b>Difficulty Check</b> : 5 + 5 per reputation difference. <i>(See attributes)</i>
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Intelligent Discussion - Diplomacy gains -1 DC per intelligence above 6 on both sides.
-							<br>----
-							<br><b>Critical Fail</b> : Reduce you and your allies' reputation with the opponent by 2.
-							<br><b>Fail</b> : No effect.
-							<br><b>Partial Success</b> : Increase you and your allies' reputation with the opponent by 1.
-							<br><b>Success</b> : Increase you and your allies' reputation with the opponent by 2.
-							<br><b>Critical Success</b> : Increase you and your allies' reputation with the opponent by 3.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">DISABLE DEVICE - COMPLEX</th></tr>
-						<tr><td style="width:30%;">Dexterity or Intelligence</td><td>2+ Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to disable mechanical devices, negating their effectiveness
-							or use entirely.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per obstacle.
-							<br><b>Difficulty Check</b> : Per obstacle.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Additional Time - If the character takes 5 minutes instead, increase their roll by 1. If
-							distracted, instead decrease the roll by 1.
-							<br>----
-							<br><b>Critical Fail</b> : Break part of the mechanism. Dangerous mechanical devices activate.
-							Increase further Difficulty Checks by +3.
-							<br><b>Fail</b> : Nothing happens.
-							<br><b>Partial Success</b> : The mechanism is temporarily disabled.
-							<br><b>Success</b> : The mechanism is fully disabled.
-							<br><b>Critical Success</b> : The mechanism is dismantled and may be sold, but not reused.
-						</td></tr>
-					</table>
-					<br><hr><br>
+<h3>NATURAL SKILLS</h3>
 
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">DISGUISE</th></tr>
-						<tr><td style="width:30%;">Dexterity or Charisma</td><td>1+ Hour (3600+ Rounds)</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to hide their looks and appear as another.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per opponent.
-							<br><b>Difficulty Check</b> : Opponent's Sense Motive or Spot skill.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Disguise Issues - Younger/Older(-1), Opposing Gender(-3), Different size(-5 per larger,-8 per smaller),
-							different species(-10).
-							<br>----
-							<br><b>Critical Fail</b> : The disguise will not fool anyone.
-							<br><b>Fail</b> : The disguise's DC is equal to the Skill - 6.
-							<br><b>Partial Success</b> : The disguise's DC is equal to the Skill - 3.
-							<br><b>Success</b> : The disguise's DC is equal to the Skill.
-							<br><b>Critical Success</b> : The disguise's DC is equal to the Skill + 3.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">ESCAPE ARTIST</th></tr>
-						<tr><td style="width:30%;">Dexterity</td><td>1 Full Round</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to get out of bindings, ropes or chains.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per action, per round.
-							<br><b>Difficulty Check</b> : Binding used + opponent's Dexterity score
-							<br><b>Armour Penalty</b> : Yes
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : The knots get tighter. Increase the next Difficulty Check by 1.
-							<br><b>Fail</b> : You struggle to no avail.
-							<br><b>Partial Success</b> : The knots get looser. Decrease the next Difficulty Check by 1.
-							<br><b>Success</b> : You struggle free.
-							<br><b>Critical Success</b> : You free yourself easily, within a single standard action.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">FORGERY - COMPLEX</th></tr>
-						<tr><td style="width:30%;">Dexterity or Intelligence</td><td>1+ Hour (3600+ Rounds)</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to recreate and duplicate lettering and symbols or items
-							of importance.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per item.
-							<br><b>Difficulty Check</b> : Forgery is countered by the opponent's Spot, Search, Knowledge: Region/Politics or
-							Linguistics skill. Depending on the item.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Linguist's Issue - The DC is increased based on the complexity of the writing/language used. 
-							The DC is increased by +2 per point less of the character's ability to read/write the language.
-							<br>----
-							<br><b>Critical Fail</b> : The forgery will not fool anyone.
-							<br><b>Fail</b> : The forgery's DC is equal to the Skill - 6.
-							<br><b>Partial Success</b> : The forgery's DC is equal to the Skill - 3.
-							<br><b>Success</b> : The forgery's DC is equal to the Skill.
-							<br><b>Critical Success</b> : The forgery's DC is equal to the Skill + 3.
-						</td></tr>
-					</table>
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br>
+<div class="bookpage-columns">
+    <div class="bookpage-column">
 
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">GATHERING INFORMATION - COMPLEX</th></tr>
-						<tr><td style="width:30%;">Beauty, Wisdom or Charisma</td><td>4+ Hours (14,400+ Rounds)</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to gain vague information and happenings from the local
-							populace.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per area.
-							<br><b>Difficulty Check</b> : 5 + 3 per reputation with the local area.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : You learn many, many false facts.
-							<br><b>Fail</b> : Your knowledge does not expand.
-							<br><b>Partial Success</b> : You learn of a few plausible myths or facts.
-							<br><b>Success</b> : You find a good lead, if available.
-							<br><b>Critical Success</b> : You learn the exact details of happenings.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">HANDLE ANIMAL - COMPLEX</th></tr>
-						<tr><td style="width:30%;">Instinct or Wisdom</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to calm and take care of tamed animals, as well as the
-							ability to teach them tricks.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per target.
-							<br><b>Difficulty Check</b> : Opponent's Will score
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Wild - Untamed creatures gain an additional +10 to their DC and can only be soothed.
-							<br>----
-							<br><b>Critical Fail</b> : The animal gets irritated and angered.
-							<br><b>Fail</b> : The animal fails to understand the command.
-							<br><b>Partial Success</b> : The animal does half the trick or command.
-							<br><b>Success</b> : The animal does as asked.
-							<br><b>Critical Success</b> : The animal does as asked and further skill checks' DC is lowered by 1.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">HEAL - COMPLEX</th></tr>
-						<tr><td style="width:30%;">Intelligence or Wisdom</td><td>2+ Minutes (120+ Rounds)</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to bandange and care for wounds.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per target per day/Once per action.
-							<br><b>Difficulty Check</b> : 5 + 3 per quarter health missing.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : First Aid - Heal can be used as a standard action to stop bleeding out at a difficulty check of
-							5.
-							<br><b>Additional</b> : None
-							<br>----
-							<br><b>Critical Fail</b> : Worsen the wound, lose 2 heal counters. If the target has no heal counters, deal 1 damage
-							instead.
-							<br><b>Fail</b> : The wound remains terrible, no change.
-							<br><b>Partial Success</b> : The target gains 1 heal counter.
-							<br><b>Success</b> : The target gains 2 heal counters.
-							<br><b>Critical Success</b> : The target gains 4 heal counter.
-						</td></tr>
-					</table>
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PERFORM (TYPE)</th></tr>
-						<tr><td style="width:30%;">-</td><td>-</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to entertain companions or crowds, often with a specific
-							trademark performance.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per opponent.
-							<br><b>Difficulty Check</b> : The difficulty check is chosen by the performer.
-								<br>Nice performance - DC 5 | Fine performance - DC 8 | Graceful performance - DC 12
-								| Beautiful performance - DC 17 | Elegant performance - DC 23 | Alluring performance - DC 30
-								| Divine performance - DC 45
-							<br><b>Armour Penalty</b> : -
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : 
-							<br> Moving Performance - Truly remarkable performances can inspire others. If a performance is "Graceful" or higher, all allies
-							gain +1(+1 per higher) to their skill checks and half that bonus, rounded down and minimum 0, to their attack values. If
-							the performance is below "Basic", instead take a -1 penalty.
-							<br> Performer's Advantage - Each performance type also gives an advantage to other skills, due to
-							the arduous training required. A trained performance skill also grants one-third (rounded down, minimum 0) of its 
-							trained bonus to certain other skills.
-							<br>----
-							<br><b>Critical Fail</b> : The performance not at all as intended. Reduce the attempted performance by 3 stages.
-							<br><b>Fail</b> : The performance not as intended. Reduce the attempted performance by 2 stages.
-							<br><b>Partial Success</b> : The performance is almost as intented. Reduce the attempted performance by 1 stage.
-							<br><b>Success</b> : The performance is as intended. 
-							<br><b>Critical Success</b> : The performance is even greater than intended. Increase the attempted performance by 1 stage.
-						</td></tr>
-					</table>				
-					<hr>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PERFORM - ACT</th></tr>
-						<tr><td style="width:30%;">Charisma or Presence</td>
-						<td style="text-align:left;"><i>The character's ability to perform through gestures and character imitations.</i></td>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Performer's Advantage</b> - Perform Act adds to the Bluff, Disguise and Persuade skills.
-						</td></tr>
-					</table>
-					<hr>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PERFORM - DANCE (BALLROOM)</th></tr>
-						<tr><td style="width:30%;">Half Charisma + Half Beauty</td>
-						<td colspan="2" style="text-align:left;"><i>The character's ability to perform a ballroom dance to a musical piece.</i></td>
-						<tr><td colspan="2" style="text-align:left;">
-							<b> Performer's Advantage (Charisma)</b> : Charisma dances adds to the Diplomacy, Bluff and Gather Information skills.
-						</td></tr>
-					</table>												
-					<hr>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PERFORM - DANCE (RYTHMIC)</th></tr>
-						<tr><td style="width:30%;">Half Agility + Half Beauty</td>
-						<td colspan="2" style="text-align:left;"><i>The character's ability to move gracefully to a rythm or musical song.</i></td>
-						<tr><td colspan="2" style="text-align:left;">
-							<b> Restraint</b> : Perform Dance (Rythmic) is affected by Armour Penalties.
-							<br><b> Performer's Advantage (Agility)</b> : Agility dances adds to the Charm, Balance, Climb and Jump skills.
-						</td></tr>
-					</table>												
-					<hr>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PERFORM - INSTRUMENT (TYPE) - COMPLEX</th></tr>
-						<tr><td style="width:30%;">Charisma</td>
-						<td colspan="2" style="text-align:left;"><i>The character's ability to play a melody upon an instrument of choosing.</i></td>
-						<tr><td colspan="2" style="text-align:left;">
-							<b> Performer's Advantage</b> : Perform Instrument adds to the Diplomacy, Gather Information and Persuade skills.
-						</td></tr>
-					</table>
-					<hr>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PERFORM - SING</th></tr>
-						<tr><td style="width:30%;">Charisma</td>
-						<td colspan="2" style="text-align:left;"><i>The character's ability to hold a tune with their voice.</i></td>
-						<tr><td colspan="2" style="text-align:left;">
-							<b> Performer's Advantage</b> : Perform Sing adds to the Charm, Bluff and Persuade skills.
-						</td></tr>
-					</table>
-					<hr>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PERFORM - SPEECH - COMPLEX</th></tr>
-						<tr><td style="width:30%;">Charisma or Presence</td>
-						<td colspan="2" style="text-align:left;"><i>The character's ability to speak eloquently and create beautiful speeches.</i></td>
-						<tr><td colspan="2" style="text-align:left;">
-							<b> Performer's Advantage</b> : Perform Speech adds to the Bluff, Diplomacy and Persuade skill checks per performance level.
-						</td></tr>
-					</table>
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PERSUADE</th></tr>
-						<tr><td style="width:30%;">Charisma or Presence</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to change the mindset of others and convince them of a certain
-							viewpoint.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per target.
-							<br><b>Difficulty Check</b> : Opponent's Will score + 2 per reputation difference.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Intellectual Arguments - Lower the DC by 1 per difference in intelligence tier.
-							<br>----
-							<br><b>Critical Fail</b> : The target disagrees to such an extent to most probably attack or argue.
-							<br><b>Fail</b> : The target disagress to the persuasion.
-							<br><b>Partial Success</b> : The target will begrudingly think about it.
-							<br><b>Success</b> : The target is persuaded.
-							<br><b>Critical Success</b> : The target is persuaded and further persuasion checks' DC are lowered by 1.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PICK LOCK</th></tr>
-						<tr><td style="width:30%;">Dexterity</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to pick, break and bypass mechanical locks.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per round.
-							<br><b>Difficulty Check</b> : Per obstacle.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Silent Picking - If the character wishes to remain quiet, increase the DC by 3.
-							<br><b>Additional</b> : Additional Time - If the character takes 5 minutes instead, increase their roll by 1. If
-							distracted during this time, decrease the roll by 1 instead.
-							<br>----
-							<br><b>Critical Fail</b> : Break part of the mechanism.
-							Increase further Difficulty Checks by +3.
-							<br><b>Fail</b> : Nothing happens.
-							<br><b>Partial Success</b> : The lock budges, but doesn't completely fail. Decrease further DC's by 1.
-							<br><b>Success</b> : The lock is fully disabled.
-							<br><b>Critical Success</b> : The lock is dismantled and may be sold, but not reused.
-						</td></tr>
-					</table>
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">PICK POCKET</th></tr>
-						<tr><td style="width:30%;">Dexterity</td><td>1 Standard Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to steal from another without them noticing.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per opponent per round.
-							<br><b>Difficulty Check</b> : Opponent's Spot skill.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Small Advantage - Decrease the DC by 1(+1) per size smaller than the opponent, if they can reach
-							the item in the first place.
-							<br>----
-							<br><b>Critical Fail</b> : The opponent notices that you attempted to pick pocket them.
-							<br><b>Fail</b> : Fail to pick pocket.
-							<br><b>Partial Success</b> : Grab a random item from their bag.
-							<br><b>Success</b> : Grab from 5 different random items.
-							<br><b>Critical Success</b> : Grab the specific object you are looking for.
-						</td></tr>
-					</table>					
-				</div>
-			</div>
-			<div class="page">
-				<div class="page_inner_full">
-					<br><br><br><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">RIDE</th></tr>
-						<tr><td style="width:30%;">Agility, Instinct or Wisdom</td><td>Swift Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to ride upon mounts, tamed or untamed, without falling off.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per round.
-							<br><b>Difficulty Check</b> : Mount's Agility + Instinct. Increase the DC by 3 while doing an action and riding.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Riding Companion - If the target is willing to have a rider upon it, the DC is decreased by 5.
-							<br>----
-							<br><b>Critical Fail</b> : You fall off and are prone.
-							<br><b>Fail</b> : You fall off.
-							<br><b>Partial Success</b> : You may ride, but take -1 to all rolls while riding.
-							<br><b>Success</b> : You ride succesfully.
-							<br><b>Critical Success</b> : 
+<table class="skills">
+<tr><td colspan="2">BALANCE - AGILITY - MOVE ACTION</td></tr>
+<tr><td colspan="2">The creature's ability to balance on ledges or tight areas
+        that cannot be simply bypassed by walking.  </td></tr>
+<tr><td> Checks           </td><td> Per Move action.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None.  </td></tr>
+<tr><td> Additional       </td>
+    <td> <b>Inherent Focus</b> : Increase the difficulty check by 3 if the creature
+         is in combat or doing an additional action.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Move your full movement.  </td></tr>
+<tr><td> Success          </td><td> Move half your movement.  </td></tr>
+<tr><td> Partial Success  </td><td> Fail to move, but don't fall off.  </td></tr>
+<tr><td> Fail             </td><td> Fall off, but hang on.  </td></tr>
+<tr><td> Critical Fail    </td><td> Fall off completely.  </td></tr>
+</table>
 
-						</td></tr>
-					</table>		
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">SURVIVAL</th></tr>
-						<tr><td style="width:30%;">Wisdom or Instinct</td><td>4+ Hours (14,400+ Rounds)</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to survive in the wilderness, including foraging food and
-							following tracks. Travel makes the target take 2 hunger counters per day of travel.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per opponent or per travel.
-							<br><b>Difficulty Check</b> : 5+ (See below) - Tracking is against the opponent's survival.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Environmental Challenges - Increase the DC by X depending on the area to forage food.
-							<br> Plentiful - -2 - (Woodlands)
-							Lived - +0 - (Plains) ||
-							Harsh - + 4 - (Marshlands) ||
-							Barren - + 8 - (Desert) ||
-							Desolate - +16 - (Volcano)
-							<br>----
-							<br><b>Critical Fail</b> : Unable to find food for the travel. Don't reduce the hunger counters. || Follow the wrong tracks.
-							<br><b>Fail</b> :  Forage the occaisional food. Reduce the counters by half. || Find no tracks.
-							<br><b>Partial Success</b> : Find barely enough food to survive. Don't take any hunger counters. || Find tracks but are unable
-							to discern the direction.
-							<br><b>Success</b> : Find enough food for yourself. Remove 1 hunger counter per day. || Find tracks with the approximate direction.
-							<br><b>Critical Success</b> : Find a few notable meals along the way. Remove 1+1 above DC hunger counters per day
-							in total (you and party members). || Find tracks with the exact direction. Gain +2
-							on subsequent survival checks to follow those tracks.
-						</td></tr>
-					</table>	
-					<br><hr><br>
-					<table style="text-align:center;width:80%;">
-						<tr><th colspan="2">SWIM</th></tr>
-						<tr><td style="width:30%;">Strength or Agility</td><td>1 Standard Action</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's ability to move through watery bodies.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Checks</b> : Once per opponent.
-							<br><b>Difficulty Check</b> : Per situation.
-							<br><b>Armour Penalty</b> : No
-							<br><b>Combat Uses</b> : None
-							<br><b>Additional</b> : Environmental Challenges - The DC is equal to the following
-							<br> Still waters - DC 5 ||
-							Rough waters - DC 10 ||
-							Rapids - DC 15 ||
-							Large ocean waves - DC 20 ||
-							Stormy ocean - DC 25 ||
-							Waterfall pull - DC 35 ||
-							Whirlpool - DC 40 ||
-							<br>----
-							<br><b>Critical Fail</b> : Thrash, quickly making the situation worse. Increase the DC of the next roll by 3.
-							<br><b>Fail</b> : Begin sinking.
-							<br><b>Partial Success</b> : Move at half swimming speed.
-							<br><b>Success</b> : Move at full swimming speed.
-							<br><b>Critical Success</b> : Move at full swimming speed and one category higher. If already "Perfect", it is
-							considered a swift action instead.
-						</td></tr>
-					</table>
-				</div>
-			</div>
-			
-			<div class="page">
-				<div class="page_inner_halfw">
-					<br><br>
-					<h3 style="text-align:center;">KNOWLEDGE SKILLS</h3>
+<table class="skills">
+<tr><td colspan=2>BLUFF - WISDOM OR CHARISMA - FREE/IMMEDIATE ACTION </td></tr>
+<tr><td colspan=2>The creature's ability to lie and subvert situations to their
+        own advantage. </td></tr>
+<tr><td> Checks           </td><td> Per opponent, per situation. </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Sense Motive skill value.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None.  </td></tr>
+<tr><td> Additional       </td><td> None.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The opponent trusts you, divulging even more information   </td></tr>
+<tr><td> Success          </td><td> The opponent believes you.  </td></tr>
+<tr><td> Partial Success  </td><td> The opponent believes you, but is suspicious of you.  </td></tr>
+<tr><td> Fail             </td><td> The opponent knows you are lying.  </td></tr>
+<tr><td> Critical Fail    </td><td> You reveal unintended pieces of information.  </td></tr>
+</table>
 
-			
-					<h4 style="margin-bottom:0;text-align:center;">Knowledge : Region (Area)</h4>
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="text-align:center;"><i>The character's total infomation known about a specified region.</i></td></tr>
-						<tr><td style="text-align:left;"><b>Adventurer's Guess </b> : The character may attempt Knowledge : Region checks for unknown regions, 
-							though with an additional -4 penalty.
-							<br><br><b>Regional Environment</b> : If the character's known regions share the same environment type/similar myths as
-							an unknown region, reduce the Adventurer's Guess Penalty for Knowledge Nature/Myth checks to an additional -2 instead.
+</div><div class="bookpage-column">
 
-						</td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Section Knowledge - Nature</b></td></tr>
-						<tr><td style="text-align:center;"><i>The character's total knowledge for matters of plants, beasts and the wilderness of a 
-							specified region.</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Section Knowledge - Geography</b></td></tr>
-						<tr><td style="text-align:center;"><i>The character's total knowledge about the lay of the land and landmakrs
-							of a specified region.</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Section Knowledge - Politics</b></td></tr>
-						<tr><td style="text-align:center;"><i>The character's total knowledge about the recent historical, religious and political
-							happenings of a specified region.</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Section Knowledge - Myths</b></td></tr>
-						<tr><td style="text-align:center;"><i>The character's total infomation known about the myths and legends of a specified region.
-						It has been known that many regions share similar myths.</i></td></tr>
-					</table>
-					
-					<h4 style="margin-bottom:0;text-align:center;">Knowledge : Race (Type)</h4>
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="text-align:center;"><i>The character's total infomation known about a specific intelligent race/civilization.</i></td></tr>
-						<tr><td style="text-align:left;"><b>Life Experience </b> : The character may attempt Knowledge : Race checks for unknown races, 
-							though with an additional -2 penalty if they share the same sub-type race and -4 if in good standings. This drops to -10
-							if the races are too far apart.
-							<br><i>(So two human variations
-							would have -2, any human and elf variations would have -4 and a human and a sei'yuulei nymph would have -10.)</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Section Knowledge - Factions</b></td></tr>
-						<tr><td style="text-align:center;"><i>The character's total knowledge of the many varied factions that compose the structure
-							of a race's civilization.</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Section Knowledge - History</b></td></tr>
-						<tr><td style="text-align:center;"><i>The character's total knowledge about a specific race's ancient and recent past. Note that
-							many secrets of many races' stories have vanished completely.</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Section Knowledge - Religions</b></td></tr>
-						<tr><td style="text-align:center;"><i>The character's total knowledge about the various religions, gods, deities and worships
-							of a race or civilization's inhabitants.</i></td></tr>
-					</table>
-				</div>	
-				
-				<div class="page_inner_halfw">
-					<br><br>
-					<h4 style="margin-bottom:0;text-align:center;">Knowledge : Magic (Sphere)</h4>
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="text-align:center;"><i>The character's total infomation known about a sphere of magic and its associated
-							uses, creators and benefactors.</i></td></tr>
-						<tr><td style="text-align:left;"><b>Magically Studious</b> : A character cannot take checks of any magic sphere without 
-						invested skill points.</td></tr>
-					</table>
-					<p style="font-size:14px;text-align:center;"><b>THE 5 MAJOR MAGIC SPHERES</b></p>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Arcana</b></td></tr>
-						<tr><td style="text-align:center;"><i>Magic associated with matters of the arcane, from powerful law-altering rituals to the mythical 
-						leylines invisibly surrounding the world.</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Elemental</b></td></tr>
-						<tr><td style="text-align:center;"><i>Magic most commonly associated with the major elemental planes and its inhabitants,
-							usually of fire, earth, water or air.</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Light</b></td></tr>
-						<tr><td style="text-align:center;"><i>Magic revolving around the holy worship of the Light and its defenders. 
-							Often valued through religious texts and deities such as Eonna or Arenya.</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Distortion</b></td></tr>
-						<tr><td style="text-align:center;"><i>Magic that violates the laws of creation, such as bringing back the dead with necromancy,
-							or tearing reality itself apart to the forgotten gods' void.</i></td></tr>
-					</table>
-					<br>
-					<table>
-						<tr><td style="font-size:14px;text-align:center;"><b>Spirit</b></td></tr>
-						<tr><td style="text-align:center;"><i>Magic from the primal, ancient force of the natural world and the very lifeforce of
-							the realm of creation.</i></td></tr>
-					</table></p>
-					
-					<!-- OLD KNOWLEDGE SYSTEM
-					<br><br>
-					<h4 style="margin-bottom:0;">Knowledge:Arcane (Complex)</h4><hr style="margin-bottom:0;">
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="width:30%;">Intelligence</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's knowledge for matters of arcane, demonic and leyline magic.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-						</td></tr>
-					</table>
+<table class="skills">
+<tr><td colspan=2>CHARM - BEAUTY-  LIMITED SWIFT ACTION  </td></tr>
+<tr><td colspan=2>The creature's ability to use their attractiveness as a base
+        persuasion or to be focused upon.  </td></tr>
+<tr><td> Checks           </td><td> Per opponent, per situation. </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Will score.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td>
+    <td> <b>Pleasing Distraction</b> : Charm may be used as a standard action in combat
+         against all targets within 15 tiles. Allies have +3 to their Will for this. </td></tr>
+<tr><td> Additional       </td>
+    <td> <b>Heart Smitten</b> : Increase the difficulty check by 10 if the opponent
+         would not usually consider the charmer attractive.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The opponent gains charm points equal to your 5 + Beauty score - their Will (Min 1).  </td></tr>
+<tr><td> Success          </td><td> The opponent gains charm points equal to your 2 + Beauty score - their Will (Min 1).  </td></tr>
+<tr><td> Partial Success  </td><td> The opponent gains charm points equal to your Beauty score - their Will – 2 (Min. 1).  </td></tr>
+<tr><td> Fail             </td><td> The opponent loses all charm points and dislikes you.  </td></tr>
+<tr><td> Critical Fail    </td><td> The opponent loses all charm points and dislikes you immensly, seeing you as a threat. </td></tr>
+</table>
 
-					<h4 style="margin-bottom:0;">Knowledge:Creature (Type)</h4><hr style="margin-bottom:0;">
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="width:30%;">Intelligence</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's knowledge for a type of species or overarching race.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Difficulty Check</b> : Entirely dependant on the subject/query.
-							<br><br><b>Known Subjects</b> : Bluff, Diplomacy, Disguise, Handle Animal (if animal), Sense Motive.
-						</td></tr>
-					</table>
-					
-					<h4 style="margin-bottom:0;">Knowledge:Elemental (Type)</h4><hr style="margin-bottom:0;">
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="width:30%;">Intelligence</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's knowledge for matters of the elemntal planes.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Difficulty Check</b> : Entirely dependant on the item itself.
-							<br><br><b>Known Subjects</b> : Bluff, Diplomacy, Disguise, Handle Animal (if animal), Sense Motive.
-						</td></tr>
-					</table>
+<table class="skills">
+<tr><td colspan = 2> CLIMB - STRENGTH - AGILITY OR DEXTERITY MOVE ACTION  </td></tr>
+<tr><td colspan = 2> The creature's ability to climb rough surfaces, be it walls or cliffsides. </td></tr>
+<tr><td> Checks           </td><td> Per Move action  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.   </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes  </td></tr>
+<tr><td> Combat Uses      </td><td> None. </td></tr>
+<tr><td> Additional       </td>
+    <td> <b>Inherent Focus</b> : Increase the difficulty check by 3 if the creature is
+         in combat or doing an additional action.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Move your full movement.  </td></tr>
+<tr><td> Success          </td><td> Move half your movement.  </td></tr>
+<tr><td> Partial Success  </td><td> Fail to move, but don't fall.  </td></tr>
+<tr><td> Fail             </td><td> Fall 3 + the DC - your Climb skill tiles. (Min 1)  </td></tr>
+<tr><td> Critical Fail    </td><td> Fall off completely.  </td></tr>
+</table>
 
-					
-					<h4 style="margin-bottom:0;">Knowledge:Myths (Type) (Complex)</h4><hr style="margin-bottom:0;">
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="width:30%;">Intelligence</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's knowledge for matters of forgotten histories, magical creatures 
-							and mythical tales of a specific race.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Difficulty Check</b> : Entirely dependant on the item itself.
-						</td></tr>
-					</table>
-					
-					<h4 style="margin-bottom:0;">Knowledge:Nature (Type)</h4><hr style="margin-bottom:0;">
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="width:30%;">Intelligence</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's knowledge for matters of plants, beasts and herbs per habitat.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Difficulty Check</b> : Entirely dependant on the item itself.
-						</td></tr>
-					</table>
-					
-					<h4 style="margin-bottom:0;">Knowledge:Politics (Type) (Complex)</h4><hr style="margin-bottom:0;">
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="width:30%;">Intelligence</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's total knowledge for historical, religious and political happenings 
-							of an area.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Difficulty Check</b> : Entirely dependant on the item itself.
-						</td></tr>
-					</table>
-					
-					<h4 style="margin-bottom:0;">Knowledge:Region (Type)</h4><hr style="margin-bottom:0;">
-					<table style="margin-left:0;width:340px;">
-						<tr><td style="width:30%;">Intelligence</td><td>2 Standard Actions</td>
-						<tr><td colspan="2" style="text-align:left;"><i>The character's knowledge for an area's landscape, terrain and landmarks.</i></td></tr>
-						<tr><td colspan="2" style="text-align:left;">
-							<b>Difficulty Check</b> : Entirely dependant on the item itself.
-						</td></tr>
-					</table>
-				</div>		-->
-			
-			
-			
-			</div>
-	
-	
-		</div>
-	
-	</body>
-</html>
+</div></div>
+
+<img src="images/rulebook-skills1-img.png" >
+<p class="img-caption">
+Bonus Text!
+</p>
+
+</div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="bookpage">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> HIDE - DEXTERITY OR INSTINCT STANDARD ACTION   </td></tr>
+<tr><td> Description      </td><td> The creature's ability to hide and remain in the shadows.   </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.   </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Spot and Search checks.   </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None.  </td></tr>
+<tr><td> Additional       </td>
+    <td> Open Daylight : Hide checks cannot be used while in plain sight,
+         in the open or while being directly looked at.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> INTIMIDATE - STRENGTH, CONSTITUTION OR CHARISMA - LIMITED SWIFT ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to create or even fear within others.  </td></tr>
+<tr><td> Checks           </td><td> Per opponent, per situation.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Will score.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td>
+    <td> Battlecry : Intimidate may be used as a standard action in combat against
+         all targets within 15 tiles. Allies have +4 to their Will for this.  </td></tr>
+<tr><td> Additional       </td>
+    <td> Sizable Terror : Increase or decrease the Difficulty check by 3 peru
+         size smaller or greater than the opponent.   </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The opponent gains fear points equal to 5+ your chosen ability score - their Will (Min 1).  </td></tr>
+<tr><td> Success          </td><td> The opponent gains fear points equal to 2 + your chosen ability score - their Will (Min 1).  </td></tr>
+<tr><td> Partial Success  </td><td> The opponent gains fear points equal to your chosen ability score - their Will – 2 (Min. 1).  </td></tr>
+<tr><td> Fail             </td><td> The opponent loses 3 fear points. This does not affect allies.  </td></tr>
+<tr><td> Critical Fail    </td><td> The opponent loses all fear points. This does not affect allies.  </td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> INSPIRE - CHARISMA OR BEAUTY - LIMITED STANDARD ACTION   </td></tr>
+<tr><td> Description      </td><td> The creature's ability to inspire allies and rekindle their hope.  </td></tr>
+<tr><td> Checks           </td><td> Per target.  </td></tr>
+<tr><td> Difficulty Check </td><td> Target's fear points + 5  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td>
+    <td> Bolster : Inspire may be used as a standard action in combat for all
+         allies within 5 tiles.   </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Target loses fear points equal to 3 + your chosen ability score - the DC (Min 1).  </td></tr>
+<tr><td> Success          </td><td> Target loses fear points equal to your chosen ability score - the DC (Min 1).  </td></tr>
+<tr><td> Partial Success  </td><td> Target loses 1 fear point.  </td></tr>
+<tr><td> Fail             </td><td> Target doesn't lose any fear points.  </td></tr>
+<tr><td> Critical Fail    </td><td> Target gains 3 fear points.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> JUMP - AGILITY - LIMITED MOVE ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to jump over obstacles of height and distance. </td></tr>
+<tr><td> Checks           </td><td> Per Move action  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Make the jump and move again at half movement. </td></tr>
+<tr><td> Success          </td><td> Make the jump.  </td></tr>
+<tr><td> Partial Success  </td><td> Barely make the jump and catch the ledge.  </td></tr>
+<tr><td> Fail             </td><td> Catch yourself before jumping. Don't move.  </td></tr>
+<tr><td> Critical Fail    </td><td> Fail the jump and fall prone/fall down. </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> LISTEN - INSTINCT - LIMITED FREE/IMMEDIATE ACTION  </td></tr>
+<tr><td> Description      </td>
+    <td> The character's ability to focus on listening for specific noises and
+         filtering out unnecessary sounds.  </td></tr>
+<tr><td> Checks           </td><td> Per Move action  </td></tr>
+<tr><td> Difficulty Check </td><td> 1 per tile distance. Opponent's move silently skill.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Resonate : Yelling 1/5ths the difficulty, shouting halves it and whispering doubles it. </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> You hear the exact location of the sound.  </td></tr>
+<tr><td> Success          </td><td> You hear the sound/conversation and its approximate location.  </td></tr>
+<tr><td> Partial Success  </td><td> You hear noise, but nothing specific.  </td></tr>
+<tr><td> Fail             </td><td> You don't hear anything.  </td></tr>
+<tr><td> Critical Fail    </td><td> You think you hear something else...  </td></tr>
+</table>
+
+</div></div></div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="bookpage">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> MOVE SILENTLY - AGILITY, DEXTERITY OR INSTINCT MOVE ACTION   </td></tr>
+<tr><td> Description      </td><td> The creature's ability to not be heard whilst moving.  </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponen'ts Listen checks.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> SEARCH - INSTINCT, INTELLIGENCE OR WISDOM 10+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability for seaching the area and finding small details.  </td></tr>
+<tr><td> Checks           </td><td> Once per action. Cancelling early automatically fails.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Scrutiny : Increase the check result by 1 per doubling of time period searched.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> You successfully find everything in that area.  </td></tr>
+<tr><td> Success          </td><td> You find something in the location.  </td></tr>
+<tr><td> Partial Success  </td><td> You find traces, but nothing specific. Increase further check results by 1.  </td></tr>
+<tr><td> Fail             </td><td> You find nothing.  </td></tr>
+<tr><td> Critical Fail    </td><td> You hinder the evidence. Increase the difficulty check by 1 forever.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> SENSE MOTIVE - INSTINCT, INTELLIGENCE OR WISDOM SWIFT OR IMMEDIATE ACTION  </td></tr>
+<tr><td> Description      </td>
+    <td> The creature's ability to sense what others are feeling or thinking to do,
+         usually used when one thinks they are being lied to.  </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Bluff or Persuade skills.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> SPOT - INSTINCT - LIMITED STANDARD ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to notice larger details or incoming dangers before they occur.  </td></tr>
+<tr><td> Checks           </td><td> Once per action.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> You notice additional details. Gain +1 to the next roll against the target outside of combat.  </td></tr>
+<tr><td> Success          </td><td> You notice the target/opportunity/happening.  </td></tr>
+<tr><td> Partial Success  </td><td> You notice something out of the corner of your eye.  </td></tr>
+<tr><td> Fail             </td><td> You fail to notice anything.  </td></tr>
+<tr><td> Critical Fail    </td><td> You are distracted, and think you notice something that isn't there.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> TUMBLE - AGILITY MOVE/IMMEDIATE ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability in acrobatic movements and to fall gracefully.</td></tr>
+<tr><td> Checks           </td><td> Once per action/reaction to falling.  </td></tr>
+<tr><td> Difficulty Check </td><td> 3 per tile of Falling distance.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Increase falling distance by 5 tiles.  </td></tr>
+<tr><td> Success          </td><td> Increase falling distance by 3 tiles.  </td></tr>
+<tr><td> Partial Success  </td><td> Increase falling distance by 1 tile.  </td></tr>
+<tr><td> Fail             </td><td> Take the full falling damage.   </td></tr>
+<tr><td> Critical Fail    </td><td> Increase damage taken from the fall by 1 lethal damage per instance of distance.</td></tr>
+</table>
+
+<img src="images/rulebook-skills3-img.png" >
+<p class="img-caption">
+Bonus Text!
+</p>
+
+</div></div></div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="bookpage">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h2>LEARNED SKILLS</h2>
+
+<table class="skills">
+<tr><td> Skill            </td><td> APPRAISE - INSTINCT OR INTELLIGENCE 1 ROUND  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to judge the worth of a rare or unique item.  </td></tr>
+<tr><td> Checks           </td><td> Per Item  </td></tr>
+<tr><td> Difficulty Check </td><td> Per Item  </td></tr>
+<tr><td> Armour Penalty   </td><td> No   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Just a Guess : Appraise checks with Instinct increase the difficulty check by 1.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Know the exact price, +1 on any knowledge checks for the item.  </td></tr>
+<tr><td> Success          </td><td> Know the approximate worth.  </td></tr>
+<tr><td> Partial Success  </td><td> The guessed worth is slightly lower.  </td></tr>
+<tr><td> Fail             </td><td> The guessed worth is halved.  </td></tr>
+<tr><td> Critical Fail    </td><td> The guessed worth is wrong at 1/10th the worth.  </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> DISABLE DEVICE - DEXTERITY OR INTELLIGENCE - COMPLEX 5+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to disable mechanical devies, negating their use or effectiveness.  </td></tr>
+<tr><td> Checks           </td><td> Per obstacle.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per obstacle.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Taking Time : Increase the check result by i per doubling of time period searched.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The mechanism is dismantled and you may take a few parts intact.  </td></tr>
+<tr><td> Success          </td><td> The mechanism is disabled.   </td></tr>
+<tr><td> Partial Success  </td><td> The mechanism is disabled momentarily.  </td></tr>
+<tr><td> Fail             </td><td> Nothing happens.  </td></tr>
+<tr><td> Critical Fail    </td><td> The device activates again and further difficulty checks are increased by 1.  </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> DISGUISE - DEXTERITY - COMPLEX 10+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to hide their original looks and appear as another.  </td></tr>
+<tr><td> Checks           </td><td> Declaration - No roll required.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Sense Motive or Spot.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes   </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td>
+    <td> Disguise Issues : Age (-1), Gender (-3), Size (-5 per larger,
+        -8 per smaller), Species (-10).  </td></tr>
+<tr><td>                  </td>
+    <td> Materials : The disguise needs appropriate materials. The disguise is
+         at -3 per material missing, per the GM's discretion.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> - </td></tr>
+<tr><td> Success          </td><td> - </td></tr>
+<tr><td> Partial Success  </td><td> - </td></tr>
+<tr><td> Fail             </td><td> - </td></tr>
+<tr><td> Critical Fail    </td><td> - </td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> FORAGE FOOD - INSTINCT OR WISDOM 10+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to find food in the wilderness or areas of difficulty.  </td></tr>
+<tr><td> Checks           </td><td> Once per day.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per area.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Survival of the Pack : Hunger points reduced may be split with party members.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Reduce hunger by the chosen ability score   </td></tr>
+<tr><td> Success          </td><td> Reduce hunger by half the chosen ability score.  </td></tr>
+<tr><td> Partial Success  </td><td> Reduce hunger points by 1.  </td></tr>
+<tr><td> Fail             </td><td> You find nothing.  </td></tr>
+<tr><td> Critical Fail    </td><td> You eat something offputting. Gain 2 hunger.  </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> FORGE COPY - DEXTERITY OR INTELLIGENCE - COMPLEX 5+ ROUNDS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to duplicate lettering and symbols.  </td></tr>
+<tr><td> Checks           </td><td> Once per item.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per item  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td>
+    <td> Linguistic Issue : Further increase the difficulty by 3 per complexity
+         of the language bieng copied if the forger doesn't know the language.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The forgery's DC is the skill's value +5  </td></tr>
+<tr><td> Success          </td><td> The forgery's DC is the skill's value.   </td></tr>
+<tr><td> Partial Success  </td><td> The forgery's DC is the skill's value -2.  </td></tr>
+<tr><td> Fail             </td><td> The forgery's DC is the skill's value - 5.  </td></tr>
+<tr><td> Critical Fail    </td><td> The forgery's DC is the skill's value - 10.  </td></tr>
+</table>
+
+</div></div></div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+
+<div class="bookpage">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> HANDLE ANIMAL - INSTINCT OR WISDOM - COMPLEX 1 ROUND </td></tr>
+<tr><td> Description      </td><td> The creature's ability to take care of tamed animals, as well as the ability to teach them tricks.  </td></tr>
+<tr><td> Checks           </td><td> Per creature.  </td></tr>
+<tr><td> Difficulty Check </td><td> Creature's will + instinct/2.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Wild : Wild animals are immune to Handle Animal.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The animal gets +1 to their asked task.  </td></tr>
+<tr><td> Success          </td><td> The animal does as commanded.  </td></tr>
+<tr><td> Partial Success  </td><td> The animal does as commanded, but at -1.  </td></tr>
+<tr><td> Fail             </td><td> The animal fails to understand the command.  </td></tr>
+<tr><td> Critical Fail    </td><td> The animal gets irritated and increases further DCs for the day by 1.  </td></tr>
+</table>
+
+<table class="skills">
+<tr><td> Skill            </td><td> HEAL - INTELLIGENCE OR WISDOM - COMPLEX X HOURS  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to disable mechanical devies, negating their use or effectiveness.  </td></tr>
+<tr><td> Checks           </td><td> Once per day per target.  </td></tr>
+<tr><td> Difficulty Check </td><td> 5+ total wounds - hours taken.  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td>
+    <td> First Aid : Heal can be used as a standard action to stop bleeding out
+         at a difficulty check of 5 +/- 1 per target's size difference.
+        (Smaller is easier, larger is harder).  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The target gains the chosen ability's worth of healing points.  </td></tr>
+<tr><td> Success          </td><td> The target gains the chosen ability's worth of healing points / 2.  </td></tr>
+<tr><td> Partial Success  </td><td> The target gains i healing point.  </td></tr>
+<tr><td> Fail             </td><td> The target heals nothing.  </td></tr>
+<tr><td> Critical Fail    </td>
+    <td> Worsen the wound. The target loses 1 healing points. If they have no healing points,
+         they take 1 lethal damage.  </td></tr>
+</table>
+
+
+</div><div class="bookpage-column">
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> PERSUADE - WISDOM OR CHARISMA 1 ROUND  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to change the mindset of others and convince them of a certain viewpoint.  </td></tr>
+<tr><td> Checks           </td><td> Once per target.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Sense Motive  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Diplomacy : Persuasion through wisdom gains +/- 1 per reputation level.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The target is persuaded. Increase reputation by 1.  </td></tr>
+<tr><td> Success          </td><td> The target is persuaded.  </td></tr>
+<tr><td> Partial Success  </td><td> The target will begrudgingly think about it.  </td></tr>
+<tr><td> Fail             </td><td> The target disagrees to the persuasion.  </td></tr>
+<tr><td> Critical Fail    </td><td> The target feels insulted and is angered. </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> PICK POCKET - DEXTERITY OR INTELLIGENCE - COMPLEX STANDARD ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to steal from another without them noticing  </td></tr>
+<tr><td> Checks           </td><td> Once per round.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's Spot  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Small Advantage : Reduce the difficulty per item size smaller than you.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Grab an additional random item of equal size.  </td></tr>
+<tr><td> Success          </td><td> Grab the item you were trying to.  </td></tr>
+<tr><td> Partial Success  </td><td> Grab a random item of equal size, with a chance of grabbing the item you were trying to.  </td></tr>
+<tr><td> Fail             </td><td> Fail the pick pocket.  </td></tr>
+<tr><td> Critical Fail    </td><td> The target notices you tried to pick pocket them.  </td></tr>
+</table>
+
+</div></div>
+
+<img src="images/rulebook-skills5-img.png" >
+<p class="img-caption">
+Bonus Text!
+</p>
+
+</div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="bookpage">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> RIDE - AGILITY, INSTINCT OR WISDOM SWIFT ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to ride upon mounts, tamed or untamed, without falling off.  </td></tr>
+<tr><td> Checks           </td><td> Once per creature  </td></tr>
+<tr><td> Difficulty Check </td><td> Mount's (Agility + Instinct)/2. Increase by +3 if attempting to do an additional action.  </td></tr>
+<tr><td> Armour Penalty   </td><td> Yes  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> Riding Companion : If the mount is willing to have a rider upon it, decrease the DC by 10.  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> You no longer take penalties for additional actions while riding.  </td></tr>
+<tr><td> Success          </td><td> You ride the mount successfully  </td></tr>
+<tr><td> Partial Success  </td><td> You ride the mount successfully, but with a -1 to all other rolls while riding.  </td></tr>
+<tr><td> Fail             </td><td> You fall off.  </td></tr>
+<tr><td> Critical Fail    </td><td> You fall off and take -1 on your next ride check.  </td></tr>
+</table>
+
+
+<table class="skills">
+<tr><td> Skill            </td><td> SWIM - STRENGTH OR AGILITY - LIMITED MOVE ACTION  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to move through and float in liquid based bodies.  </td></tr>
+<tr><td> Checks           </td><td> Once per action.  </td></tr>
+<tr><td> Difficulty Check </td><td> Per Situation *   </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td>
+    <td> Environmental Challenges : The DC is as follows :</br>
+         - Still waters - 5</br>
+         - Rough waters - 8</br>
+         - Rapids - 13</br>
+         - Large ocean waves - 15</br>
+         - Stormy ocean - 18</br>
+         - Waterfall pull - 20</br>
+         - Whirlpool - 25  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Move at full speed.  </td></tr>
+<tr><td> Success          </td><td> Move at half speed.  </td></tr>
+<tr><td> Partial Success  </td><td> Don't move, but don't sink.  </td></tr>
+<tr><td> Fail             </td><td> Begin sinking.  </td></tr>
+<tr><td> Critical Fail    </td><td> Thrash, making the situation worse. Increase the DC of the next roll by 1.  </td></tr>
+</table>
+
+
+</div><div class="bookpage-column">
+
+<table class="skills">
+<tr><td> Skill            </td><td> TRACK - INSTINCT, INTELLIGENCE OR WISDOM 1 ROUND  </td></tr>
+<tr><td> Description      </td><td> The creature's ability to follow a target's whearabouts and previous paths.  </td></tr>
+<tr><td> Checks           </td><td> Once per round.  </td></tr>
+<tr><td> Difficulty Check </td><td> Opponent's size/weight (GM's discretion).  </td></tr>
+<tr><td> Armour Penalty   </td><td> No  </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> None  </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> Find tracks with the exact direction.  </td></tr>
+<tr><td> Success          </td><td> Find related tracks with an approximate direction.  </td></tr>
+<tr><td> Partial Success  </td><td> Find related tracks, but are unable to discern the direction.  </td></tr>
+<tr><td> Fail             </td><td> Find no related tracks to the search   </td></tr>
+<tr><td> Critical Fail    </td><td> Follow the wrong tracks.  </td></tr>
+</table>
+
+<img src="images/rulebook-skills6-img.png" >
+<p class="img-caption">
+Bonus Text!
+</p>
+
+</div></div> </div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="bookpage">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h3>TRADE SKILLS</h3>
+<p>
+Unlike the traditional Natural and Learned skills, which each have singular
+specific checks and results, trade skills all roll off of the same challenges.
+
+<h3>INSPIRATION TRADE SKILLS</h3>
+<p>
+These skill have a potential to increase the rolls of the target by inspiring
+them to greater heights. If multiple inspiration trade skills are used,
+the highest DC beaten is used. The bonuses given by DC's also give all previous
+tier bonuses.
+</p>
+
+<table class="skills">
+<tr><td> Skill            </td><td> </td></tr>
+<tr><td> Description      </td><td> </td></tr>
+<tr><td> Checks           </td><td> Once per day  </td></tr>
+<tr><td> Difficulty Check </td><td> Choose from one:
+   Terrible -1 to all roll results </br>
+   Uninspired - 1 to all roll values </br>
+   Basic </br>
+   5 - Fine +1 Will for the day. (+1 per tier) </br>
+   8 - Beautiful +1 to one's highest skill value </br>
+   12 - Graceful +1 to all skill attempt values. </br>
+   17 - Elegant +1 to all roll values </br>
+   23 - Alluring +2 to all roll values </br>
+   30 - Enthralling +1 to all roll results </br>
+   45 - Divine Increase all previous bonuses by 1. </br>
+</td></tr>
+<tr><td> Armour Penalty   </td><td>Acting and Dances only. </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> See Trade Skill Bonuses. </td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The inspiration is even greater than intended.  Increase the attempted performance by 1 stage.</td></tr>
+<tr><td> Success          </td><td> The inspiration is as attempted.  </td></tr>
+<tr><td> Partial Success  </td><td> The performance was almost as intended, reduce the inspiration to 1 stage lower than your skill value.  </td></tr>
+<tr><td> Fail             </td><td> The performance failed to be as intended, reduce the performance by 2 stages lower than your skill value.  </td></tr>
+<tr><td> Critical Fail    </td><td> The performance fails. Reduce the attempted performance to 3 stages lower than your skill value.</td></tr>
+</table>
+
+<h3>CRAFT TRADE SKILLS</h3>
+<p>
+These skill are used to create things of astonishing quality. While each trade
+has its own use, they will not be listed here in extreme detail as the variety
+of objects that can be created are too many to list, and it is mostly up to the
+DM to say what the result entails.
+</p>
+
+<table class="skills">
+<tr><td> Skill            </td><td> </td></tr>
+<tr><td> Description      </td><td> </td></tr>
+<tr><td> Checks           </td><td> Once per day  </td></tr>
+<tr><td> Difficulty Check </td><td> Object dependant.</td></tr>
+<tr><td> Armour Penalty   </td><td> No </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> See Trade Skill Bonuses.</td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> A mistake is a happy accident. The object is an even greater masterpiece than intended.</td></tr>
+<tr><td> Success          </td><td> The object is created accordingly.</td></tr>
+<tr><td> Partial Success  </td><td> The object is created, but twice the materials were used.</td></tr>
+<tr><td> Fail             </td><td> The object is a failure and no materials remain.</td></tr>
+<tr><td> Critical Fail    </td><td> The object costs twice the material value.</td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<h3>TRADE SKILL BONUSES</h3>
+<p>
+Trade skills often also grow the creature's ability in a few other skills,
+though not as quickly as if they had focused solely on that one aspect.
+Increase the related skills by half the value of the trade skill, rounded down.
+Limited skills still apply their further halving to this bonus.
+</p>
+
+<b>TRADE SKILL BONUSES</b>
+<table>
+<tr></th> Skill         </th><th>   Type        </th><th> Bonuses                                            </td></tr>
+<tr></td> Act           </td><td>   Inspiration </td><td> Bluff, Disguise, Persuade                          </td></tr>
+<tr></td> Dance (Wild)  </td><td>   Inspiration </td><td> Balance, Charm, Jump                               </td></tr>
+<tr></td> Dance (Court) </td><td>   Inspiration </td><td> Bluff, Disguise, Persuade                          </td></tr>
+<tr></td> Illustrate    </td><td>   Inspiration </td><td> Forge Copy, Sense Motive, Spot                     </td></tr>
+<tr></td> Instrument    </td><td>   Inspiration </td><td> Persuade, Listen, Appraise                         </td></tr>
+<tr></td> Sing          </td><td>   Inspiration </td><td> Bluff, Charm, Persuade                             </td></tr>
+<tr></td> Speech        </td><td>   Inspiration </td><td> Bluff, Persuade, Sense Motive                      </td></tr>
+<tr></td> Cook          </td><td>   Craft       </td><td> Know. Nature, Forage, Track, Spot, Appraise        </td></tr>
+<tr></td> Smith         </td><td>   Craft       </td><td> Know. Geo, Spot, Appraise, Disable Device, Search  </td></tr>
+<tr></td> Stonework     </td><td>   Craft       </td><td> Know.Geo./Nature, Appraise, Spot, Search           </td></tr>
+<tr></td> Weave         </td><td>   Craft       </td><td> Know. Nature, Spot, Appraise, Forage, Search       </td></tr>
+<tr></td> Woodwork      </td><td>   Craft       </td><td> Know.Nature, Appraise, Forage, Spot, Search        </td></tr>
+</table>
+
+<img src="images/rulebook-skills7-img.png" >
+<p class="img-caption">
+“There is no treasure quite like living the moment, with the
+exception of delicious food.” - Falgrii saying
+</p>
+
+</div></div></div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+
+<div class="bookpage">
+
+<h1>INTERACTIONS</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
+
+<h2>KNOWLEDGE SKILLS</h2>
+<p>
+Knowledge skills are much like the trade skills in that they all share the same
+difficulty check. Unlike trade skills however, knowledge skills don't have a
+choice for their difficulty check and instead function like normal skills in
+that the knowledge in question is the difficulty check.
+</p>
+
+<p>
+Knowledge skills can overlap as well, and any creature may roll all the knowledge
+skills they think will give information and are not limited to rolling a single
+knowledge skill per query. Each knowledge facet will give different answers.
+</p>
+
+<h3>KNOWLEDGE SKILLS</h3>
+
+<table class="skills">
+<tr><td> Skill            </td><td> </td></tr>
+<tr><td> Description      </td><td> </td></tr>
+<tr><td> Checks           </td><td> Once per knowledge</td></tr>
+<tr><td> Difficulty Check </td><td> Per query.</td></tr>
+<tr><td> Armour Penalty   </td><td> No </td></tr>
+<tr><td> Combat Uses      </td><td> None  </td></tr>
+<tr><td> Additional       </td><td> See below.</td></tr>
+<tr class="separator"><td></td><td></td></tr>
+<tr><td> Critical Success </td><td> The knowledge is well known to the creature.  Gain an additional piece of information for free.</td></tr>
+<tr><td> Success          </td><td> The queried knowledge is satisfied and known.</td></tr>
+<tr><td> Partial Success  </td><td> The knowledge is somewhat known, but the answer known is vague at best.</td></tr>
+<tr><td> Fail             </td><td> The knowledge is unknown.</td></tr>
+<tr><td> Critical Fail    </td><td> The character thinks the answer is something that is not even relevant.</td></tr>
+</table>
+
+</div><div class="bookpage-column">
+
+<h3>SIMILAR KNOWLEDGE - REGION </h3>
+<p>
+<b>Very Similar</b> : Creatures may attempt Knowledge : Region checks for sub-skills
+a similar aspect, such as a Knowledge : Nature check for a different region of
+desert, although with a -2 penalty
+</p>
+
+<p>
+<b>Somewhat Similar</b> : Knowledge skills that share a bit of a similar aspect,
+like a river to a lake, take a -4 penalty.
+</p>
+
+<p>
+<b>Barely Similar</b> : Knowledge skills that are too different but still in the
+same sphere, such as knowledge of deserts versus knowledge of forests
+take a -7 penalty.
+</p>
+
+<h3>SIMILAR KNOWLEDGE - RACE</h3>
+<p>
+Same sub-race : Creatures may attempt Knowledge : Race checks for unknown races
+of the same species (human variation against another human variation), although
+with a -2 penalty
+</p>
+
+<p>
+<b>Known species</b> : If the species are known to one another but not of the same
+species (humans and aelvenkin), the penalty is instead -4.
+</p>
+
+<p>
+<b>Conflicted species</b> : If the races are known to one another but not in good
+standing (humans and goblinkin), the penalty is dropped to -7.
+</p>
+
+<p>
+<b>Unknown/Mythical species</b> : If the species barely know or are unknown to one
+another (humans and faefolk), the penalty is -10.
+</p>
+
+<h3>SIMILAR KNOWLEDGE - MAGIC</h3>
+<p>
+<b>Different Sphere</b> : Creatures may attempt Knowledge : Magic checks for
+spheres other than their own, although with a -5 penalty.
+</p>
+
+</div></div>
+
+<img src="images/rulebook-skills8-img.png">
+<p class="img-caption">
+“The realm is vast beyond imagining, with ancient knowledge and forgotten ruins
+or ruins to be ‘round every corner.” -Talon Kiel, adventurer
+</p>
+
+</div>
+
+</body></html>
+
+

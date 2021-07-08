@@ -1,127 +1,242 @@
-			/* -- CSS Coment syntax -- */
-			
-			/* -- TOP LEFT TITLE -- */
-			.title {
-				position:fixed;
-			}
-			
-			/* -- SIDEBAR -- */
-			.sidenav {
-				height: 100%;
-				width: 220px;
-				position: fixed;
-				z-index: 1;
-				top: 0;
-				left: 0;
-				background-color: white;
-				background-image: url("images/general/BG_Banner.png");
-				background-repeat: no-repeat;
-				padding-top: 20px;
-				overflow: auto;
-			}
-			.sidenav a {
-				text-align: center;
-				line-height: 20px;
-				margin-left : 0px;
-				color: black;
-			}
-			.sidenav button {
-				border: 3px solid transparent;
-				padding: 6px 10px;
-				text-align: center;
-				width: 93%;
-				margin-left: 8px;
-				background-color: transparent;
-				background-image: url("images/general/Button_Norm.jpg");
-				background-size: cover;
-				background-repeat: no-repeat;
-			}
-			
-			.sidenav button:hover {
-				background-image: url("images/general/Button_Hovered.jpg");
-			}
-			
-			/* -- PAGES -- */
-			.main {
-				margin: auto;
-				padding-left: 230px;
-				max-width: 800px;
-			}
-			
-			.main2 {
-				margin: auto;
-				padding-left: 230px;
-				max-width: 910px;
-			}
-			
-			.page {
-				width: 820px;
-				height: 1100px;
-				/*border: 1px solid black;*/
-				margin-top: 125px;
-			}
-			
-			.main_page {
-				width: 820px;
-				height: 200px;
-				margin-top: 125px;
-			}
-			
-			.page_inner_halfw {
-				float: left;
-				width: 42%;
-				height: 1050px;
-				/*border: 1px solid black;*/
-				margin-left: 40px;
-			}
-			
-			.page_inner_halfh {
-				float: left;
-				width: 89%;
-				height: 525px;
-				/*border: 1px solid black;*/
-				margin-left: 40px;				
-			}
+/* -- CSS Comment syntax -- */
 
-			.page_inner_halfhw {			
-				float: left;
-				width: 42%;
-				height: 525px;
-				/*border: 1px solid black;*/
-				margin-left: 40px;
-			}	
-			
-			.page_inner_full {			
-				float: left;
-				width: 89%;
-				height: 1050px;
-				/*border: 1px solid black;*/
-				margin-left: 40px;
-			}		
-			
-			/* -- OTHER DETAILS -- */
-			p, i {
-				text-align: justify;
-				font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-				font-size: 12px;
-			}
-			
-			
-			table, th, tr, td {
-				border: 1px solid black;
-				border-collapse: collapse;
-				width: 320px;
-				text-align: center;
-				font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-				font-size: 12px;
-				margin: auto;
-			}
-			
-			
-			.box {
-				float: left;
-				width: 8px;
-				height: 8px;
-				margin: 2px;
-				border: 1px solid black;
-			}
+/* -- NAVIGATION SIDEBAR -- */
+.nav {
+	height: 100%;
+	width: 220px;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: white;
+	background-image: url("images/general/BG_Banner.png");
+	background-repeat: no-repeat;
+	padding-top: 20px;
+	overflow: auto;
+}
+.nav button:hover {
+	background-image: url("images/general/Button_Hovered.jpg");
+}
+.homemenu {
+    color:white;
+    margin-left:5px;
+    margin-bottom:0px;
+	width:208px;
+}
+.menu {
+	border: 3px solid transparent;
+	text-align: center;
+	width: 93%;
+	padding: 6px 10px;
+	text-align: center;
+    font-weight: bold;
+	margin-left: 8px;
+	background-color: transparent;
+	background-image: url("images/general/Button_Norm.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.submenu {
+	margin-left: 28px;
+	width: 80%;
+}
+.picked {
+    background-image:url("images/general/Button_Picked.jpg");
+}
+
+/* -- MAIN CONTENT PAGES -- */
+.main {
+	margin: auto;
+	padding-left: 230px;
+	max-width: 800px;
+}
+
+.main2 {
+	margin: auto;
+	padding-left: 230px;
+	max-width: 910px;
+}
+
+.page {
+	width: 820px;
+	height: 1100px;
+	/*border: 1px solid black;*/
+	margin-top: 125px;
+}
+
+.main_page {
+	width: 820px;
+	height: 200px;
+	margin-top: 125px;
+}
+
+.page_inner_halfw {
+	float: left;
+	width: 42%;
+	height: 1050px;
+	/*border: 1px solid black;*/
+	margin-left: 40px;
+}
+
+.page_inner_halfh {
+	float: left;
+	width: 89%;
+	height: 525px;
+	/*border: 1px solid black;*/
+	margin-left: 40px;
+}
+
+.page_inner_halfhw {
+	float: left;
+	width: 42%;
+	height: 525px;
+	/*border: 1px solid black;*/
+	margin-left: 40px;
+}
+
+.page_inner_full {
+	float: left;
+	width: 89%;
+	height: 1050px;
+	/*border: 1px solid black;*/
+	margin-left: 40px;
+}
+
+/* -- OTHER DETAILS -- */
+p, i, li, th, tr, td {
+	text-align: justify;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12px;
+}
+
+table, th, tr, td {
+    width: 90%;
+	border: 1px solid black;
+	border-collapse: collapse;
+	text-align: center;
+	margin: auto;
+}
+table tr:first-child {
+    background-color: #AB8C70;
+}
+table tr:nth-child(even) {
+    background-color: #DCD1C4;
+}
+th, tr, td {
+    width: 1%;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.logo {
+    width: 300px;
+}
+
+.box {
+	float: left;
+	width: 8px;
+	height: 8px;
+	margin: 2px;
+	border: 1px solid black;
+}
+
+/* -- MAIN PAGES -- */
+.nav { grid-area: nav; }
+.content {
+    grid-area: main;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-container {
+  display: grid;
+  grid-template-areas: 'nav main';
+  grid-template-columns: 230px 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+  /*
+  background-color: #2196F3;
+  */
+}
+
+/* -- BOOK PAGE -- */
+.bookpage {
+	max-width: 800px;
+    height: 1000px;
+	text-align: justify;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 12px;
+    background-image: url('images/rulebook/page-background.png');
+    background-repeat:no-repeat;
+    background-size: 800px 1000px;
+}
+.bookpage p {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:0;
+    margin-top:0;
+}
+.bookpage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.bookpage h1 {
+    padding-top: 25px;
+	font-size: 24px;
+    text-align: center
+}
+.bookpage h2 {
+	font-size: 18px;
+    text-align: center
+}
+.bookpage h3 {
+	font-size: 14px;
+    padding-left: 18px;
+    padding-top: 10px;
+    margin: 0px;
+}
+.bookpage h4, h5 {
+	font-size: 12px;
+    padding-left: 18px;
+    padding-top: 10px;
+    margin: 0px;
+}
+.bookpage-columns {
+    display: flex;
+    align-items: flex-end;
+}
+.bookpage-column {
+    flex: 50%;
+    padding: 20px;
+    align-self:stretch;
+}
+.img-caption {
+    font-style: italic;
+}
+table.skills {
+    width: 100%;
+    table-layout: auto;
+    margin-bottom: 15px;
+}
+table.skills td {
+    text-align: left;
+}
+table.skills td:first-child {
+    font-weight: bold;
+    width: 28%;
+}
+table.skills td:last-child {
+    width: 72%;
+}
+table.skills tr.separator {
+    height: 5px;
+    background-color: #AB8C70;
+}

@@ -5,47 +5,36 @@
 		<meta name="author" content="Julien Ruest" charset="UTF-8">
 		<link href="../website_css.css" rel="stylesheet" type="text/css">
 	</head>
-	
-	<body>	
-		<!-- Side Navigation Buttons -->
-		<div class="sidenav">
-			<!-- Main Logo -->
-			<a href="../index.html" style="color:white;margin-left:5px;margin-bottom:0px;"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" 
-			alt="AVORKARTH" style="width:208px;"></a>
-			
-			<br><br>
-			
-			<!-- Book Choice -->
-			<a href="../rulebook.html"><button><b>Rulebook</b></button></a>	
-			<!-- <a href="../rulebook.html"><button><b>Rulebook (Old - Complete)</b></button></a>-->
-			<a href="../worldlore.html"><button style="background-image:url('../images/general/Button_Picked.jpg');"><b>World Lore</b></button></a>
-			<a href="../tale.html"><button><b>Tale of the Fifth Age</b></button></a>
-			<a href="../adventures.html"><button><b>Adventures</b></button></a>
-			<br><br>
-			<a href="../charactersheet.html"><button><b>Character Sheet</b></button></a>
-			<a href="../changelog.html"><button><b>Changelog</b></button></a>
-			
-			<!-- Title -->
-			<h2 style="text-align:center;color:white;margin-bottom:0;"><b>World Lore</b></h2>
-			<hr style="width:50%;margin-top:0;">
-			
-			<!-- Chapters -->
-			<a href="../worldlore/creatures.html"><button style="background-image:url('../images/general/Button_Picked.jpg');"><b>Creatures</b></button></a>
-			<a href="../worldlore/equipment.html"><button><b>Equipment</b></button></a>
-			<a href="../worldlore/factions.html"><button><b>Factions</b></button></a>
-			<a href=""><button><b>Areas (Empty for now)</b></button></a>
-			<a href="../worldlore/timeline.html"><button><b>Timeline</b></button></a>
-			
-			<!-- Links -->
-			<p><br><br>
-			<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
-			<img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner" style="width:200px;display:block;margin:auto;"></a>
-			<br>
-			<a href="https://www.patreon.com/avorkarth">
-			<img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner" style="width:200px;display:block;margin:auto;"></a>
-			</p>
-		</div>
-	
+
+	<body>
+	    <!-- Navigation -->
+	    <div class="nav">
+	    	<!-- Main Logo -->
+	    	<a href="../index.html" class="homemenu"><img src="../images/general/AvorkarthLogo_Main_Alpha.png" alt="AVORKARTH"></a>
+
+	    	<!-- Book Choice -->
+	    	<a href="../rulebook/startup.html"><button class="menu">Rulebook</button></a>
+	    	<a href="../worldlore.html"><button class="menu">World Lore</button></a>
+	    	<a href="../worldlore/creatures.html"><button class="menu submenu picked">Creatures</button></a>
+	    	<a href="../worldlore/equipment.html"><button class="menu submenu">Equipment</button></a>
+	    	<a href="../worldlore/factions.html"><button class="menu submenu">Factions</button></a>
+	    	<a href="../worldlore/languages.html"><button class="menu submenu">Languages</button></a>
+	    	<a href="../worldlore/timeline.html"><button class="menu submenu">Timeline</button></a>
+	    	<a href="../tale.html"><button class="menu">Tale of the Fifth Age</button></a>
+	    	<a href="../adventures.html"><button class="menu">Adventures</button></a>
+	    	<br><br>
+	    	<a href="../charactersheet.html"><button class="menu">Character Sheet</button></a>
+	    	<a href="../changelog.html"><button class="menu">Changelog</button></a>
+
+	    	<!-- Links -->
+            <br><br><br>
+	    	<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
+	    	    <img src="../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner"></a>
+	    	<br>
+	    	<a href="https://www.patreon.com/avorkarth">
+	    	    <img src="../images/general/Patreon_Image.jpg" alt="Patreon_Banner"></a>
+	    </div>
+
 	<!-- Main Page content -->
 		<div class="main">
 			<div class="page">
@@ -54,7 +43,7 @@
 <hr>
 			<h4 style="text-align:center;">Reading Creatures</h4>
 			<table style="width:90%;">
-			<tr style="">
+			<tr style="width:30%">
 			<td style="border:none;font-size:15px;text-align:left;width:30%;"><b>Karthian/common naming</b></td>
 			<td style="text-align:left;"><b>Rarity</b> - Indicated by the number of dots, higher is rarer, from a scale of 0 to 10.</td>
 			</tr>
@@ -65,12 +54,11 @@
 <!--
 list by faction? (Common beasts, common undead, common humanoid, common fae, common dragonid, common elementals...) so on.
 Things I need : Karthian name, Species name (if any)
-OR 
+OR
 Put links at the top of the page - Humanoids (rarity) - Fae (rarity) - Dragonids (rarity) - Beasts (rarity) - Elementals (rarity) - Undead (rarity) -->
 <hr>
 			<h4 style="text-align:center;">COMMON ADVENTURING SPECIES</h4>
-			<h5 style="text-align:center;">--- HUMANOIDS ---</h5>
-			
+
 			<!--KARTHIAN--><a href="creatures/human_karthian.html"><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HUMAN</b></td>
 			<td style="text-align:left;"><b>RARITY</b> -</tr>
@@ -90,175 +78,531 @@ Put links at the top of the page - Humanoids (rarity) - Fae (rarity) - Dragonids
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>TILDRAN</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;</tr>
-			</table></a>			
+			</table></a>
 			<br>
 			<!--THRAKAEN--><a href="creatures/human_thrakaen.html"><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HUMAN|BARBARIAN</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>THRAKAEN</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;</tr>
-			</table></a>			
+			</table></a>
 			<br>
 			<!--XIA--><a href="creatures/human_xia.html"><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HUMAN|EASTERNER</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>XIA</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;&#9898;</tr>
-			</table></a>			
+			</table></a>
 			<br>
 			<!--DAELDEN--><a href="creatures/human_daelden.html"><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HUMAN|ELDER HUMAN</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>DAELDEN</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
-			</table></a>			
+			</table></a>
 			<br>
 			<!--FALGRII--><a href="creatures/halfling.html"><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HALFLING|LITTLE FOLK</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>FALGRII</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;&#9898;</tr>
-			</table></a>		
+			</table></a>
 			<br>
 			<!--RUNNOC--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>DWARF</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>RUNNOC</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;&#9898;</tr>
-			</table>			
+			</table>
 			<br>
 			<!--NAREI--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ELF</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>NAREI</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;&#9898;</tr>
-			</table>			
-			<br>		
+			</table>
+			<br>
 <hr>
 			<h4 style="text-align:center;">--- HUMANOIDS ---</h4>
+			<!--CENTAUR--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>CENTAUR</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>HIRAN</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;</tr>
+			</table>
+			<br>
+			<!--CYCLOPS--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>CYCLOPS</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;</tr>
+			</table>
+			<br>
+			<!--ETTIN--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ETTIN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;</tr>
+			</table>
+			<br>
 			<!--SANGUINNAR--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ELF|AELVENKIN</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>SANGUINNAR</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
-			</table>			
+			</table>
 			<br>
 			<!--SILDAEN--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ELF|AELVENKIN</b></td>
-			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>SILDAEN</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
-			</table>			
-			<br>			
+			</table>
+			<br>
+			<!--GIANT HILL--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GIANT | HILL</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;</tr>
+			</table>
+			<br>
+			<!--GIBLIN--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GIBLIN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;</tr>
+			</table>
+			<br>
+			<!--GNOLL--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GNOLL</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;</tr>
+			</table>
+			<br>
+			<!--GOBLIN--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GOBLIN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;</tr>
+			</table>
+			<br>
+			<!--HARPY CROW--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HARPY | CROW</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;</tr>
+			</table>
+			<br>
+			<!--HARPY--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HARPY | SYLLAN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;</tr>
+			</table>
+			<br>
+			<!--HOBGOBLIN--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HOBGOBLIN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;</tr>
+			</table>
+			<br>
 			<!--KOBOLD--><a href="creatures/kobold.html"><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>KOBOLD</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>DRIKID</b></td>
-			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;</tr>
-			</table></a>			
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;</tr>
+			</table></a>
 			<br>
 			<!--ORCLING--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ORCLING</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
-			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;</tr>
-			</table>			
-			<br>				
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;</tr>
+			</table>
+			<br>
 <hr>
 			<h4 style="text-align:center;">--- BEASTS ---</h4>
 
+			<!--APE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>APE</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table></a>
+			<br>
+			<!--BAT--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>BAT</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table></a>
+			<br>
+			<!--BEAR--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>BEAR</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table></a>
+			<br>
+			<!--BOAR--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>BOAR</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table></a>
+			<br>
+			<!--CROCODILE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>CROCODILE</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table></a>
+			<br>
 			<!--DEER--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>DEER</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table></a>			
-			<br>				
+			</table></a>
+			<br>
+			<!--GORAGH--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GORAGH</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--GRYPHON--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GRYPHON</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
 			<!--HORSE--><a href="creatures/horse.html"><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HORSE</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table></a>			
+			</table></a>
+			<br>
+			<!--HYPPOGRYPH--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HIPPOGRYPH</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--SNAKE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>SNAKE</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table></a>
 			<br>
 			<!--WOLF--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>WOLF</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table></a>			
+			</table></a>
 			<br>
-		
+
 <hr>
-			<h4 style="text-align:center;">--- MAGICAL BEASTS ---</h4>
-			
+			<h4 style="text-align:center;">--- MAGIC BEASTS ---</h4>
+			<!--AETHER GLIDER--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>AETHER GLIDER</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--ARCHTEN--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ARCHTEN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--BARGHEST--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>BARGHEST</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--BASILISK--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>BASILISK</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--CHIMERA--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>CHIMERA</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--COUATLE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>COUATLE</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--HYDRA--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>HYDRA</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--KRAKEN--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>KRAKEN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--LEVIATHAN--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>LEVIATHAN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
 			<!--PHOENIX--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>PHOENIX</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table>			
-			<br>	
+			</table>
+			<br>
 <hr>
-			<h4 style="text-align:center;">--- FAE-FOLK ---</h4>
-			
-			<!--PHOENIX--><table style="width:90%;">
-			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>PIXIE</b></td>
+			<h4 style="text-align:center;">--- MAGIC ENTITIES ---</h4>
+			<!--DJINN--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>DJINN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--ETHEREAL--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ETHEREAL</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>AOLEI</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> &#9898;&#9898;&#9898;</tr>
+			</table>
+			<br>
+			<!--GREMLIN--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GREMLIN</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table>			
-			<br>	
+			</table>
+			<!--LILLEND--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>LILLEND</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+<hr>
+			<h4 style="text-align:center;">--- FAE-FOLK ---</h4>
+			<!--BROWNIE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>BROWNIE</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--DRYAD--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>DRYAD</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--FAIRY--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>FAIRY</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--PIXIE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>PIXIE</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
 <hr>
 			<h4 style="text-align:center;">--- DRACONIDS ---</h4>
-			
+
 			<!--RED DRAGON--><table style="width:90%;">
-			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>DRAGON</b></td>
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>DRAGON | RED</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
-			<tr style="border:none;"><td style="border:none;text-align:left;"><b>RED</b></td>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table>			
+			</table>
+			<br>
+			<!--DRAKE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>DRAKE | COASTAL</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
 			<br>
 <hr>
 			<h4 style="text-align:center;">--- ELEMENTALS ---</h4>
-			
+
+			<!--AIR ELEMENTAL--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>AIR ELEMENTAL</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>LESSER</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--EARTH ELEMENTAL--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>EARTH ELEMENTAL</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>LESSER</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
 			<!--FIRE ELEMENTAL--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>FIRE ELEMENTAL</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>LESSER</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table>			
+			</table>
 			<br>
-
 <hr>
 			<h4 style="text-align:center;">--- DAEMONS ---</h4>
-			
+			<!--BARETH--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>BARETH</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>BARETH</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--IFRIT--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>FLAME SWORN</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>IFRIT</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--IMP--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>IMP</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>IMP</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--PIT LORD--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>PIT LORD</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>GOL-RAEG</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
 			<!--WRATH LORD--><table style="width:90%;">
-			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>EMBODIMENT OF WRATH</b></td>
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>WRATH LORD</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>KYN-DAER</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table>			
+			</table>
 			<br>
-<hr>			
+<hr>
+			<h4 style="text-align:center;">--- ANGELIC ---</h4>
+
+			<!--ANGEL--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ANGEL</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>ELDAREN</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--ARCHANGEL--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ARCHANGEL</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>ELIANDREN</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+<hr>
 			<h4 style="text-align:center;">--- UNDEAD ---</h4>
-			
-			<!--ZOMBIE--><table style="width:90%;">
-			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ZOMBIE</b></td>
+
+			<!--BANSHEE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>BANSHEE</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table>			
+			</table>
+			<br>
+			<!--FLESH BEAST--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>FLESH BEAST</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--GHOST--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GHOST</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--GHOUL--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GHOUL</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--LICH--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>LICH</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--ZOMBIE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>ZOMBIE</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
 			<br>
 <hr>
-			<h4 style="text-align:center;">--- MECHANICAL ---</h4>
-			
+			<h4 style="text-align:center;">--- MECHANICAL/CONSTRUCTS ---</h4>
+			<!--GARGOYLE--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GARGOYLE</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
+			<!--GOLEM--><table style="width:90%;">
+			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>GOLEM</b></td>
+			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;</tr>
+			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
+			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
+			</table>
+			<br>
 			<!--QUICSILVER RECORDER--><table style="width:90%;">
 			<tr style="border:none;"><td style="border:none;font-size:15px;text-align:left;width:30%;"><b>QUICKSILVER RECORDER</b></td>
 			<td style="text-align:left;"><b>RARITY</b> &#9898;&#9898;&#9898;&#9898;&#9898;&#9898;&#9898;</tr>
 			<tr style="border:none;"><td style="border:none;text-align:left;"><b>-</b></td>
 			<td style="text-align:left;"><b>CIVILIZATION</b> -</tr>
-			</table>			
+			</table>
 			<br>
 <hr>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><!--
@@ -471,7 +815,7 @@ Put links at the top of the page - Humanoids (rarity) - Fae (rarity) - Dragonids
 				<br>Zephyrs
 				<br>
 				----------------------------------------------------------------------------------------------------------------------------
-				
+
 				</td></tr>
 				</table> -->
 				<br>
