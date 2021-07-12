@@ -144,6 +144,14 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+.content h3 {
+	text-align: center;
+}
+.content-page {
+	max-width: 800px;
+    display:block;
+    margin:auto;
+}
 
 .page-container {
   display: grid;
@@ -151,9 +159,23 @@ img {
   grid-template-columns: 230px 1fr;
   grid-gap: 10px;
   padding: 10px;
-  /*
-  background-color: #2196F3;
-  */
+}
+
+
+/* -- STORY Pages and Chapters -- */
+.story-chapter {
+	max-width: 800px;
+    display:block;
+    margin:auto;
+}
+.story-chapter img {
+    border: 1px solid;
+}
+.story-chapter hr {
+	max-width: 90%;
+    border: 3px solid;
+    margin-top 10px;
+    margin-bottom 10px;
 }
 
 /* -- BOOK PAGE -- */
