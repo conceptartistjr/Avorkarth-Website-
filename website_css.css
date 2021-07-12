@@ -109,21 +109,14 @@ p, i, li, th, tr, td {
 	font-size: 12px;
 }
 
+/* Basic table */
 table, th, tr, td {
-    width: 90%;
-	border: 1px solid black;
-	border-collapse: collapse;
-	text-align: center;
-	margin: auto;
-}
-table tr:first-child {
-    background-color: #AB8C70;
-}
-table tr:nth-child(even) {
-    background-color: #DCD1C4;
-}
-th, tr, td {
-    width: 1%;
+        border: 1px solid black;
+        border-collapse: collapse;
+        /*
+        text-align: center;
+        margin: auto;
+        */
 }
 
 img {
@@ -220,6 +213,26 @@ img {
 }
 .img-caption {
     font-style: italic;
+}
+
+table.wide {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    border-collapse: collapse;
+}
+table.wide td {
+    text-align: center;
+}
+table.wide tr:first-child {
+    background-color: #AB8C70;
+}
+table.wide tr:nth-child(even) {
+    background-color: #DCD1C4;
+}
+table.skills caption {
+    background-color: #AB8C70;
+    padding: 3px;
 }
 table.skills {
     width: 100%;
