@@ -146,11 +146,21 @@ img {
 }
 
 /* -- MAIN PAGES -- */
+.page-container {
+  display: grid;
+  grid-template-areas: 'nav main';
+  grid-template-columns: 230px 1fr;
+  grid-gap: 10px;
+  padding: 10px;
+}
 .nav { grid-area: nav; }
 .content {
     grid-area: main;
     margin-left: auto;
     margin-right: auto;
+}
+.content h2 {
+	text-align: center;
 }
 .content h3 {
 	text-align: center;
@@ -167,16 +177,27 @@ img {
     height: 1000px;
 }
 
-.page-container {
-  display: grid;
-  grid-template-areas: 'nav main';
-  grid-template-columns: 230px 1fr;
-  grid-gap: 10px;
-  padding: 10px;
+/* -- WORLDLORE  Pages and Chapters -- */
+table.creature {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table.creature tr, td, th {
+    border: none;
+}
+table.creature td:first-child {
+    font-weight: bold;
+    width: 25%;
+}
+table.creature td:last-child {
+    width: 75%;
+    border: 1px solid;
+    padding-left: 10px;
 }
 
 /* -- ADVENTURE  Pages and Chapters -- */
-
 .adventure {
     position: relative;
 }
