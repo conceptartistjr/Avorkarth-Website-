@@ -274,8 +274,9 @@ table.wide {
     margin: auto;
     border-collapse: collapse;
 }
-table.wide td {
+table.wide td,th {
     text-align: center;
+	width:10%;
 }
 table.wide tr:first-child {
     background-color: #AB8C70;
