@@ -60,7 +60,6 @@
 .page {
 	width: 820px;
 	height: 1100px;
-	/*border: 1px solid black;*/
 	margin-top: 125px;
 }
 
@@ -113,10 +112,17 @@ p, i, li, th, tr, td {
 table, th, tr, td {
         border: 1px solid black;
         border-collapse: collapse;
-        /*
         text-align: center;
         margin: auto;
-        */
+}
+.centered {
+    text-align: center;
+}
+.note {
+    font-style: bold;
+}
+.setting {
+    font-style: italic;
 }
 
 img {
@@ -138,22 +144,82 @@ img {
 }
 
 /* -- MAIN PAGES -- */
-.nav { grid-area: nav; }
-.content {
-    grid-area: main;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .page-container {
   display: grid;
   grid-template-areas: 'nav main';
   grid-template-columns: 230px 1fr;
   grid-gap: 10px;
   padding: 10px;
-  /*
-  background-color: #2196F3;
-  */
+}
+.nav { grid-area: nav; }
+.content {
+    grid-area: main;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content h2 {
+	text-align: center;
+}
+.content h3 {
+	text-align: center;
+    border-bottom: 2px solid black;
+}
+.content hr {
+	max-width: 90%;
+    border: 3px solid;
+    margin-top 10px;
+    margin-bottom 10px;
+}
+.content-page {
+	max-width: 800px;
+    height: 1000px;
+}
+
+/* -- WORLDLORE  Pages and Chapters -- */
+table.creature {
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table.creature tr, table.creature td, table.creature th {
+    border: none;
+    text-align: left;
+}
+table.creature td:first-child {
+    font-weight: bold;
+    width: 25%;
+}
+table.creature td:last-child {
+    width: 75%;
+    border: 1px solid;
+    padding-left: 10px;
+}
+
+/* -- ADVENTURE  Pages and Chapters -- */
+.adventure {
+    position: relative;
+}
+.adventure img {
+    background-size:contain;
+	max-width: 800px;
+    height:300px;
+}
+.adventure button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+/* -- STORY Pages and Chapters -- */
+.story-chapter {
+	max-width: 800px;
+    display:block;
+    margin:auto;
+}
+.story-chapter img {
+    border: 1px solid;
 }
 
 /* -- BOOK PAGE -- */
@@ -195,8 +261,10 @@ img {
     padding-left: 18px;
     padding-top: 10px;
     margin: 0px;
+    border: none;
+	text-align: left;
 }
-.bookpage h4, h5 {
+.bookpage h4, .bookpage h5 {
 	font-size: 12px;
     padding-left: 18px;
     padding-top: 10px;
@@ -213,6 +281,11 @@ img {
 }
 .img-caption {
     font-style: italic;
+    text-align: center;
+}
+.caption {
+    font-style: italic;
+    text-align: center;
 }
 
 table.wide {
@@ -221,7 +294,7 @@ table.wide {
     margin: auto;
     border-collapse: collapse;
 }
-table.wide td,th {
+table.wide td, table.wide th {
     text-align: center;
 	width:10%;
 }
