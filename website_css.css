@@ -44,76 +44,23 @@
     background-image:url("images/general/Button_Picked.jpg");
 }
 
-/* -- MAIN CONTENT PAGES -- */
-.main {
-	margin: auto;
-	padding-left: 230px;
-	max-width: 800px;
-}
-
-.main2 {
-	margin: auto;
-	padding-left: 230px;
-	max-width: 910px;
-}
-
-.page {
-	width: 820px;
-	height: 1100px;
-	margin-top: 125px;
-}
-
-.main_page {
-	width: 820px;
-	height: 200px;
-	margin-top: 125px;
-}
-
-.page_inner_halfw {
-	float: left;
-	width: 42%;
-	height: 1050px;
-	/*border: 1px solid black;*/
-	margin-left: 40px;
-}
-
-.page_inner_halfh {
-	float: left;
-	width: 89%;
-	height: 525px;
-	/*border: 1px solid black;*/
-	margin-left: 40px;
-}
-
-.page_inner_halfhw {
-	float: left;
-	width: 42%;
-	height: 525px;
-	/*border: 1px solid black;*/
-	margin-left: 40px;
-}
-
-.page_inner_full {
-	float: left;
-	width: 89%;
-	height: 1050px;
-	/*border: 1px solid black;*/
-	margin-left: 40px;
-}
-
-/* -- OTHER DETAILS -- */
+/* -- BASE SETTINGS -- */
 p, i, li, th, tr, td {
 	text-align: justify;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 12px;
 }
-
-/* Basic table */
 table, th, tr, td {
         border: 1px solid black;
         border-collapse: collapse;
         text-align: center;
         margin: auto;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
 }
 .centered {
     text-align: center;
@@ -124,17 +71,12 @@ table, th, tr, td {
 .setting {
     font-style: italic;
 }
-
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
+.list-steps {
+    list-style-type: upper-alpha;
 }
 .logo {
     width: 300px;
 }
-
 .box {
 	float: left;
 	width: 8px;
@@ -151,6 +93,9 @@ img {
   grid-gap: 10px;
   padding: 10px;
 }
+.spacing {
+    padding-top:100px;
+}
 .nav { grid-area: nav; }
 .content {
     grid-area: main;
@@ -165,8 +110,7 @@ img {
     border-bottom: 2px solid black;
 }
 .content hr {
-	max-width: 90%;
-    border: 3px solid;
+    border: 1px thin;
     margin-top 10px;
     margin-bottom 10px;
 }
