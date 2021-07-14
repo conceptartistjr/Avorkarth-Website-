@@ -184,6 +184,7 @@ table.creature {
 }
 table.creature tr, table.creature td, table.creature th {
     border: none;
+    text-align: left;
 }
 table.creature td:first-child {
     font-weight: bold;
@@ -263,7 +264,7 @@ table.creature td:last-child {
     border: none;
 	text-align: left;
 }
-.bookpage h4, h5 {
+.bookpage h4, .bookpage h5 {
 	font-size: 12px;
     padding-left: 18px;
     padding-top: 10px;
@@ -293,7 +294,7 @@ table.wide {
     margin: auto;
     border-collapse: collapse;
 }
-table.wide td,th {
+table.wide td, table.wide th {
     text-align: center;
 	width:10%;
 }
