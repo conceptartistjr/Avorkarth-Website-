@@ -31,6 +31,7 @@ body {
 	text-align: justify;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	font-size: 14px;
+    /* background-color: #AB8C70; */
 }
 h2 {
 	text-align: center;
@@ -174,6 +175,23 @@ th, tr, td {
     background-color: #DCD1C4;
 }
 
+/* -- ADVENTURE  Pages and Chapters --------------------------------------------
+ *    specific formatting for the adventure pages */
+.adventure {
+    position: relative;
+}
+.adventure img {
+    background-size:contain;
+	max-width: 800px;
+    height:300px;
+}
+.adventure button {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
 /*
 
 /* -- MAIN PAGES -- */
@@ -205,22 +223,6 @@ table.creature td:last-child {
     padding-left: 10px;
 }
 
-/* -- ADVENTURE  Pages and Chapters -- */
-/*
-.adventure {
-    position: relative;
-}
-.adventure img {
-    background-size:contain;
-	max-width: 800px;
-    height:300px;
-}
-.adventure button {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-}
 
 /* -- STORY Pages and Chapters -- */
 /*
