@@ -88,6 +88,9 @@ th, tr, td {
     font-style: italic;
     text-align: center;
 }
+.centered {
+	text-align: center;
+}
 
 /* -- NAVIGATION SIDEBAR (on the left) -- */
 .nav {
@@ -97,12 +100,6 @@ th, tr, td {
 }
 .nav button:hover {
 	background-image: url("images/general/Button_Hovered.jpg");
-}
-.homemenu {
-    color:white;
-    margin-left:5px;
-    margin-bottom:0px;
-	width:208px;
 }
 .menu {
 	border: 3px solid transparent;
