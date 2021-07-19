@@ -84,6 +84,12 @@ th, tr, td {
 .img3 { width: 300px; }
 .img4 { width: 400px; }
 .img5 { width: 500px; }
+.icon {
+    width: 75px;
+    float: left;
+    margin-left: 20px;
+}
+.rotated { transform:rotate(-90deg); }
 .caption {
     font-style: italic;
     text-align: center;
@@ -120,6 +126,11 @@ th, tr, td {
 }
 .picked {
     background-image:url("images/general/Button_Picked.jpg");
+}
+.encounter {
+    background-color:#e3b5af;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 
 /* -- HOME PAGE -- */
