@@ -84,11 +84,6 @@ th, tr, td {
 .img3 { width: 300px; }
 .img4 { width: 400px; }
 .img5 { width: 500px; }
-.icon {
-    width: 75px;
-    float: left;
-    margin-left: 20px;
-}
 .rotated { transform:rotate(-90deg); }
 .caption {
     font-style: italic;
@@ -126,11 +121,6 @@ th, tr, td {
 }
 .picked {
     background-image:url("images/general/Button_Picked.jpg");
-}
-.encounter {
-    background-color:#e3b5af;
-    padding-top:10px;
-    padding-bottom:10px;
 }
 
 /* -- HOME PAGE -- */
@@ -199,4 +189,21 @@ th, tr, td {
     left: 50%;
     transform: translate(-50%, 0%);
 }
-
+.encounter {
+    background-color:#e3b5af;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.attribute {
+    border-style: solid;
+    border-width: 1px;
+    background-color:#dce0e6;
+    padding:0px;
+    margin:0px;
+}
+.skill-check {
+    background-color:#dce0e6;
+}
+.icon {
+    width: 75px;
+}
