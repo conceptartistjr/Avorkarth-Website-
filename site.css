@@ -260,3 +260,9 @@ th, tr, td {
 .setting {
     font-style: italic;
 }
+
+/* -- WORLDLORE CSS Overrides --------------------------------------------
+ *    specific formatting for the worldlore pages */
+.creature tr, td:first-child {
+    border: none;
+}
