@@ -1,14 +1,6 @@
 /* -- LAYOUT -------------------------------------------------------------------
  *    page layout for navigation and content */
-.container {
-    display: grid;
-    grid-template-areas:'nav content';
-    grid-template-columns: 230px 1fr;
-    grid-gap: 10px;
-    padding: 10px;
-}
 .nav {
-    grid-area: nav;
 	height: 100%;
 	width: 220px;
 	position: fixed;
@@ -18,13 +10,13 @@
 	background-repeat: no-repeat;
 }
 .content {
-    grid-area: content;
     margin-left: auto;
     margin-right: auto;
 	max-width: 900px;
     padding-bottom: 100px;
+    padding-left: 230px;
 }
-
+/*
 .topnav {
 	position: fixed;
 	width: 750px;
@@ -42,14 +34,17 @@
     padding-bottom: 100px;
 	padding-top: 150px;
 }
+*/
 
 
 /* -- GENERAL ELEMENT STYLES ---------------------------------------------------
  *    Used for consistency across all pages. */
 body {
-	text-align: justify;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    /* serif web-safe fonts are:
+     * "Times New Roman", "Didot", "Georgia", "American Typewriter" */
+	font-family: "Georgia", "Didot", serif;
 	font-size: 14px;
+	text-align: justify;
     /* background-color: #AB8C70; */
 }
 h2 {
@@ -121,28 +116,47 @@ th, tr, td {
 	background-image: url("images/general/BG_Banner.png");
 	background-repeat: no-repeat;
 }
-.nav button:hover {
-	background-image: url("images/general/Button_Hovered.jpg");
+.nav a:hover {
+	color: pink;
 }
 .menu {
-	border: 3px solid transparent;
-	text-align: center;
-	width: 93%;
-	padding: 6px 10px;
-	text-align: center;
+    display: block;
+	width: 82%;
+    margin: 10px;
+    padding: 5px;
     font-weight: bold;
-	margin-left: 8px;
+    color: black;
+    text-decoration: none;
+	text-align: center;
 	background-color: transparent;
 	background-image: url("images/general/Button_Norm.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .submenu {
+    margin: 5px;
 	margin-left: 28px;
-	width: 80%;
+    padding: 2px;
+	width: 70%;
+	background-image: url("images/general/Button_Norm.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .picked {
     background-image:url("images/general/Button_Picked.jpg");
+}
+
+.clickable {
+    margin: 15px;
+    padding: 5px;
+    border: solid;
+    border-radius: 10px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+.clickable:hover {
+	background-color: lightgray;
 }
 
 /* -- HOME PAGE -- */
@@ -205,11 +219,15 @@ th, tr, td {
 	max-width: 800px;
     height:300px;
 }
-.adventure button {
-    position: absolute;
+.adventure-caption {
+    position: absolute; /* relative to parent */
     bottom: 5%;
     left: 50%;
     transform: translate(-50%, 0%);
+    background: white;
+    padding: 5px;
+    color: black;
+	text-align: center;
 }
 .encounter {
     background-color:#e3b5af;
