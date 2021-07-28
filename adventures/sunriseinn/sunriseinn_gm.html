@@ -1,79 +1,63 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>The Sunrise Inn - Avorkarth</title><!-- THE TAB -->
+		<title>The Sunrise Inn - Avorkarth</title>
 		<meta name="author" content="Julien Ruest" charset="UTF-8">
-		<link href="../../website_css.css" rel="stylesheet" type="text/css">
+		<link href="../../site.css" rel="stylesheet" type="text/css">
 	</head>
 <body>
-<div class=container>
 
+<!-- Site Navigation -->
 <div class="nav">
 	<a href="../../index.html"><img src="../../images/general/AvorkarthLogo_Main_Alpha.png" alt="AVORKARTH"></a>
 
 	<!-- Book Choice -->
-	<a href="../../rulebook/startup.html"><button class="menu">Rulebook</button></a>
-	<a href="../../worldlore.html"><button class="menu">World Lore</button></a>
-	<a href="../../tale.html"><button class="menu">Tale of the Fifth Age</button></a>
-	<a href="../../adventures.html"><button class="menu">Adventures</button></a>
-	<a href="../../adventures/koboldcave/koboldcave.html"><button class="menu submenu">Kobold Cave</button></a>
-    <a href="../../adventures/sunriseinn/sunriseinn.html"><button class="menu submenu">Sunrise Inn</button></a>
-    <a href="../../adventures/sunriseinn/sunriseinn_gm.html"><button class="menu submenu picked">Sunrise Inn - GM</button></a>
+	<a href="../../rulebook/startup.html" class="menu">Rulebook</a>
+	<a href="../../worldlore.html" class="menu">World Lore</a>
+	<a href="../../tale.html" class="menu">Tale of the Fifth Age</a>
+	<a href="../../adventures.html" class="menu">Adventures</a>
+	<a href="../../adventures/koboldcave/koboldcave.html" class="menu submenu">Kobold Cave</a>
+    <a href="../../adventures/sunriseinn/sunriseinn.html" class="menu submenu picked">Sunrise Inn</a>
 	<br><br>
-	<a href="../../charactersheet.html"><button class="menu">Character Sheet</button></a>
-	<a href="../../changelog.html"><button class="menu">Changelog</button></a>
+	<a href="../../charactersheet.html" class="menu">Character Sheet</a>
+	<a href="../../changelog.html" class="menu">Changelog</a>
 
 	<!-- Links -->
-    <br><br><br>
+    <br><br>
 	<a href="https://www.youtube.com/channel/UC2Ca5YXi3kmwn8Zzon34rYA">
 	    <img src="../../images/general/Youtube_Image.png" alt="ConceptArtistJR_Banner"></a>
 	<br>
 	<a href="https://www.patreon.com/avorkarth">
 	    <img src="../../images/general/Patreon_Image.jpg" alt="Patreon_Banner"></a>
+    <br><br>
+
+    <div class="toc">
+        <a href="#SUNRISEINNPRISTINE">Sunrise Inn (Pristine)</a>
+        <a href="#SUNRISEINNDECAYED">Sunrise Inn (Decayed)</a>
+        <a href="#ATTENBUR">Attenbur</a>
+        <a href="#BANDEARSCAMP">Band-Ear's Camp</a>
+        <a href="#CLIFFSIDE">Cliffside</a>
+        <a href="#DARKHOVEL">Dark Hovel</a>
+        <a href="#DARKSTONECAVEEXTERIOR">Darkstone Cave (Exterior)</a>
+        <a href="#DARKSTONECAVEINTERIOR">Darkstone Cave (Interior)</a>
+        <a href="#FORESTPATH1">Forest Path 1</a>
+        <a href="#FORESTPATH2">Forest Path 2 (Projection)</a>
+        <a href="#FORESTROAD1">Forest Road 1</a>
+        <a href="#FORESTROAD2">Forest Road 2</a>
+        <a href="#FORTDAVLIN">Fort Davlin</a>
+        <a href="#GATEWAYPASS">Gateway Pass</a>
+        <a href="#LIONSTONEBRIDGE">Lionstone Bridge</a>
+        <a href="#MIRROWMERELAKE">Mirrowmere Lake</a>
+        <a href="#MIRROWMEREISLE">Mirrowmere Isle</a>
+        <a href="#ANCIENTRUINS">Ancient Ruins</a>
+        <a href="#TOWEROFKALDEREXTERIOR">Tower of Kalder (Exterior)</a>
+        <a href="#TOWEROFKALDERINTERIOR">Tower of Kalder (Interior)</a>
+    </div>
 </div>
 
-<!--TOP NAVIGATION - CONTENT USES CONTENT2 CLASS FOR BUFFER -->
-<div class="topnav">
-<table>
-<tr><td colspan="3"><h3 class="centered">MAPS</h3></td></tr>
-<tr>
-<td><a href="#SUNRISEINNPRISTINE">Sunrise Inn (Pristine)</a></td>
-<td><a href="#SUNRISEINNDECAYED">Sunrise Inn (Decayed)</a></td>
-<td><a href="#ATTENBUR">Attenbur</a></td>
-</tr>
-<tr>
-<td><a href="#BANDEARSCAMP">Band-Ear's Camp</a></td>
-<td><a href="#CLIFFSIDE">Cliffside</a></td>
-<td><a href="#DARKHOVEL">Dark Hovel</a></td>
-</tr>
-<tr>
-<td><a href="#DARKSTONECAVEEXTERIOR">Darkstone Cave (Exterior)</a></td>
-<td><a href="#DARKSTONECAVEINTERIOR">Darkstone Cave (Interior)</a></td>
-<td><a href="#FORESTPATH1">Forest Path 1</a></td>
-</tr>
-<tr>
-<td><a href="#FORESTPATH2">Forest Path 2 (Projection)</a></td>
-<td><a href="#FORESTROAD1">Forest Road 1</a></td>
-<td><a href="#FORESTROAD2">Forest Road 2</a></td>
-</tr>
-<tr>
-<td><a href="#FORTDAVLIN">Fort Davlin</a></td>
-<td><a href="#GATEWAYPASS">Gateway Pass</a></td>
-<td><a href="#LIONSTONEBRIDGE">Lionstone Bridge</a></td>
-</tr>
-<tr>
-<td><a href="#MIRROWMERELAKE">Mirrowmere Lake</a></td>
-<td><a href="#MIRROWMEREISLE">Mirrowmere Isle</a></td>
-<td><a href="#ANCIENTRUINS">Ancient Ruins</a></td>
-</tr>
-<tr>
-<td><a href="#TOWEROFKALDEREXTERIOR">Tower of Kalder (Exterior)</a></td>
-<td><a href="#TOWEROFKALDERINTERIOR">Tower of Kalder (Interior)</a></td>
-</tr></table>
-</div>
-
+<!-- Table of Content for a page -->
 <!-- Main Page content -->
-<div class="content2">
+<div class="adventure-gm">
 
 <h2>THE SUNRISE INN - GAME MASTER</h2>
 <img class="img6" src="../../images/adventures/sunriseinn/SunriseInn_1.jpg">
@@ -166,7 +150,6 @@
 <h3 class="centered"> MAP : TOWER OF KALDER (INTERIOR)</h3>
 <img class="img6" src="../../images/adventures/sunriseinn/maps/Tower_of_Kalder.jpg" alt="Tower of Kalder Interior"></a>
 
-</div>
 </div>
 </body>
 </html>
