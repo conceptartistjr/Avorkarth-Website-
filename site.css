@@ -17,9 +17,19 @@
     padding-left: 230px;
 }
 
-.toc { /* Work in progress: table of contents for a page */
-    display: block;
-    width: 230px;
+.toc {
+	position: fixed;
+    top: 10px;
+    transform: translate(8%, 0);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: "b b b b b";
+    background: lightgray;
+    border: solid 1px;
+}
+.toc a {
+    padding: 5px;
 }
 
 /* -- GENERAL ELEMENT STYLES ---------------------------------------------------
@@ -208,21 +218,6 @@ th, tr, td {
 }
 .adventure-button {
     position: relative;
-}
-.toc a {
-    display: block;
-	width: 72%;
-    margin: 5px;
-    margin-left: 28px;
-    padding: 5px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-	text-align: center;
-	background-color: transparent;
-	background-image: url("images/general/Button_Norm.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
 }
 .adventure img {
     background-size:contain;
