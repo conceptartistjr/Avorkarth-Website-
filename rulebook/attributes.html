@@ -242,10 +242,13 @@ including the gear currently worn.
 
 <h3>LIFTING CAPACITY</h3>
 <p>
-Lifting capacity determines the total weight of all objects upon the character
+Lifting capacity determines the total amount of objects upon the character
 and when they suffer penalties for carrying too much. These are separated into
-multiple general categories of lifting or carry weight. All lifting calculations
-are done with pounds (lbs) in mind.
+multiple general categories and increased by the character's strength.
+However, no matter a character's strength, their carrying amount is unfortunately still
+limited by their size. A character may only carry so many items of certain sizes.
+Note that worn armour and clothing does NOT count towards this capacity,
+but worn items such as swords and backpacks do.
 </p>
 
 <h3>CARRY WEIGHT CATEGORIES/PENALTIES</h3>
@@ -288,64 +291,33 @@ treasures of much greater value to be found.” - The Chronicler
 
     </div><div class="bookpage-column">
 
-<h3>LIFTING CAPACITY STRENGTH</h3>
+<h3>LIFTING CAPACITY</h3>
 <p>
-To calculate what are the limits to the character's carrying capacities one must
-look at one's own strength and strength category.
+To know what are the limits to the character's carrying capacities one must
+look at one's own strength and size category.
 </p>
-
-<h4>Lifting Base : Strength x Strength.</h4>
-<table>
-    <tr><th> STR CAT.    </th><th>  LIGHT </th><th>  MEDIUM </th><th>  HEAVY  </th><th>  MAXIMUM </th><tr>
-    <tr><td> Minor       </td><td> X1     </td><td>  X2     </td><td>  X3     </td><td>  X4      </td><tr>
-    <tr><td> Lesser      </td><td> X1     </td><td>  X2     </td><td>  X4     </td><td>  X6      </td><tr>
-    <tr><td> Standard    </td><td> X1     </td><td>  X2     </td><td>  X5     </td><td>  X9      </td><tr>
-    <tr><td> Greater     </td><td> X2     </td><td>  X4     </td><td>  X8     </td><td>  X15     </td><tr>
-    <tr><td> Superior    </td><td> X3     </td><td>  X7     </td><td>  X12    </td><td>  X25     </td><tr>
-    <tr><td> Mighty      </td><td> X5     </td><td>  X10    </td><td>  X15    </td><td>  X50     </td><tr>
-    <tr><td> Legendary   </td><td> X7     </td><td>  X15    </td><td>  X30    </td><td>  X75     </td><tr>
-    <tr><td> Mythical    </td><td> X10    </td><td>  X20    </td><td>  X50    </td><td>  X100    </td><tr>
+<p>
+ITEM SIZE/CARRY AMOUNT
+</p>
+<table style="table-layout:auto;">
+	<tr><th>SIZE</th>    <th>NO LOAD</th><th>LIGHT</th><th>MEDIUM</th><th>HEAVY</th><th>MAXIMUM</th></tr>
+	<tr><td>TINY</td>	 <td>9      </td><td>18   </td><td>27    </td><td>54   </td><td>162    </td></tr>
+	<tr><td>SMALL</td>   <td>3      </td><td>6    </td><td>9     </td><td>18   </td><td>54     </td></tr>
+	<tr><td>STANDARD</td><td>1      </td><td>2    </td><td>3     </td><td>6    </td><td>9      </td></tr>
+	<tr><td>LARGE</td>   <td>-      </td><td>-    </td><td>1     </td><td>2    </td><td>3      </td></tr>
+	<tr><td>MASSIVE</td> <td>-      </td><td>-    </td><td>-     </td><td>-    </td><td>1      </td></tr>
 </table>
 
-<h3>LIFTING CAPACITY EXAMPLES</h3>
-<p>
-<b>PIXIE (Male)</b> - An average male pixie has a strength value of 1. It has therefore
-a lifting base of 1 (1x1). Since the pixie's strength is in the Minor strength
-category, its light load is 1 lbs. (1x1), medium load is 2 lbs. (1x2), heavy load
-is 3 lbs(1x3) and it can lift at maximum 4 lbs. (1x4).
-</p>
+<h3>ALL THINGS RELATIVE</h3>
+<p>Items sizes are relative to the character size. What is a standard longsword for a human
+is a large item for a falgrii. Item size categories increase by 1 per the 
+character's relative size difference.
 
-<p>
-<b>HUMAN (Male - Karthian)</b> - An average male human has a strength value of 7.
-It has therefore a lifting base of 49 (787). Since the male human's strength is
-in the Standard strength category, its light load is 49 lbs. (49x1), medium
-load is 98 lbs. (49X2), heavy load is 245 lbs. (49x5) and it can lift at maximum
-441 lbs. (49x9).
-</p>
-
-<p>
-<b>GRYPHON (Male - Brown)</b> - An average male brown feathered gryphon has a
-strength value of 13. It therefore has a lifting base of 169 (13x13).
-Since the gryphon's strength is in the Greater strength category, its
-light load is 338 lbs. (169x2), medium load is 676 lbs. (169x4),
-heavy load is 1,352 lbs. (169x8), and it can lift at maximum 2,535 lbs. (169x15).
-</p>
-
-<h2>CARRYING CAPCITY</h2>
-<p>
-No matter a character's strength, their carrying amount is unfortunately still
-limited by their size. A character may only carry so many items of certain sizes.
-Note that worn armour and clothing does NOT count towards this capacity,
-but worn items such as swords and backpacks do.
-</p>
-
-<table>
-    <tr><th> ITEM SIZE (RELATIVE) </th><th> CARRY AMOUNT  </th></tr>
-    <tr><td> Tiny                 </td><td>  20           </td></tr>
-    <tr><td> Small                </td><td>  10           </td></tr>
-    <tr><td> Standard             </td><td>  5            </td></tr>
-    <tr><td> Large                </td><td>  2            </td></tr>
-</table>
+<h3>STRENGTH BONUS</h3>
+<p>A character's strength also increases the amount of items allowed held. This is 
+increased at 1 tiny item more per strength. Therefore, 1 small item per 3 strength,
+1 standard item per 9 strength, 1 large item per 18 strength and 1 massive item 
+per 54 strength.
 
 </div></div></div>
 

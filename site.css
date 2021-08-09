@@ -112,7 +112,7 @@ th, tr, td {
 	background-repeat: no-repeat;
 }
 .nav a:hover {
-	color: pink;
+	color: white;
 }
 .menu {
     display: block;
@@ -176,11 +176,11 @@ th, tr, td {
 .bookpage {
     height: 1150px;
 	text-align: justify;
-    background-image: url('images/rulebook/page-background.png');
+    background-image: url('images/rulebook/Page_BG1.jpg');
     background-repeat:no-repeat;
     background-size: 900px 1150px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 .bookpage-columns {
     display: flex;
