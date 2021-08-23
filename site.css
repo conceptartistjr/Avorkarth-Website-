@@ -76,6 +76,9 @@ th, tr, td {
     padding-left: 5px;
     border: 1px solid black;
 }
+a {
+	text-decoration: none;
+}
 
 /* -- CLASS OVERRIDES ----------------------------------------------------------
  *    can be combined as needed to get a particular effect */
