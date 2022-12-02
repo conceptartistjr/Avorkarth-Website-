@@ -13,13 +13,14 @@
 	<!-- Book Choice -->
 	<a href="../rulebook/startup.html" class="menu">Rulebook</a>
 	<a href="../rulebook/startup.html" class="menu submenu">Startup</a>
-	<a href="../rulebook/abilities.html" class="menu submenu">Abilities</a>
+	<a href="../rulebook/abilities.html" class="menu submenu">Ability Scores</a>
 	<a href="../rulebook/alignments.html" class="menu submenu">Alignments</a>
 	<a href="../rulebook/attributes.html" class="menu submenu">Attributes</a>
 	<a href="../rulebook/mastery.html" class="menu submenu">Mastery</a>
 	<a href="../rulebook/interactions.html" class="menu submenu">Interactions</a>
 	<a href="../rulebook/skills.html" class="menu submenu">Skills</a>
 	<a href="../rulebook/combat.html" class="menu submenu picked">Combat</a>
+	<a href="../rulebook/equipment.html" class="menu submenu">Equipment</a>
 	<a href="../rulebook/spellcasting.html" class="menu submenu">Spell Casting</a>
 	<a href="../worldlore.html" class="menu">World Lore</a>
 	<a href="../tale.html" class="menu">Tale of the Fifth Age</a>
@@ -63,10 +64,6 @@ scores to tell how efficient the creature is at these moments of conflict.
 Wounds is the total amount of lethal damage a character can take before dying
 or falling unconscious. This is due to there being two different methods of
 wounding a character, one being lethal and the other being non-lethal.
-</p>
-
-<p class="centered">
-WOUNDS<br> Vitality
 </p>
 
 <p>
@@ -119,7 +116,7 @@ second and so on.
 </p>
 
 <p class="centered">
-INITIATIVE <br> Agility + (Instinct + Wisdom)/2 (rounded down)
+INITIATIVE <br> (Agility + (Instinct + Wisdom)/2)/2 (rounded down)
 </p>
 
 <h3>ATTACK</h3>
@@ -135,7 +132,7 @@ MELEE ATTACK <br> (Agility OR Dexterity + Instinct)/2 (rounded down)
 </p>
 
 <p class="centered">
-RANGED ATTACK <br> (Dexterity + Instinct)/2 (rounded down)
+RANGED ATTACK <br> (Dexterity + Instinct)/2 (rounded down) - 4
 </p>
 
 <h3>MIGHT</h3>
@@ -148,7 +145,7 @@ character's weapon.
 <p class="centered">
 MIGHT <br> Strength
 </p>
-
+<!--
 <h3>DAMAGE</h3>
 <p>
 Should a strike go through the opponent's armour, it then deals damage.
@@ -158,7 +155,7 @@ on the weapon itself.
 
 <p class="centered">
 DAMAGE <br> Strength/3 (rounded down)
-</p>
+</p> -->
 
 <img src="../images/rulebook/rulebook-combatA1-img.png">
 <p class="caption">
@@ -210,8 +207,9 @@ Back : Back attacks increase the attack's rolling category by 3.
 
 <h3>PARRYING</h3>
 <p>
-The secondary part of defense, should an attack partially hit,
-is to deflect part of the incoming damage. Parrying is influenced by one's
+An alternative to dodging, some heavily armoured warriors, or those with
+belief in their skill at arms may instead parry. The attacker's attack always hits
+when parrying, but never at a critical. Parrying is influenced by one's
 arm strength as well as one's proficiency with their current weapon.
 Parrying isn't a roll and is instead added on top of one's armour amount before
 any calculation.
@@ -219,7 +217,7 @@ any calculation.
 
 <p>
 <b>Blocking</b> : If a character has a shield, they instead block the attack,
-adding the shield's block value to the parry.
+also adding the shield's block value to the parry.
 </p>
 
 <p class="centered">
@@ -239,8 +237,6 @@ of hindering movement. Some armours come with an Armour Penalty, which is applie
 to some skills and to the character's dodge. This is covered on a per skill basis.
 </p>
 
-</div><div class="bookpage-column">
-
 <h3>ARMOUR TYPES</h3>
 <p>
 <b>Full Armour</b> : Worn armour is made to defend a creature in battle from all
@@ -254,21 +250,34 @@ made to the front or flank, but less so against attacks from the back.
 Guarded armour bonuses are only applied to frontal and flank attacks.
 </p>
 
+</div><div class="bookpage-column">
+
 <p>
 <b>Natural Armour</b> : All creatures have a skin to protect from minor injures.
 These are natural to the creature and as such cannot be countered by positioning
-unless specifically stated.
+unless specifically stated. It is also increased by a character's vitality.
 </p>
 
 <p class="centered">
-NATURAL ARMOUR <br> Vitality/4 (rounded down)
+NATURAL ARMOUR BONUS <br> Constitution
+</p>
+
+<h3>STAMINA</h3>
+<p>
+Stamina represents how quickly a character is exhausted in combat. When their stamina
+is depleted, all combat attributes are reduced by 1, with a further 1 when they
+reach -Stamina and then -Stamina x 2. (Normal, Tired, Fatigued and Exhausted.)
+</p>
+<p class="centered">
+STAMINA <br> Constitution
 </p>
 
 <h3>RESISTANCES</h3>
 <p>
 Resistances offer a flat damage reduction to any damage of its type.
 The resistances are as follows : Physical, Acid, Poison, Necrotic, Fire,
-Cold, Shock, Holy, Infernal, Shadow and Spirit.
+Cold, Shock, Holy, Infernal, Shadow and Spirit. Poison and Necrotic are
+influenced by the character's vitality.
 </p>
 
 <p>
@@ -278,7 +287,16 @@ negative of the resistance.
 </p>
 
 <p class="centered">
-POISON/NECROTIC RESISTANCE <br> Constitution/5 (rounded down)
+POISON/NECROTIC RESISTANCE <br> Vitality
+</p>
+
+<h3>RESOLVE</h3>
+<p>
+Resolve is a character's ability to remain calm and collected no matter the circumstance
+and is used primarily for Morale checks at the end of rounds.
+
+<p class="centered">
+RESOLVE <br> Will
 </p>
 
 <h3>PRESENCE</h3>
@@ -287,24 +305,18 @@ A character's presence upon the battlefield is ever important, not only to
 leaders who wish to bolster their allies, but also to strike fear into the enemy.
 The creature's presence is used as the basis for resolve rolls during combat.
 </p>
-
-<p class="centered">
-PRESENCE (POWER) <br> (Strength + Vitality + Will)/3 (rounded down)
-</p>
-
 <p>
 <b>Terrifying Size</b> : A creature of Large size gains a +1 bonus to their presence,
-doubling per size greater.
+doubling per size greater than Large.
 </p>
-
 <p>
-<b>Inspiring Beauty</b> : A creature may instead have use of their beauty to inspire
-neaby allies. Note that this presence is only counted for allies, and enemies
-must still use the highest strength based presence score.
+<b>Defend the fair</b> : Presence using Elegance only affects allies, and another
+ability score must be used to cause fear to enemies.
 </p>
 
 <p class="centered">
-PRESENCE (BEAUTY) <br>  (Beauty + Will)/2 (rounded down)
+PRESENCE <br>  Constitution OR Strength OR Charisma OR Elegance
+<br>+ 1 per 5 Wounds - 5
 </p>
 
 </div></div>
@@ -321,7 +333,7 @@ PRESENCE (BEAUTY) <br>  (Beauty + Will)/2 (rounded down)
 
 <p>
 From the clash of steel upon the battlefield, to duels within a gladitorial arena,
-to a heroic warrior battling a drake upon a snowed mountain, combat within
+to a heroic group of warriors battling a drake upon a snowed mountain, combat within
 Avorkarth may happen wherever the adventurer goes. Combat is replicated in
 avorkarth using a turn based system and begins when the Game Master declares so,
 usually upon the request of a player or an ambush from deadly creatures.
@@ -345,7 +357,7 @@ usually upon the request of a player or an ambush from deadly creatures.
 <ul>
 <li> (If finishing an Ambush round) - Any ambushing creatures lose their
   +10 initiative bonus.</li>
-<li> All creatures roll id6 and add their initiative</li>
+<li> All creatures roll 1d6 and add their initiative</li>
 <li> Any creature whose agility bonus is high enough adds their additional
      turns at their initiative - 5 per additional turn.</li>
 <li> Order all the initiatives in a list, from highest to lowest.</li>
@@ -372,7 +384,7 @@ usually upon the request of a player or an ambush from deadly creatures.
 <h4> D. - ROUND'S END</h4>
 <ul>
 <li> Enact all area, environmental and over-time effects, such as burns,
-     bleeds or poisons.</li>
+     bleeds or poisons. Reduce all creature's Stamina by 1.</li>
 <li> Remove all creatures that have perished from the initiative list,
      and begin a new round with the updated initiative list.</li>
 <li> The highest initiative goes first. Players win ties. (Go to C.)</li>
@@ -391,26 +403,15 @@ a character's ability to do anything within a short amount of time.
 
 <p>
 <b>Round</b> : This is only updated once every character has acted all of their
-turns. The round is an approximation of 8 seconds in real-time and is the most
+turns. The round is an approximation of 6 seconds in real-time and is the most
 common time keeper for effects with most of them occuring at the end of every round.
 
 <h4>ADDITIONAL TURNS AND EXTRA ACTIONS</h4>
 <p>
-Creatures gain 1 additional action per round for each 4 agility, with a maximum
-of 1 move and 1 standard per turn. Every additional action afterwards is added
-as another turn at their initiative -5.
+Creatures gain 1 turn per round for each 6 agility. 
+Every additional action after the first is added
+as another turn in the round at the initial initiative - 5.
 </p>
-<p>
-Examples :
-</p>
-<ul>
-<li>Creature with 3 agility : 1 turn per round with 1 Move action.</li>
-<li>Creature with 5 agility : 1 turn per round with 1 Move and 1 Standard action.</li>
-<li>Creature with 8 agility : 2 turns, first with 1 Move and 1 Standard,
-    and a second turn with 1 Move action.</li>
-<li>Creature with 12 agility : 2 turns, 1 with i Move and 1 Standard,
-    and a second with 1 Move and 1 Standard again.</li>
-</ul>
 
 <h4>COMBAT ACTIONS</h4>
 <p>
@@ -439,12 +440,12 @@ Can be forgone to do a swift action or lesser attack action. (See combat attacks
 </p>
 
 <p>
-<b>Swift Action (1 + 1 per 5 agility per turn)</b> : A short action. Can be used
+<b>Swift Action (1 per 8 agility per round - minimum 1.)</b> : A short action. Can be used
 alongside a move or standard action on one's turn.
 </p>
 
 <p>
-<b>Immediate Action (1 +1 per 4 agility per turn)</b>: A very short action.
+<b>Immediate Action (1 per 10 agility per round - minimum 1.)</b>: A very short action.
 Can be used in reaction to enemy or allied actions even if not one's turn.
 </p>
 
@@ -530,7 +531,8 @@ HIT -> STRIKE -> DAMAGE
 (ATTACK VS DODGE)
 <p>
 To see if an attack hits one's opponent, the attacking creature must roll against
-their opponent's dodge. Compare these values on the roll chart then roll to see
+their opponent's dodge unless the defender is blocking/parrying. 
+Compare these values on the roll chart then roll to see
 what the outcome would be. (See Dice Rolls chart)
 </p>
 
@@ -588,21 +590,41 @@ opponent's wounds.
 </p>
 
 <p>
-<b>Critical Success</b> : The weapon's damage is increased by 1 per size difference,
-with a minimum of +1.
+<b>Critical Success</b> : The weapon's damage is increased by 1/2, 
+with a minimum damage increase of +1.
 </p>
 
 <p>
-<b>Success</b> : The weapon's damage of the attack is applied.
+<b>Success</b> : The weapon's damage is applied.
 </p>
 
 <p>
-<b>Partial Success</b> : The weapon's damage is reduced by 1 per size difference,
-to a minimum of 1 damage before any damage reduction calculations.
+<b>Partial Success</b> : The weapon's damage is reduced by 1/2, with a minimum damage
+of 1.
 </p>
 
 <p>
 <b>Fail</b> : The damage is negated.
+</p>
+
+<p>
+<b>Critical Fail</b> : The damage is negated and the weapon takes a durability damage
+point.
+</p>
+
+<h3>STRIKING DAMAGE</h3>
+<p>
+<b>Weapon Size</b> : The weapon's damage is reduced by 1 per size greater 
+(to a minimum of 1) and increased by 1
+per size smaller, doubling this bonus per size difference. This is calculated
+BEFORE strike critical and partial successes.
+</p>
+
+<p>
+<b>Might/Armour Difference</b> : The weapon's damage is increased or 
+decreased by 1 (to a minimum of 1) per rolling category when rolling to strike. 
+(See Startup - Dice Rolling). This is calculated AFTER strike critical and partial
+successes.
 </p>
 
 <h3>ATTACK/STRIKING ADDITIONAL RULES</h3>
@@ -637,6 +659,8 @@ primary attack but reduce all hitting values by 1.
 a lesser attack. It acts as a primary attack with -1 to it's hitting values.
 </p>
 
+</div><div class="bookpage-column">
+
 <p>
 <b>Flanking</b> : For each additional ally within melee range of a creature,
 reduce its dodge by 1. Positioning does not matter for flanking.
@@ -647,7 +671,6 @@ reduce its dodge by 1. Positioning does not matter for flanking.
 See Dodge. (Combat Attributes)
 </p>
 
-</div><div class="bookpage-column">
 
 <h3>NON-LETHAL DAMAGE</h3>
 <p>
@@ -771,15 +794,15 @@ artist checks against the bindings instead of strength checks against the grappl
 their strength. If the target's total is greater than the grappler's, they escape.
 </p>
 
-<h3>RESOLVE</h3>
+<h3>MORALE CHECK</h3>
 <p>
-Resolve is a roll required by all characters at the start of the first turn
-within a round. It uses the creature's Will as its basis and is the
+Morale checks are a roll required by all characters at the start of the first turn
+within a round. It uses the creature's Resolve as its basis and is the
 representation of the flight or fight response throughout a battle.
 </p>
 
-<p>
-RESOLVE 3 + Highest enemy Presence - Highest allied Presence
+<p class="centered">
+MORALE CHECK <br> 3 + Highest enemy Presence - Highest allied Presence
 </p>
 
 <p>
@@ -791,7 +814,7 @@ RESOLVE 3 + Highest enemy Presence - Highest allied Presence
 </p>
 
 <p>
-<b>Partial Success</b> : Roll the die again.
+<b>Partial Success</b> : Lower Resolve by 1 for the next Morale check.
 </p>
 
 <p>
@@ -804,7 +827,24 @@ and the Resolve.
 score and the Resolve.
 </p>
 
+
 </div><div class="bookpage-column">
+<!--
+<h3>INSPIRATION / LEADERSHIP</h3>
+
+<p>
+A creature with little physical presence on the battlefield may instead use of their
+beauty or silver tongued charisma to inspire
+neaby allies, bolstering their will against terrifying encounters and enemies.
+</p>
+
+
+<p class="centered">
+INSPIRATION <br>  +1 to allied Resolve per 2 categories higher Beauty. <br><br>
+LEADERSHIP
+<br>(costs 1 action)<br>  +1 to allied Resolve per 1 category higher Charisma.
+</p>
+-->
 
 <h3>CRITICAL WOUNDS (OPTIONAL)</h3>
 <p>
@@ -825,7 +865,8 @@ If no limbs remain, can no longer use strength skill checks.
 </p>
 
 <p>
-<b>3 - Hips</b> : Hips are half-removed. 1 tile movement. Can't use move based
+<b>3 - Hips</b> : Hips and lower limbs are crippled. 
+1 tile movement. Can't use move based
 skills and actions
 </p>
 
@@ -850,9 +891,6 @@ how to apply the negatives at a reduced rate. If they have only a single limb
 (like a tail for legs), automatically apply the full penalty.
 </p>
 
-<img src="../images/rulebook/rulebook-combat4-img.png">
-<p class="caption">
-One must always be weary of predators within the delving deeps...
 </p>
 
 </div></div>
