@@ -58,6 +58,15 @@ distinct categories, being the General actions, Skill actions and Combat actions
 
 <h3>ACTIONS</h3>
 
+<p>Any action takes a certain amount of time and while under stressful situations
+such as combat, characters are limited in the number of actions they may do in
+a given time. Further, Actions are split into three types.</p>
+
+<p>
+If an action takes longer than a full turn's worth, it is carried over to that
+character's next turn.
+</p>
+
 <h4>ACTION TYPES</h4>
 <p>
 Actions are how the character interacts with the world and encompass
@@ -81,25 +90,18 @@ begin combat such as swinging a sword or casting an offensive spell.
 
 <h4>ACTION LENGTH</h4>
 <p>
-Any action takes a certain amount of time and while under stressful situations
-such as combat, characters are limited in the number of actions they may do in
-a given time. To easily categorize all actions, there are multiple categories
-of time lengths based upon turns and rounds.
+To easily categorize all actions, each one is given a certain amount
+of time needed to act upon it. 
 </p>
-
-<p>
-If an action takes longer than a full turn's worth, it is carried over to that
-character's next turn.
-</p>
-
+<!--
 <p>
 <b>Move Action</b> : The base Move Action is given freely to all characters,
 no matter how slow their reaction speed.
 </p>
-
+-->
 <p>
-<b>Standard Actions</b> : The most common action, most characters tend to have
-a single Standard Action per turn alongside their Move action.
+<b>Standard Actions</b> : The most common action, a character gets actions equal to
+their Swiftness score.
 </p>
 
 <p>
@@ -110,16 +112,17 @@ the character's full attention.
 
 <p>
 <b>Swift Actions</b> : These actions are quick but still take up enough time that
-they cannot be done except on the turn of the character. These actions may be
-done alongside a standard or move action.
+they cannot be done except on the turn of the character. These actions may be done once per 
+turn. Should the character have more than one turn in a round, they get additional
+swift actions per round.
 </p>
-
+<!--
 <p>
 <b>Immediate Actions</b> : Immediate Actions are so impressively fast that they may
 be done during another creature's turn. Immediate actions often need to be
 prepared ahead of time.
 </p>
-
+-->
 </div><div class="bookpage-column">
 
 <i><h4> THE TELLING ACTION</h4>
@@ -167,42 +170,43 @@ serenity, “Yours was your smile.”
 
 <table>
 <tr><th class="w30">  ACTION               </th><th class="w20"> LENGTH   </th><th class-"w50"> DESCRIPTION </td></tr>
-<tr><td> Discussing                        </td><td>                       </td>
-    <td> The character speaks to another without interruptions or distractions.
-     (both characters cannot be under duress.)</td></tr>
-<tr><td> Speaking                          </td><td> Full Action           </td>
+<tr><td> Discussing                        </td><td> Full Action                     </td>
+    <td> The character speaks to another without interruptions or distractions. This cannot be done
+		while the character is locked in melee combat.
+		</td></tr>
+<tr><td> Speaking                          </td><td> Swift Action         </td>
     <td> The character relays an established thought to another within a short
          time frame. This can be done as a free action while moving.  </td></tr>
-<tr><td> Quick Shout/Yell                  </td><td> Free/Immediate Action </td>
+<tr><td> Quick Shout/Yell                  </td><td> Swift Action </td>
     <td> The character relays a few words or a command. Maximum once per round.
          This does not allow a conversation.                         </td></tr>
-<tr><td> Moving                            </td><td> 1 Standard/Move Action</td>
+<tr><td> Moving                            </td><td> 1 Action per 5 feet movement. </td>
     <td> The character runs/climbs/swims their full movement length.</td></tr>
-<tr><td> Guarded Move                      </td><td> 1 Swift Action        </td>
-    <td> The character moves 1/5th (minimum 1) of their movement.
+<tr><td> Guarded Move                      </td><td> 2 Actions per 5 feet movement.        </td>
+    <td> The character moves carefully, gaining slight bonuses.
          This also safeguards them against any actions of opportunity.</td></tr>
-<tr><td> Changing Direction                </td><td> Immediate Action      </td>
-    <td> The character quickly adjusts their facing. (Against flanking etc...) </td></tr>
-<tr><td> Simple Interaction                </td><td> 1 Swift Action        </td>
+<tr><td> Changing Direction/Standing Up     </td><td> 1 Action*     </td>
+    <td> The character quickly adjusts their facing. This is a free action once a turn. </td></tr>
+<tr><td> Simple Interaction                </td><td> 2 Actions        </td>
     <td> The character uses a common item, eats food, drinks a potion,
          opens a door or does any similar simple action.                      </td></tr>
-<tr><td> Complex Interaction               </td><td> 1+ Full Actions       </td>
+<tr><td> Complex Interaction               </td><td> 1+ Rounds      </td>
     <td> The character uses an uncommon item such as a complex mechanical device
          or magical object that requires their full attention.      </td></tr>
-<tr><td> Reaching for a belted/pouched Item</td><td> 1 Standard Action     </td>
+<tr><td> Reaching for a belted/pouched Item</td><td> 3 Actions     </td>
     <td> The character grabs hold of an easily accessible or pouched item.</td></tr>
-<tr><td> Rummaging through a Backpack      </td><td> 2 Standard Actions    </td>
+<tr><td> Rummaging through a Backpack      </td><td> 8 Actions    </td>
     <td> The character ruffles through larger bags, looking for a particular item.</td></tr>
 <tr><td> Dropping an Item                  </td><td> Swift Action          </td>
     <td> The character drops whatever they are holding to the ground. </td></tr>
-<tr><td> Preparing a Simple Weapon         </td><td> 1 Standard Action     </td>
+<tr><td> Preparing a Simple Weapon         </td><td> 2 Actions     </td>
     <td> The character draws a weapon from their back or side. </td></tr>
-<tr><td> Preparing a Complex Weapon        </td><td> 2 Standard Actions    </td>
+<tr><td> Preparing a Complex Weapon        </td><td> 6 Actions    </td>
     <td> The character prepares a weapon, such as reloading a crossbow or
          drawing a bow's string.</td></tr>
-<tr><td> Attacking                         </td><td> 1 Standard Action     </td>
+<tr><td> Attacking                         </td><td> 3 Actions     </td>
     <td> The character attacks either at melee or ranged with their Primary attacks.</td></tr>
-<tr><td> Focused Attack                    </td><td> Swift Action          </td>
+<tr><td> Focused Attack                    </td><td> +1 Action per Secondary Attack    </td>
     <td> The character must do this alongside an Attacking action.
          The character adds all their Secondary attacks to the attack action.</td></tr>
 </table>
