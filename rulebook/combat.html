@@ -51,7 +51,7 @@
     <div class="bookpage-column">
 <p>
 While the everyday civilized creature does not have to worry about it, the realm
-of Avorkarth is one of danger lurking ‘round every corner. As such, adventurers,
+of Avorkarth is one with danger lurking ‘round every corner. As such, adventurers,
 heroes, villains and creatures of all kinds must fight to simply live and reap
 the rewards of each further day. The combat attributes use the base ability
 scores to tell how efficient the creature is at these moments of conflict.
@@ -69,11 +69,6 @@ are separated into three categories : Wounds, Lesser Wounds and Minor Wounds.
 
 <p><b> Wounds </b> : 1 to 1 ratio with the character's wound statistic. Should the character
 receive this many wounds, they perish.
-
-<p class="centered">
-WOUNDS <br> Wounds
-</p>
-
 <br><b> Lesser Wounds </b> : 5 to 1 ratio (1 wound = 5 lesser wounds). When a character takes
 5 lesser wounds, they convert them into a full wound.
 <br><b> Minor Wounds </b> : 10 to 1 ratio (1 lesser wound = 10 minor wounds). When a character takes
@@ -113,7 +108,7 @@ divine means.
 </p>
 <p><b> Lesser/Minor Wounds </b> :  Minor wounds are removed at a pace of 1 per week of in-game
 time, with lesser wounds being removed whenever all minor wounds are removed. This next lesser wound
-is then converted into ten minor wounds, beginning the healing procedure again.
+is then converted into nine minor wounds, beginning the healing procedure again.
 </p>
 
 </div><div class="bookpage-column">
@@ -128,7 +123,7 @@ increasing penalties.</p>
 <tr><th class="w20"> State</th><th class="w20"> Wounds</th><th class="w60">  Effect                        </th></tr>
 <tr><td> Well      </td><td> Full    </td><td> None                                                        </td></tr>
 <tr><td> Hurt      </td><td> 3/4     </td><td> -1 Movement, Dodge and Attack                               </td></tr>
-<tr><td> Wounded   </td><td> 1/2     </td><td> Half Movement and Dodge, -2 Attack, -1 Might. Bleeding Out. </td></tr>
+<tr><td> Wounded   </td><td> 1/2     </td><td> Half Movement and Dodge, -2 Attack, -1 Might. </td></tr>
 <tr><td> Crippled  </td><td> 1/10    </td><td> 1 Movement and Dodge, halve all other combat attributes.    </td></tr>
 </table>
 
@@ -166,7 +161,7 @@ MELEE ATTACK <br> (Agility OR Dexterity + Instinct)/2 (rounded down)
 </p>
 
 <p class="centered">
-RANGED ATTACK <br> (Dexterity + Instinct)/2 (rounded down) - 4
+RANGED ATTACK <br> (Dexterity + Instinct)/2 (rounded down)
 </p>
 
 <h3>MIGHT</h3>
@@ -218,32 +213,35 @@ DODGE <br> (Agility + Instinct)/2 (rounded down) + Armour Penalty
 </p>
 
 <p>
+<b>Immobilised</b> : Should a character be unable to move, any attack against 
+them is considered as an extreme critical and deals additional damage equal
+to 3 categories higher and also ignores any Full or Guarded armour values 
+(but not Natural).
+</p>
+
+<p>
 <b>Directional Dodge</b> : While in combat, the character's facing matters just
 as much as their placing. Almost each creature in Avorkarth has a front,
 flank and back. This can affect dodge rather harshly.
 </p>
 
-<p>
+<p class="centered">
 DIRECTIONAL DODGE
 </p>
 
 <p>
-Front : Retain the full dodge amount.
+<b>Front</b> : Retain the full dodge amount.
+<br><b>Flank</b> : Flank attacks increase the attack's rolling category by 1.
+<br><b>Back</b> : Back attacks increase the attack's rolling category by 3.
 </p>
 
+<!--
+<h3>BLOCKING</h3>
 <p>
-Flank : Flank attacks increase the attack's rolling category by 1.
-</p>
-
-<p>
-Back : Back attacks increase the attack's rolling category by 3.
-</p>
-
-<h3>PARRYING</h3>
-<p>
-An alternative to dodging, some heavily armoured warriors, or those with
-belief in their skill at arms may instead parry. The attacker's attack always hits
-when parrying, but never at a critical. Parrying is influenced by one's
+Parrying is an alternative to dodging used by some heavily armoured warriors, or those with
+belief in their skill at arms is greater. If a parry is declared, the attacker's attack 
+always hits, but the parry value is added to the defender's armour value.
+ Parrying is influenced by one's
 arm strength as well as one's proficiency with their current weapon.
 Parrying isn't a roll and is instead added on top of one's armour amount before
 any calculation.
@@ -255,8 +253,8 @@ also adding the shield's block value to the parry.
 </p>
 
 <p class="centered">
-PARRY <br> Strength/3 (rounded down) + Dexterity/4 (rounded down)
-</p>
+PARRY <br> Strength difference of attacker/defender + Weapon's Mastery bonus
+</p> -->
 
 <h3>ARMOUR</h3>
 <p>
@@ -284,13 +282,16 @@ made to the front or flank, but less so against attacks from the back.
 Guarded armour bonuses are only applied to frontal and flank attacks.
 </p>
 
-</div><div class="bookpage-column">
-
 <p>
 <b>Natural Armour</b> : All creatures have a skin to protect from minor injures.
 These are natural to the creature and as such cannot be countered by positioning
 unless specifically stated.
 </p>
+
+
+</div><div class="bookpage-column">
+
+
 
 <h3>STAMINA</h3>
 <p>
@@ -304,20 +305,18 @@ STAMINA <br> Constitution
 
 <h3>RESISTANCES</h3>
 <p>
-Resistances offer a flat damage reduction to any damage of its type.
-The resistances are as follows : Physical, Acid, Poison, Necrotic, Fire,
-Cold, Shock, Holy, Infernal, Shadow and Spirit. Poison and Necrotic are
-influenced by the character's vitality.
-</p>
-
-<p>
-<b>Negative Resistances</b> : Should a creature have a negative score in their
-resistances, they take reduced healing or increased damage equal to the
-negative of the resistance.
+Resistances function as an armour value to any damage of its type.
+The resistances are as follows : Acid, Poison, Necrotic, Fire,
+Cold, Shock, Holy, Infernal, Shadow and Spirit. Resistances are influenced by
+the character's vitality or toughness.
 </p>
 
 <p class="centered">
-POISON/NECROTIC RESISTANCE <br> Vitality
+POISON/NECROTIC/COLD/ RESISTANCES <br> Vitality
+</p>
+
+<p class="centered">
+FIRE/SHOCK RESISTANCES<br> Toughness
 </p>
 
 <h3>RESOLVE</h3>
@@ -375,7 +374,7 @@ usually upon the request of a player or an ambush from deadly creatures.
 
 <h4>A. - IF AMBUSHED (If not, go to B.)</h4>
 <ul>
-<li> All creatures roll 1d6 and add their initiative, with ambushed creatures
+<li> All creatures add their initiative to a list, with ambushed creatures
      taking a -10 penalty.</li>
 <li> Order all the initiatives in a list, from highest to lowest. If a creature's 
 	 initiative is lower than the lowest ambushing creature, they do not act this round.
@@ -385,11 +384,9 @@ usually upon the request of a player or an ambush from deadly creatures.
 <h4> B. - MARK INITIATIVE</h4>
 <ul>
 <li> (If finishing an Ambush round) - Any ambushed creatures take off the -10 penalty 
-	 to their initiative.</li>
-<li> All creatures roll 1d6 and add their initiative.</li>
+	 to their initiative and add their initiative to the list in their proper place of order.</li>
 <li> Any creature whose swiftness exceeds 6 actions then gain additional turns per
-6 actions, and add them to the initiative list at -5 initiative per.</li>
-<li> Order all the initiatives in a list, from highest to lowest.</li>
+6 actions, and add them to the initiative list at -5 initiative per extra turn.</li>
 <li> The highest initiative goes first. Players win ties. (Go to C.)</li>
 </ul>
 
@@ -397,7 +394,7 @@ usually upon the request of a player or an ambush from deadly creatures.
 <ul>
 <li> If it is the creature's first turn in the round, they must roll their
      Resolve check.</li>
-<li> The acting creature has 6 actions (or fewer if their swiftness score is lower than 6).
+<li> The acting creature uses up to 10 actions.
 	(See the interaction section of the rulebook for what actions are available and how much
 	they each cost.)</li>
 <li> The creature may choose to stay their actions and declare to use them another
@@ -549,7 +546,7 @@ target and is at least 3 tiles away.
 <p class="caption">
 A charge cannot change direction.
 </p>
-
+<!--
 <p>
 <b>Changing Facing Direction</b> : A character may change their
 facing direction by up to 1 tile degree each round whenever a foe attempts to attack
@@ -566,7 +563,7 @@ attacking from C is too far to face in one action.
 <b>Prone/Standing Up</b> : A very short action. Can be used in reaction to enemy
 or allied actions even if not one's turn.
 </p>
-
+-->
 <p>
 <h3>LOCKING</h3>
 <p>
@@ -575,21 +572,6 @@ As such, a character can only do two actions while as such. Attack back, or retr
 
 <br><br><b> Retreating </b> : A creature may retreat out of melee range, but may only use movement 
 actions for their turn.
-
-
-
-</div></div></div>
-
-<!--========================================================== Page content -->
-<!--======================================================================= -->
-<div class="bookpage">
-
-<h1>COMBAT</h1>
-
-<div class="bookpage-columns">
-    <div class="bookpage-column">
-
-
 
 <h3>DIFFICULT TERRAIN</h3>
 <p>
@@ -605,12 +587,20 @@ amount of their movement speed and dodge.
 <b>Difficult Terrain (Brush, Marshlands, Ruin Rubble)</b> :
 Half or -4 Movement (whichever is worse, Min 1), - 3 Dodge.
 </p>
-
 <p>
-<b>Difficult Terrain (Quicksand)</b> : No Movement, -6 Dodge.
+<b>Harsh Terrain (Quicksand)</b> : No Movement, -6 Dodge.
 </p>
 
-</div><div class="bookpage-column">
+</div></div></div>
+
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="bookpage">
+
+<h1>COMBAT</h1>
+
+<div class="bookpage-columns">
+    <div class="bookpage-column">
 
 <h3>ATTACKING/DEFENDING</h3>
 <p>
@@ -620,13 +610,13 @@ rolled per attack, not one roll for all attacks.
 </p>
 
 <h4>ATTACKING</h4>
-HIT -> STRIKE -> DAMAGE
+HIT -> STRIKE -> WOUND
 
 <h4>HITTING</h4>
 (ATTACK VS DODGE)
 <p>
 To see if an attack hits one's opponent, the attacking creature must roll against
-their opponent's dodge unless the defender is blocking/parrying. 
+their opponent's dodge. 
 Compare these values on the roll chart then roll to see
 what the outcome would be. (See Dice Rolls chart)
 </p>
@@ -652,15 +642,77 @@ be rolled for Striking.
 </p>
 
 <p>
-<b>Critical Fail</b> : MELEE : The opponent outmaneuvers the attacker and may use an
-immediate action to make an attack of opportunity. (See further)
+<b>Critical Fail</b> : MELEE : The opponent outmaneuvers the attacker and gains +1
+to their next attack roll against the attacker. (See further)
 RANGED : Fumble and drop your weapon.
 </p>
 
-<img src="../images/rulebook/rulebook-combat2-img3.png">
-<p class="caption">
-Bonus Text!
+<h4>STRIKING</h4>
+(MIGHT VS ARMOUR)
+
+<p>
+Each attack that hits an opponent doesn't automatically deal damage. They must
+rolled a second time to see if said attack goes through the opponent's armour.
+Compare each attack's might and the opponent's armour on the dice rolling chart,
+then roll the strikes. If it goes through, then the opponent takes a certain amount
+of wounds depending on the severity of the attack.
 </p>
+
+<p>
+<b>Critical Success</b> : The creature takes 1 mortal wound.
+</p>
+
+<p>
+<b>Success</b> : The creature takes 1 lesser wound.
+</p>
+
+<p>
+<b>Partial Success</b> : The creature takes 1 minor wound.
+</p>
+
+<p>
+<b>Fail</b> : The damage is negated.
+</p>
+
+<p>
+<b>Critical Fail</b> : The damage is negated and the weapon takes a durability damage
+point. If unarmed, the attacker instead takes 1 minor wound.
+</p>
+
+
+</div><div class="bookpage-column">
+
+
+<h3>DEFENSIVE STANCE</h3>
+<p>If a creature believes in their ability to shrug off blows, they can enter a defensive stance.
+The creature can no longer dodge regular attacks (skipping the "Hitting" phase)
+ but can no longer be critically struck.
+</p>
+
+<h3>OVERWHELM</h3>
+<p>
+The difference in strength between the users also changes the wounds dealt, with the advantage to the 
+creature with a greater strength score.
+<table> 
+<tr><th class="w20"> STRENGTH DIFFERENCE</th><th class="w60">  Effect                        </th></tr>
+<tr><td> +/- 0     </td><td> No Effect                                                        </td></tr>
+<tr><td> +/- 1     </td><td> Add/Remove 2 minor wounds to/from the damage. (To a minimum of 1 minor wound).  </td></tr>
+<tr><td> +/- 2   </td><td> Add/Remove 5 minor wounds to/from the damage. (To a minimum of 1 minor wound). </td></tr>
+<tr><td> +/- 3  </td><td> Add/Remove 1 lesser to/from the damage. (To a minimum of 1 minor wound). </td></tr>
+<tr><td> +/- 5  </td><td> Add/Remove 3 lesser wounds to/from the damage. (To a minimum of 1 minor wound).    </td></tr>
+<tr><td> +/- 7  </td><td> Add/Remove 1 wound to/from the damage. (To a minimum of 1 minor wound).    </td></tr>
+<tr><td> +/- 10  </td><td> Add/Remove 3 wounds to/from the damage. (Certain creatures cannot hurt others...)</td></tr>
+</table>
+
+<h3>NON-LETHAL DAMAGE</h3>
+<p>
+Sometimes a creature may wish to simply knock out an opponent instead of killing them.
+If this is the case, the attacker counts all their roll values with lethal weaponry
+as one category lower on the dice roll chart. Non-lethal weaponry ignores this
+rule and rolls normally.
+</p>
+
+
 
 </div></div></div>
 
@@ -673,75 +725,6 @@ Bonus Text!
 
 <div class="bookpage-columns">
     <div class="bookpage-column">
-
-<h3>STRIKING</h3>
-
-<h3>(MIGHT VS ARMOUR)</h3>
-<p>
-Each attack that hits an opponent doesn't automatically deal damage. They must
-rolled a second time to see if said attack goes through the opponent's armour.
-Compare each attack's might and the opponent's armour on the dice rolling chart,
-then roll the strikes. If it goes through, the weapon's damage is applied to the
-opponent's wounds.
-</p>
-
-<p>
-<b>Critical Success</b> : The defender takes a Wound. If the attack was a critical
-hit AND a critical strike, roll another attack. This keeps going until either the attack
-or strike rolled are not criticals.
-</p>
-
-<p>
-<b>Success</b> : The weapon's Lesser Wound damage is applied.
-</p>
-
-<p>
-<b>Partial Success</b> : The weapon's Minor Wound damage is applied.
-</p>
-
-<p>
-<b>Fail</b> : The damage is negated.
-</p>
-
-<p>
-<b>Critical Fail</b> : The damage is negated and the weapon takes a durability damage
-point. If unarmed, the attacker instead takes 1 minor wound.
-</p>
-
-<h3>ADDITIONAL STRIKING DAMAGE</h3>
-<p>
-The amount of damage dealt is directly indicated by the weapon used. However, the difference
-in strength between the users also changes the damage dealt, with the advantage to the 
-creature with a greater strength score. (It follows the dice rolling table)
-<table> 
-<tr><th class="w20"> STRENGTH DIFFERENCE</th><th class="w60">  Effect                        </th></tr>
-<tr><td> +/- 0     </td><td> No Effect                                                        </td></tr>
-<tr><td> +/- 1     </td><td> Add/Remove 5 minor wounds to the damage. (To a minimum of 1 minor wound).  </td></tr>
-<tr><td> +/- 2   </td><td> Add/Remove 1 lesser wound to the damage. (To a minimum of 1 minor wound). </td></tr>
-<tr><td> +/- 3  </td><td> Add/Remove 1 wound to the damage. (To a minimum of 1 minor wound). </td></tr>
-<tr><td> +/- 5  </td><td> Add/Remove 3 wounds to the damage. (To a minimum of 1 minor wound).    </td></tr>
-<tr><td> +/- 7  </td><td> Add/Remove 6 wound to the damage. (To a minimum of 1 minor wound).    </td></tr>
-<tr><td> +/- 10  </td><td> Add/Remove 10 wounds to the damage. (Certain creatures cannot hurt others...)</td></tr>
-</table>
-
-<!-- I think I want the weapon size to simply be indicating damage dealt, so that damage dealt
-can be equivalent when two creatures of the same size attack one another. 
-<b>Weapon Size</b> : The attacker's damage is reduced by one category per enemy size greater 
-(to a minimum of 1) and increased by one category
-per size smaller, <b>doubling</b> this bonus per size difference. This is calculated
-BEFORE strike critical and partial successes.
-</p>
-
-<p>
-<b>Might/Armour Difference</b> : The weapon's damage is increased or 
-decreased by 1 (to a minimum of 1) per rolling category when rolling to strike. 
-(See Startup - Dice Rolling). This is calculated AFTER strike critical and partial
-successes.
-</p> -->
-
-
-
-</div><div class="bookpage-column">
 
 <h3>ATTACK/STRIKING ADDITIONAL RULES</h3>
 <p>
@@ -785,16 +768,8 @@ reduce its dodge by 1. Positioning does not matter for flanking.
 See Dodge. (Combat Attributes)
 </p>
 
-
-<h3>NON-LETHAL DAMAGE</h3>
-<p>
-Sometimes a creature may wish to simply knock out an opponent instead of killing them.
-If this is the case, the attacker counts all their roll values with lethal weaponry
-as one category lower on the dice roll chart. Non-lethal weaponry ignores this
-rule and rolls normally.
-</p>
-
 <h3>COMBAT MANEUVERS</h3>
+
 <p>
 Combat maneuvers are attack actions that don't deal damage, instead attempting
 to displace or control the target. Combat maneuvers only need to roll the
@@ -818,21 +793,10 @@ RANGED : The projectile breaks upon impact.
 than simply attacking the target with a club. This is per maneuver.
 </p>
 
+</div><div class="bookpage-column">
 
 
-</div></div></div>
-
-<!--========================================================== Page content -->
-<!--======================================================================= -->
-<div class="bookpage">
-
-<h1>COMBAT</h1>
-
-<div class="bookpage-columns">
-    <div class="bookpage-column">
-
-<h2>COMBAT MANEUVERS</h2>
-Maneuver Penalty
+<h3>COMBAT MANEUVERS</h3>
 
 <p>
 Shove/Drag -1 per tile
@@ -847,24 +811,25 @@ for 1+X rounds.
 </p>
 
 <p>
-Trip -2
-Attempt to make a target within melee range fall down and gain the prone condition.
+Trip -1
+Attempt to make a target within melee range fall down and unable to move/attack until they
+use the standing up action.
 </p>
 
 <p>
-Disarm -3.
+Disarm -2.
 Attempt to make a target within attacking range drop their wielded weapon.
 </p>
 
 <p>
-Grapple -3
+Grapple -2
 Attempt to partially grapple a target. (See Grappling)
 </p>
 
 <p>
-Tackle +3
-Attempt to fully grapple a target. (See Grappling) The target may use an
-immediate action to get a free Striking roll with their primary attack.
+Tackle +2
+Attempt to fully grapple a target. (See Grappling) The target may use their
+swift action to get a free Striking roll with their primary attack.
 </p>
 
 <h3>GRAPPLING</h3>
@@ -881,7 +846,7 @@ state of the grapple.
 
 <p>
 <b>Partial Grapple</b> : If a grapple check is successful, the target is grabbed
-by the arm or leg. Both the grappler and target lose half their dodge.
+by the arm, tail or leg. Both the grappler and target lose half their dodge.
 The grappled target lowers their movement by half before any other movement calculations.
 The two creatures drag each other whenever moving. If another grapple is successful,
 the partial grapple becomes a full grapple.
@@ -895,8 +860,8 @@ once again, the grappler may choose to either pin or choke/constrict their targe
 </p>
 
 <p>
-<b>Choke/Constrict</b> : The grappler deals i lethal damage every round, ignoring
-all guarded armour bonuses.
+<b>Choke/Constrict</b> : The grappler deals 1 minor wound every round, ignoring
+all guarded armour bonuses. This increases by 1 minor wound per round.
 </p>
 
 <p>
@@ -910,26 +875,16 @@ artist checks against the bindings instead of strength checks against the grappl
 their strength. If the target's total is greater than the grappler's, they escape.
 </p>
 
+</div></div></div>
 
+<!--========================================================== Page content -->
+<!--======================================================================= -->
+<div class="bookpage">
 
+<h1>COMBAT</h1>
 
-</div><div class="bookpage-column">
-<!--
-<h3>INSPIRATION / LEADERSHIP</h3>
-
-<p>
-A creature with little physical presence on the battlefield may instead use of their
-beauty or silver tongued charisma to inspire
-neaby allies, bolstering their will against terrifying encounters and enemies.
-</p>
-
-
-<p class="centered">
-INSPIRATION <br>  +1 to allied Resolve per 2 categories higher Beauty. <br><br>
-LEADERSHIP
-<br>(costs 1 action)<br>  +1 to allied Resolve per 1 category higher Charisma.
-</p>
--->
+<div class="bookpage-columns">
+    <div class="bookpage-column">
 
 <h3>MORALE CHECK</h3>
 <p>
@@ -939,7 +894,7 @@ representation of the flight or fight response throughout a battle.
 </p>
 
 <p class="centered">
-MORALE CHECK <br> 3 + Highest enemy Presence - Highest allied Presence
+MORALE CHECK DC<br> 3 + Highest enemy Presence - Highest allied Presence
 </p>
 
 <p>
@@ -1010,7 +965,10 @@ how to apply the negatives at a reduced rate. If they have only a single limb
 (like a tail for legs), automatically apply the full penalty.
 </p>
 
-</p>
+
+
+</div><div class="bookpage-column">
+
 
 </div></div>
 </div>
